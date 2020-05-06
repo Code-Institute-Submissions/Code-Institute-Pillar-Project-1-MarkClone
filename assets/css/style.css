@@ -1,0 +1,45 @@
+
+/*=== MAIN HTML ELEMENTS===========================================================================================================*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+ margin: 0;
+ padding: 0;
+
+}
+
+/*=== GENERAL STYLES (To be used across the Project)==========================================================================*/
+
+.no-paddings-margins {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*=== SPECIFIC GENERAL STYLES (Special areas to be formated the same across the Project)=======================================*/
+
+/*---------------------------------------------------------------------------Billboard ----------------------------------------*/
+
+.billboard {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*=== MAIN PAGE - index.html ===================================================================================================*/
+
+/*---------------------------------------------------------------- Billboard - Main- ------*/
+
+.billboard-start {
+    background-image: url("../images/track1.jpg");
+}
