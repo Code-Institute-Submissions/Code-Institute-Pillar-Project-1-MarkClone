@@ -1,5 +1,5 @@
 
-/*=== MAIN HTML ELEMENTS===========================================================================================================*/
+/*=== HTML ELEMENTS===========================================================================================================*/
 
 body {
     margin: 0;
@@ -7,9 +7,8 @@ body {
 }
 
 header {
- margin: 0;
- padding: 0;
-
+    margin: 0;
+    padding: 0;
 }
 
 /*=== GENERAL STYLES (To be used across the Project)==========================================================================*/
@@ -19,7 +18,6 @@ header {
     margin: 0;
 }
 
-
 /*=== SPECIFIC GENERAL STYLES (Special areas to be formated the same across the Project)=======================================*/
 
 /*---------------------------------------------------------------------------Billboard ----------------------------------------*/
@@ -27,14 +25,31 @@ header {
 .billboard {
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
+    background-size: 100% 70vh;
     width: 100%;
     height: 70vh;
     padding: 0;
     margin: 0;
 }
 
+/*---------------------------------------------------------------------------Main Content Area --------------------------------*/
+.main-content-container {
+    padding: 20px;
+    text-align: center;
+    background-color: grey;
+}
 
+
+
+/*---------------------------------------------------------------------------Footer --------------------------------------------*/
+.footer-container {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
 
 /*=== MAIN PAGE - index.html ===================================================================================================*/
 
@@ -43,3 +58,49 @@ header {
 .billboard-start {
     background-image: url("../images/track1.jpg");
 }
+
+/*=== MEDIA QUERIES ============================================================================================================*/
+
+/* --- Bootstrap xl breakpoint - More than 1200px --- */
+@media screen and (min-width: 1200px) {
+    
+    .main-content-container {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+/* --- Bootstrap xl breakpoint - Less than 1200px --- */
+@media screen and (max-width: 1200px) {
+    
+    .main-content-container {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+
+/* --- Bootstrap lg breakpoint - Less than 992px --- */
+@media screen and (max-width: 992px) {
+    .main-content-container {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+
+
+/* --- Bootstrap md breakpoint - Less than 768px --- */
+@media screen and (max-width: 768px) {
+    .main-content-container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
