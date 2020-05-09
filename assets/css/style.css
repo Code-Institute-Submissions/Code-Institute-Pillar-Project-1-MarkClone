@@ -1,62 +1,4 @@
-/*=== VARIABLES ==============================================================================================================*/
-:root {
-
-    /*=== Colors ===*/
-    --primary-color-1: #c39853;
-    --primary-color-2: #65060f;
-    
-    --secondary-color-1: #5d5d5d;
-    --secondary-color-2: #ffffff;
-    --secondary-color-3: #8a8a8a;
-
-    /*=== Text sizes ===*/
-    --text-xl: 150%;
-    --text-lg: 120%;
-    --text-md: 100%;
-    --text-sm: 80%;
-    --text-xs: 70%;
-
-    /*=== Fonts ===*/
-    --font-family-menus: inherit;
-    --font-family-headers: inherit;
-    --font-family-text: inherit;
-
-    /*====== General Elements variables ======*/
-    
-    /* Body */
-    --main-text-color: var(--secondary-color-1-gray);
-    --main-text-size: var(--text-md);
-     
-    /* Dropdown Menus */
-    --dropdown-menu-font: var(--font-family-menus);
-    --dropdown-menu-text-color: var(--secondary-color-1);
-
-    --dropdown-icon-color: var(--primary-color-2);
-    --dropdown-icon-size: var(--text-lg);
-        
-    /*====== Specific Elements variables ======*/
-        
-    /* Logotype */
-    --logo-text-color: var(--secondary-color-1);
-    --logo-icon-color: var(--primary-color-1);
-    --logo-icon-size: 1.2em;
-   
-    /* Header */
-    --header-text-color: var(--secondary-color-1);
-    --header-bg-color: var(--secondary-color-2);
-
-    /* Footer */
-    --footer-text-color: var(--secondary-color-1);
-    --footer-bg-color: var(--secondary-color-2);
-    --footer-border-color: var(--secondary-color-1);
-
-    --footer-icon-color: var(--secondary-color-3);
-    --footer-icon-size: var(--text-md);
-
-}
-
-
-/*=== HTML ELEMENTS===========================================================================================================*/
+/*=== HTML ELEMENTS ===============================================================*/
 
 body {
     margin: 0;
@@ -98,7 +40,7 @@ h3, h4 {
     font-size: var(--text-md);
 }
 
-/*=== GENERAL STYLES (To be used across the Project)==========================================================================*/
+/*=== GENERAL STYLES (To be used across the Project) ======================================*/
 
 .no-paddings-margins {
     padding: 0;
@@ -112,7 +54,7 @@ h3, h4 {
     position: absolute;
 }
 
-/*--------------------------------------------------------------------------- Text styles -------------------------------------*/
+/*--- Text Styles -----------------------------------------------------------------------------------------------------------------------------*/
 
 .text-xl {
     font-size: var(--text-xl);
@@ -142,20 +84,9 @@ h3, h4 {
     font-weight: thin;
 }
 
+/*=== SPECIFIC GENERAL STYLES (Special areas to be formated the same across the Project)===========*/
 
-
-/*--------------------------------------------------------------------------- Colors ------------------------------------------*/
-
-.color-gray {
-    font-size: var(--secondary-color-1);
-}
-
-
-
-
-/*=== SPECIFIC GENERAL STYLES (Special areas to be formated the same across the Project)=======================================*/
-
-/*--------------------------------------------------------------------------- Logotype ----------------------------------------*/
+/*--- Logotype ---------------------------------------------------------------------------------------------------------------------------------*/
 
 .logo-icon {
     font-size: var(--logo-icon-size);
@@ -170,21 +101,58 @@ h3, h4 {
     padding: 0 10px;
 }
 
-/*--------------------------------------------------------------------------- Dropdown Menus ----------------------------------------*/
-
-.dropdown-menu-custom {
-    font-family: var(--dropdown-menu-font);
-    color: var(--dropdown-menu-text-color);
+.logotype {
+    font-family: var(--font-family-logotype);
 }
 
-.dropdown-menu-icon {
-    padding: 0 20px 0 0;
-    font-size: var(--dropdown-icon-size);
-    color: var(--dropdown-icon-color);
+.logotype-large {
+    font-size: var(--top-logo-font-size);
 }
 
+/*--- Header ---------------------------------------------------------------------------------------------------------------------------------*/
+.top-navbar-row {
+    height: 50px;
+}
 
-/*---------------------------------------------------------------------------Billboard ----------------------------------------*/
+.top-navbar-logo-container {
+    width: 300px;
+    padding-top: 5px;
+}
+
+header {
+    background-color: var(--top-navbar-bg-color);
+}
+
+.top-navbar-menu-link-container  {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.top-navbar-menu-link {
+    position: relative;
+    right: 12px;
+    color: var(--menu-link-1-color);
+    font-size: var( --text-mdl);
+    font-family: var(--font-family-menus);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.top-navbar-menu-link i {
+    padding-left: 6px;
+    position: relative;
+    top: 1px;
+    font-size: 1em;
+    color: var(--menu-link-icon-color);
+}
+
+#top-navbar-sub-menu {
+    display: none;
+    width: 100vh;
+    border-radius: 0px;
+}
+
+/*--- Billboard --------------------------------------------------------------------------------------------------------------------------------*/
 
 .billboard {
     background-repeat: no-repeat;
@@ -196,14 +164,15 @@ h3, h4 {
     margin: 0;
 }
 
-/*---------------------------------------------------------------------------Main Content Area --------------------------------*/
+/*--- Main Content Area ------------------------------------------------------------------------------------------------------------------*/
 
 .main-content-container {
+    width:100%;
     margin: auto;
     padding: 20px 0;
 }
 
-/*---------------------------------------------------------------------------Footer --------------------------------------------*/
+/*--- Footer -----------------------------------------------------------------------------------------------------------------------------------*/
 .footer-container {
     width: 100%;
     height: 80px;
@@ -231,22 +200,30 @@ h3, h4 {
     font-size: var(--footer-icon-size);
 }
 
+/*--- Dropdown Menus Footer --------------------------------------------------------------------------------------------------------------*/
 
+.dropdown-menu-custom {
+    font-family: var(--dropdown-menu-font);
+    color: var(--dropdown-menu-text-color);
+}
 
+.dropdown-menu-icon {
+    padding: 0 20px 0 0;
+    font-size: var(--dropdown-icon-size);
+    color: var(--dropdown-icon-color);
+}
 
-/*=== MAIN PAGE - index.html ===================================================================================================*/
+/*=== MAIN PAGE - index.html =============================================================*/
 
-/*---------------------------------------------------------------- Billboard - Main- ------*/
+/*--- Billboard - Main Page -----------------------------------------------------------------------------------------------------------------*/
 
-.billboard-start {
+.billboard-main-page {
     background-image: url("../images/track1.jpg");
 }
 
+/*=== MEDIA QUERIES ==================================================================*/
 
-
-/*=== MEDIA QUERIES ============================================================================================================*/
-
-/* --- Bootstrap xl breakpoint - More than 1200px --- */
+/* --- Bootstrap xl breakpoint - More than 1200px ----------------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
     
     /*Main content*/
@@ -261,7 +238,7 @@ h3, h4 {
 
 }
 
-/* --- Bootstrap xl breakpoint - Less than 1200px --- */
+/* --- Bootstrap xl breakpoint - Less than 1200px --------------------------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
     
     /*Main content*/
@@ -276,8 +253,7 @@ h3, h4 {
 
 }
 
-
-/* --- Bootstrap lg breakpoint - Less than 992px --- */
+/* --- Bootstrap lg breakpoint - Less than 992px ------------------------------------------------------------------------------------------ */
 @media screen and (max-width: 992px) {
     
     /*Main content*/
@@ -292,9 +268,7 @@ h3, h4 {
 
 }
 
-
-
-/* --- Bootstrap md breakpoint - Less than 768px --- */
+/* --- Bootstrap md breakpoint - Less than 768px ---------------------------------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
     
     /*Main content*/

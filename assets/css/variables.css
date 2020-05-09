@@ -1,0 +1,53 @@
+/*=== VARIABLES ====================================================================*/
+:root {
+    /*=== Colors ===*/
+    --primary-color-1: #c39853;
+    --primary-color-2: #65060f;
+    --primary-color-3: #c39853;
+    --primary-color-4: #6b53c3;
+    --secondary-color-1: #5d5d5d;
+    --secondary-color-2: #ffffff;
+    --secondary-color-3: #8a8a8a;
+    --secondary-color-4: #e0e0e0;
+    /*=== Text sizes ======================================================================*/
+    --text-xxl: 180%;
+    --text-xl: 150%;
+    --text-lg: 120%;
+    --text-mdl: 110%;
+    --text-md: 100%;
+    --text-sm: 80%;
+    --text-xs: 70%;
+       /*=== Fonts ===*/
+    --font-family-menus: inherit;
+    --font-family-headers: inherit;
+    --font-family-text: inherit;
+    --font-family-logotype: inherit;
+    /*=== General Elements variables ========================================================*/
+    /* Body */
+    --main-text-color: var(--secondary-color-1);
+    --main-text-size: var(--text-md);
+    /* Menus */
+    --menu-link-1-color: var(--secondary-color-1);
+    --menu-link-1-size: var(--text-md);
+    --menu-link-icon-color: var(--secondary-color-3);
+    /* Dropdown Menus */
+    --dropdown-menu-font: var(--font-family-menus);
+    --dropdown-menu-text-color: var(--secondary-color-1);
+    --dropdown-icon-color: var(--primary-color-2);
+    --dropdown-icon-size: var(--text-lg);
+    /*=== Specific Elements variables ========================================================*/
+    /* Logotype */
+    --logo-text-color: var(--secondary-color-1);
+    --logo-icon-color: var(--primary-color-1);
+    --logo-icon-size: 1.2em;
+    --top-logo-font-size: var(--text-xxl);
+    /* Header */
+    --header-text-color: var(--secondary-color-1);
+    --top-navbar-bg-color: var(--secondary-color-4);
+    /* Footer */
+    --footer-text-color: var(--secondary-color-1);
+    --footer-bg-color: var(--secondary-color-2);
+    --footer-border-color: var(--secondary-color-1);
+    --footer-icon-color: var(--secondary-color-3);
+    --footer-icon-size: var(--text-md);
+}
