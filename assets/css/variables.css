@@ -9,6 +9,8 @@
     --secondary-color-2: #ffffff;
     --secondary-color-3: #8a8a8a;
     --secondary-color-4: #e0e0e0;
+    --secondary-color-5: #b3b3b3;
+    --secondary-color-6: #c8c8c8;
     /*=== Text sizes ======================================================================*/
     --text-xxl: 180%;
     --text-xl: 150%;
@@ -23,18 +25,30 @@
     --font-family-text: inherit;
     --font-family-logotype: inherit;
     /*!=== GENERAL ELEMENTS VARIABLE ========================================================*/
-    /* Body */
+    /* === BODY === */
     --main-text-color: var(--secondary-color-1);
     --main-text-size: var(--text-md);
-    /* Menus */
+    /* === MENUS === */
+    /* Links */
     --menu-link-1-color: var(--secondary-color-1);
     --menu-link-1-size: var(--text-md);
     --menu-link-icon-color: var(--secondary-color-3);
-    /* Dropdown Menus */
+    /* Headers */
+    --menu-text-1-size: var(--text-lg);
+    --menu-text-1-color: var(--primary-color-2);
+    --menu-text-1-font: var(--font-family-headers);
+    --menu-text-2-size: var(--text-md);
+    --menu-text-2-color: var(--secondary-color-1);
+    --menu-text-2-font: var(--font-family-menus);
+    /* Dropdowns */
     --dropdown-menu-font: var(--font-family-menus);
     --dropdown-menu-text-color: var(--secondary-color-1);
     --dropdown-icon-color: var(--primary-color-2);
     --dropdown-icon-size: var(--text-lg);
+
+    /* === BORDERS === */
+    --border-thin-light: var(--secondary-color-6);
+
     /*=== Specific Elements variables ========================================================*/
     /* Logotype */
     --logo-text-color: var(--secondary-color-1);

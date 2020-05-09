@@ -19,39 +19,77 @@
 
   <body>
       
-      <header> <!-- !====== HEADER ======! -->
-          <nav>
-              <div class="container-fluid no-paddings-margins"> <!-- == Top Navbar == -->
-                  <div class="row align-items-center no-gutters top-navbar-row"> 
-                      <div class="col-6"> <!--  Logotype -->
-                           <div class="top-navbar-logo-container">
-                              <a class="logotype logotype-large" href="index.html">
-                                  Mark<i class="fas fa-dna logo-icon logo-icon-large"></i>Clone
-                              </a>
-                          </div>
-                      </div>
-                      <div class="col-6 top-navbar-link-container"> <!-- Menu Link -->
+    <header>
+        <!-- !====== HEADER ======! -->
+        <nav>
+            <div class="container-fluid no-paddings-margins"> <!-- == Top Navbar == -->
+                <div class="row align-items-center no-gutters top-navbar-row"> 
+                    <div class="col-6"><!--  Logotype -->
+                         <div class="top-navbar-logo-container">
+                            <a class="logotype logotype-large" href="index.html">
+                                Mark<i class="fas fa-dna logo-icon logo-icon-large"></i>Clone
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 top-navbar-link-container"> <!-- Menu Link -->
                         <button class="clear-button top-navbar-menu-link toggle-button" data-id="#top-navbar-submenu">
                             Menu<i class="fas fa-angle-down"></i>
-                        </button>   
-                     </div>
-                  </div>
-                  <div class="row"> <!-- Menu Link -->
-                      <div class="col-12">
-                          <div id="top-navbar-sub-menu">
-                              <div class="top-navbar-sub-menu">
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div id="top-navbar-submenu" role="navigation"> <!-- == Top Sub-Menu == -->
-                just work now, will you!
-             </div>
-          </nav>
-      </header>
-
-
+                        </button>
+                    </div>
+                </div>
+                <div class="row"> <!-- Menu Link -->
+                    <div class="col-12">
+                        <div id="top-navbar-sub-menu">
+                            <div class="top-navbar-sub-menu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="top-navbar-submenu" role="navigation"> <!-- == Top Sub-Menu == -->         
+                <div class="container-fluid no-paddings-margins">
+                    <div class="row no-gutters text-align-center"> <!----Menu row 1---->
+                        <div class="col-sm-12 col-md-4 top-navbar-submenu-group"> <!--Order Menu -->
+                            <div class="top-navbar-submenu-header">
+                                <h2>Order<br>Now!</h2>
+                            </div>
+                                <h3>Business Leasing</h3>
+                                <h3>Need a good bank?</h3>
+                                <h3>Unsure? Talk to a Mark!</h3>
+                        </div>               
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-group"> <!-- Product Menu -->
+                            <div class="top-navbar-submenu-header"> 
+                                <h2>Mark<br> 2000</h2>
+                            </div>
+                                <h3>Product Overview</h3>
+                                <h3>The Base Unit</h3>
+                                <h3>The Add-Ons</h3>
+                        </div>
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-group"> <!-- Service Menu -->
+                            <div class="top-navbar-submenu-header">
+                                <h2>Service<br>Center</h2>
+                            </div>
+                                <h3>Is It Really Broken?</h3>
+                                <h3>Find Out Why?</h3>
+                                <h3>Contact</h3>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row no-gutters text-align-center"> <!----Menu row 2---->
+                        <div class="col-sm-12 col-md-4 top-navbar-submenu-text"> <!--Company Info -->
+                            <h3>Join The Exclusive<br> "Markers-Club!"</h3>    
+                        </div>               
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text"> <!-- Product Menu -->
+                            <h3>About<br>Us</h3>
+                        </div>
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text"> <!-- Service Menu -->
+                                <h3>Register to upgrade<br> your Mark-2000</h3>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <!-- TODO: Limit with on sub-menu on wider screens -->
 
 
       <section class="billboard billboard-main-page">  <!-- !====== BILLBOARD AREA ======!-->
@@ -162,14 +200,14 @@
       <!-- Bootstrap -->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-      <script>
-            $(document).ready(function () {
-                $(".toggle-button").click(function () {
-                    var id = $(this).data("id");
-                    $(id).toggle();
-                });
+    <script>
+        $(document).ready(function () {
+            $(".toggle-button").click(function () {
+                var id = $(this).data("id");
+                $(id).toggle('slow', 'swing');
             });
-      </script>
+        });
+    </script>
 
   </body>
 </html>

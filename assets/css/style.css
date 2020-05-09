@@ -137,8 +137,12 @@ h3, h4 {
     font-size: 1em;
 }
 
-/*--- Header / Navbar -------------------------------------------------------------------------------------------------------------------------*/
-.top-navbar-row {
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--- HEADER / NAVBAR -----------------------------------------------------------------------------------------------------------------------*/
+
+/* --- Navbar Top ---*/
+
+top-navbar-row {
     height: 5vh;
 }
 
@@ -179,11 +183,42 @@ header {
     color: var(--menu-link-icon-color);
 }
 
+/* --- Navbar Submenu ---*/
+
 #top-navbar-submenu {
     display: none;
-
-
+    padding: 50px 100px;
+    border-bottom: 1px solid var(--border-thin-light);
 }
+
+.top-navbar-submenu-group {
+    text-align: center;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.top-navbar-submenu-header {
+    height: 60px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-thin-light);
+    font-size: var(--menu-text-1-size);
+    color: var(--menu-text-1-color);
+    font-family: var(--menu-text-1-font);
+    text-transform: uppercase;
+}
+
+.top-navbar-submenu-text {
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-thin-light);
+    font-size: var(--menu-text-2-size);
+    color: var(--menu-text-2-color);
+    font-family: var(--menu-text-2-font);
+}
+
+/* --- header / navbar end ----------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*--- Billboard --------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -249,7 +284,7 @@ header {
 /*--- Billboard - Main Page -----------------------------------------------------------------------------------------------------------------*/
 
 .billboard-main-page {
-    background-image: url("../images/track1.jpg");
+    background-image: url("../images/track_1080.jpg");
 }
 
 /*!=== MEDIA QUERIES ==================================================================*/
@@ -284,7 +319,7 @@ header {
 
 }
 
-/* --- Bootstrap xl breakpoint - Less than 1100px --------------------------------------------------------------------------------------- */
+/* ------------------------------------- Less than 1100px --------------------------------------------------------------------------------------- */
 @media screen and (max-width: 1100px) {
        
     /* Top Navbar Menu Link */
@@ -334,6 +369,7 @@ header {
 
 }
 
+/*TODO  Add a breakpoint for sm at below 576px */
 /* --- Bootstrap md breakpoint - Less than 450px ---------------------------------------------------------------------------------------- */
 @media screen and (max-width: 450px) {
     
