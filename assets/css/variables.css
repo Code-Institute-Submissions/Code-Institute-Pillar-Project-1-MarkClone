@@ -40,7 +40,8 @@
     --logo-text-color: var(--secondary-color-1);
     --logo-icon-color: var(--primary-color-1);
     --logo-icon-size: 1.2em;
-    --top-logo-font-size: var(--text-xxl);
+    --logo-small-font-size: var(--text-xs);
+    --logo-large-font-size: var(--text-xxl);
     /* Header */
     --header-text-color: var(--secondary-color-1);
     --top-navbar-bg-color: var(--secondary-color-4);

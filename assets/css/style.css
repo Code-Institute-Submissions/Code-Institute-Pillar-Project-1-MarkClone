@@ -129,18 +129,23 @@ h3, h4 {
     font-family: var(--font-family-logotype);
 }
 
-.logotype-large {
-    font-size: var(--top-logo-font-size);
+.logotype-small {
+    font-size: var(--logo-small-font-size);
 }
 
-/*--- Header ---------------------------------------------------------------------------------------------------------------------------------*/
+.logotype-large {
+    font-size: 1em;
+}
+
+/*--- Header / Navbar -------------------------------------------------------------------------------------------------------------------------*/
 .top-navbar-row {
-    height: 50px;
+    height: 5vh;
 }
 
 .top-navbar-logo-container {
     width: 100%;
     padding-left: 20px;
+    font-size: var(--logo-large-font-size);
 }
 
 header {
@@ -279,8 +284,8 @@ header {
 
 }
 
-/* --- Bootstrap xl breakpoint - Less than 1000px --------------------------------------------------------------------------------------- */
-@media screen and (max-width: 1000px) {
+/* --- Bootstrap xl breakpoint - Less than 1100px --------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1100px) {
        
     /* Top Navbar Menu Link */
         .top-navbar-link-container {
@@ -329,7 +334,13 @@ header {
 
 }
 
-
+/* --- Bootstrap md breakpoint - Less than 450px ---------------------------------------------------------------------------------------- */
+@media screen and (max-width: 450px) {
+    
+    .logotype-large {
+        font-size: 0.8em;
+    }
+}
 
 
 
