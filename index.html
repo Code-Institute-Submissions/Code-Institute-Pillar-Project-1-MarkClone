@@ -31,10 +31,10 @@
                           </div>
                       </div>
                       <div class="col-6 top-navbar-link-container"> <!-- Menu Link -->
-                              <a class="top-navbar-menu-link" data-id="#top-navbar-sub-menu" href="#" role="button" aria-expanded="false" aria-controls="navbarMenuLink">
-                                  Menu<i class="fas fa-angle-down"></i>
-                              </a>                        
-                      </div>
+                        <button class="clear-button top-navbar-menu-link toggle-button" data-id="#top-navbar-submenu">
+                            Menu<i class="fas fa-angle-down"></i>
+                        </button>   
+                     </div>
                   </div>
                   <div class="row"> <!-- Menu Link -->
                       <div class="col-12">
@@ -48,6 +48,10 @@
           </nav>
       </header>
 
+      <div id="top-navbar-submenu" role="navigation">
+        
+        just work now, will you!
+      </div>
 
 
       <section class="billboard billboard-main-page">  <!-- !====== BILLBOARD AREA ======!-->
@@ -157,6 +161,15 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <!-- Bootstrap -->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+      <script>
+            $(document).ready(function () {
+                $(".toggle-button").click(function () {
+                    var id = $(this).data("id");
+                    $(id).toggle();
+                });
+            });
+      </script>
 
   </body>
 </html>

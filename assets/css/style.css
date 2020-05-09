@@ -54,6 +54,18 @@ h3, h4 {
     position: absolute;
 }
 
+.clear-button {
+    background-color: inherit;
+    border: inherit;
+    font-family: inherit;
+    color: inherit;
+    padding: inherit;
+    margin: inherit;
+    outline: none;
+    box-sizing: inherit;
+
+}
+
 /*--- Text Styles -----------------------------------------------------------------------------------------------------------------------------*/
 
 .text-xl {
@@ -148,8 +160,10 @@ header {
     text-transform: uppercase;
     letter-spacing: 5px;
     color: var(--menu-link-1-color);
-    font-size: var( --text-mdl);
+    font-size: var( --menu-link-1-size);
     font-family: var(--font-family-menus);
+    background-color: 0;
+    border: 0;
 }
 
 .top-navbar-menu-link i {
@@ -160,10 +174,10 @@ header {
     color: var(--menu-link-icon-color);
 }
 
-#top-navbar-sub-menu {
+#top-navbar-submenu {
     display: none;
-    width: 100vh;
-    border-radius: 0px;
+
+
 }
 
 /*--- Billboard --------------------------------------------------------------------------------------------------------------------------------*/
