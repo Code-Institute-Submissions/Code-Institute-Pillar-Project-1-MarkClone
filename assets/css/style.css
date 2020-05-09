@@ -57,6 +57,10 @@ h3, h4 {
 /*--- Text Styles -----------------------------------------------------------------------------------------------------------------------------*/
 
 .text-xl {
+    font-size: var(--text-xxl);
+}
+
+.text-xl {
     font-size: var(--text-xl);
 }
 
@@ -64,8 +68,16 @@ h3, h4 {
     font-size: var(--text-lg);
 }
 
+.text-mds {
+    font-size: var(--text-mdl);
+}
+
 .text-md {
     font-size: var(--text-md);
+}
+
+.text-mds {
+    font-size: var(--text-mds);
 }
 
 .text-sm {
@@ -73,7 +85,7 @@ h3, h4 {
 }
 
 .text-xs {
-    font-size: var(--text-xs);
+    font-size: var(--text-xs)
 }
 
 .text-bold {
@@ -116,31 +128,34 @@ h3, h4 {
 
 .top-navbar-logo-container {
     width: 100%;
+    padding-left: 20px;
 }
 
 header {
     background-color: var(--top-navbar-bg-color);
 }
 
-.top-navbar-menu-link-container  {
-    width: 100%;
-    padding-top: 7px;
+.top-navbar-link-container {
+    position: relative;
 }
 
 .top-navbar-menu-link {
+    display: inline-block;
+    width:150px;
     position: relative;
-    right: 12px;
+    text-align:center;
+    right: 75px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
     color: var(--menu-link-1-color);
     font-size: var( --text-mdl);
     font-family: var(--font-family-menus);
-    text-transform: uppercase;
-    letter-spacing: 5px;
 }
 
 .top-navbar-menu-link i {
     padding-left: 6px;
-    position: relative;
-    top: 1px;
+    position: absolute;
+    top: 5px;
     font-size: 1em;
     color: var(--menu-link-icon-color);
 }
@@ -248,6 +263,26 @@ header {
         width: 80%;
     }
 
+}
+
+/* --- Bootstrap xl breakpoint - Less than 1000px --------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1000px) {
+       
+    /* Top Navbar Menu Link */
+        .top-navbar-link-container {
+            text-align: right;
+        }
+    
+        .top-navbar-menu-link {
+            text-align: right;
+            right: 0px;
+            padding-right: 20px;
+        }
+    
+        .top-navbar-menu-link i {
+            position: relative;
+            top: 0px;
+        }
 }
 
 /* --- Bootstrap lg breakpoint - Less than 992px ------------------------------------------------------------------------------------------ */

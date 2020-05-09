@@ -18,33 +18,28 @@
 </head>
 
   <body>
-
       
       <header> <!-- !====== HEADER ======! -->
           <nav>
               <div class="container-fluid no-paddings-margins">
-                  <div class="row align-items-center no-gutters top-navbar-row"> <!--  Logotype -->
-                      <div class="col-6">
+                  <div class="row align-items-center no-gutters top-navbar-row">  <!-- == Top Navbar Row == -->
+                      <div class="col-6"> <!--  Logotype -->
                            <div class="top-navbar-logo-container">
                               <a class="logotype logotype-large" href="index.html">
                                   Mark<i class="fas fa-dna logo-icon logo-icon-large"></i>Clone
                               </a>
                           </div>
                       </div>
-                     <!-- TODO: Center Menu link to middle of screen -->
-                      <div class="col-6 top-navbar-menu-link"> <!-- Menu Link -->
-                          <div class="top-navbar-menu-link-container">
+                      <div class="col-6 top-navbar-link-container"> <!-- Menu Link -->
                               <a class="top-navbar-menu-link" data-id="#top-navbar-sub-menu" href="#" role="button" aria-expanded="false" aria-controls="navbarMenuLink">
                                   Menu<i class="fas fa-angle-down"></i>
-                              </a>
-                          </div>
+                              </a>                        
                       </div>
                   </div>
-                  <div class="row">
+                  <div class="row"> <!-- Menu Link -->
                       <div class="col-12">
                           <div id="top-navbar-sub-menu">
                               <div class="top-navbar-sub-menu">
- 
                               </div>
                           </div>
                       </div>
@@ -53,8 +48,9 @@
           </nav>
       </header>
 
-     
-      <section class="x">  <!-- !====== BILLBOARD AREA ======!-->
+
+
+      <section class="billboard billboard-main-page">  <!-- !====== BILLBOARD AREA ======!-->
       </section>
 
       <main class="main-content-container"> <!-- !====== MAIN CONTENT ======! -->
@@ -65,7 +61,39 @@
       <footer class="bottom-menu-container"> <!-- !====== FOOTER ======! -->
           <div class="container-fluid no-paddings-margins">
               <div class="row row align-items-center bottom-menu-row">
-                <div class="col-md-4 bottom-menu-content"> <!-- CONTACT -->
+                <div class="col-md-4  bottom-menu-content"> <!-- SOCIAL MEDIA -->
+                    <div class="dropup"><!-- dropdown -->
+                      <a href="#" type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false" id="social-media-dropdown-footer">
+                          <i class="fas fa-hashtag bottom-menu-icon text-xs" aria-hidden="true"></i>SOCIAL MEDIA
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-center bottom-menu-dropdown" aria-labelledby="social-media-footer-Dropdown">
+                          <div class="dropdown-item">
+                              <h2 class="invisible">Follow us on Social Media</h2>
+                              <p class="text-lg text-bold">KEEP UP!</p>
+                              <p class="text-md text-bold">FOLLOW US!</p>
+                          </div>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">
+                              <h3 class="invisible">Facebook</h3>
+                              <p class="text-md"><i class="fab fa-facebook-square bottom-menu-dropdown-icon" aria-hidden="true"></i>Facebook</p>
+                          </a>
+                          <a class="dropdown-item" href="https://www.twitter.com/" target="_blank">
+                              <h3 class="invisible">Twitter</h3>
+                              <p class="text-md"><i class="fab fa-twitter-square bottom-menu-dropdown-icon" aria-hidden="true"></i>Twitter</p>
+                          </a>
+                          <a class="dropdown-item" href="https://www.linkedin.com/" target="_blank">
+                              <h3 class="invisible">Linled In</h3>
+                              <p class="text-md"><i class="fab fa-linkedin bottom-menu-dropdown-icon" aria-hidden="true"></i>Linked In</p>
+                          </a>
+                          <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">
+                              <h3 class="invisible">Instagram</h3>
+                              <p class="text-md"><i class="fab fa-instagram-square bottom-menu-dropdown-icon" aria-hidden="true"></i>Instagram</p>
+                          </a>
+                      </div>
+                  </div>
+              </div>             
+                <div class="col-md-4 order-md-3 bottom-menu-content"> <!-- CONTACT -->
                       <address class="no-paddings-margins"> 
                           <div class="dropup"> <!-- dropdown -->
                               <a href="#" type="button" class="dropdown-toggle text-md" data-toggle="dropdown" aria-haspopup="true"
@@ -114,40 +142,6 @@
                           </div>
                       </address>
                   </div>
-                  <div class="col-md-4 order-md-3 bottom-menu-content"> <!-- SOCIAL MEDIA -->
-                    <div class="dropup"><!-- dropdown -->
-                      <a href="#" type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                         aria-expanded="false" id="social-media-dropdown-footer">
-                          <i class="fas fa-hashtag footer-icon" aria-hidden="true"></i>SOCIAL MEDIA
-
-
-                      </a>
-                      <div class="dropdown-menu dropdown-menu-center bottom-menu-dropdown" aria-labelledby="social-media-footer-Dropdown">
-                          <div class="dropdown-item">
-                              <h2 class="invisible">Follow us on Social Media</h2>
-                              <p class="text-lg text-bold">KEEP UP!</p>
-                              <p class="text-md text-bold">FOLLOW US!</p>
-                          </div>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">
-                              <h3 class="invisible">Facebook</h3>
-                              <p class="text-md"><i class="fab fa-facebook-square bottom-menu-dropdown-icon" aria-hidden="true"></i>Facebook</p>
-                          </a>
-                          <a class="dropdown-item" href="https://www.twitter.com/" target="_blank">
-                              <h3 class="invisible">Twitter</h3>
-                              <p class="text-md"><i class="fab fa-twitter-square bottom-menu-dropdown-icon" aria-hidden="true"></i>Twitter</p>
-                          </a>
-                          <a class="dropdown-item" href="https://www.linkedin.com/" target="_blank">
-                              <h3 class="invisible">Linled In</h3>
-                              <p class="text-md"><i class="fab fa-linkedin bottom-menu-dropdown-icon" aria-hidden="true"></i>Linked In</p>
-                          </a>
-                          <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">
-                              <h3 class="invisible">Instagram</h3>
-                              <p class="text-md"><i class="fab fa-instagram-square bottom-menu-dropdown-icon" aria-hidden="true"></i>Instagram</p>
-                          </a>
-                      </div>
-                  </div>
-              </div>
                   <div class="col-md-4 bottom-menu-content"> <!-- LOGOTYPE -->
                     <a href="index.html">Mark<span class="logo-icon"><i class="fas fa-dna logo-icon-small"></i></span>Clone<span class="text-xs"> Inc.</span></a>
                     <p class="text-xs color-grey">All Rights reserved. © 2020.</p>
