@@ -342,6 +342,14 @@ header {
     }
 }
 
+/* --- Bootstrap md breakpoint - Less than 370px ---------------------------------------------------------------------------------------- */
+@media screen and (max-width:370px) {
+    
+    .logotype-large {
+        font-size: 0.6em;
+    }
+}
+
 
 
 
