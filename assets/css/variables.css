@@ -1,9 +1,9 @@
-/*=== VARIABLES ====================================================================*/
+/*!=== VARIABLES ====================================================================*/
 :root {
     /*=== Colors ===*/
     --primary-color-1: #c39853;
     --primary-color-2: #65060f;
-    --primary-color-3: #c39853;
+    --primary-color-3: #df8817;
     --primary-color-4: #6b53c3;
     --secondary-color-1: #5d5d5d;
     --secondary-color-2: #ffffff;
@@ -22,7 +22,7 @@
     --font-family-headers: inherit;
     --font-family-text: inherit;
     --font-family-logotype: inherit;
-    /*=== General Elements variables ========================================================*/
+    /*!=== GENERAL ELEMENTS VARIABLE ========================================================*/
     /* Body */
     --main-text-color: var(--secondary-color-1);
     --main-text-size: var(--text-md);

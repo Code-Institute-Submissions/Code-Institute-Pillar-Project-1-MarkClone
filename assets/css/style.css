@@ -1,4 +1,4 @@
-/*=== HTML ELEMENTS ===============================================================*/
+/*!=== HTML ELEMENTS ===============================================================*/
 
 body {
     margin: 0;
@@ -40,7 +40,7 @@ h3, h4 {
     font-size: var(--text-md);
 }
 
-/*=== GENERAL STYLES (To be used across the Project) ======================================*/
+/*!=== GENERAL STYLES (To be used across the Project) ======================================*/
 
 .no-paddings-margins {
     padding: 0;
@@ -84,7 +84,7 @@ h3, h4 {
     font-weight: thin;
 }
 
-/*=== SPECIFIC GENERAL STYLES (Special areas to be formated the same across the Project)===========*/
+/*!=== SPECIFIC GENERAL STYLES (Special areas to be formated the same across the Project)===========*/
 
 /*--- Logotype ---------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -94,7 +94,7 @@ h3, h4 {
 }
 
 .logo-icon-small {
-    padding: 0 5px;
+    padding: 0 3px;
 }
 
 .logo-icon-large {
@@ -115,8 +115,7 @@ h3, h4 {
 }
 
 .top-navbar-logo-container {
-    width: 300px;
-    padding-top: 5px;
+    width: 100%;
 }
 
 header {
@@ -125,7 +124,7 @@ header {
 
 .top-navbar-menu-link-container  {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 7px;
 }
 
 .top-navbar-menu-link {
@@ -173,7 +172,7 @@ header {
 }
 
 /*--- Footer -----------------------------------------------------------------------------------------------------------------------------------*/
-.footer-container {
+.bottom-menu-container {
     width: 100%;
     height: 80px;
     background-color: var(--footer-bg-color);
@@ -182,38 +181,36 @@ header {
     border-top: 1px solid var(--footer-border-color);
 }
 
-.footer-row {
+.bottom-menu-row {
     margin: auto;
     padding: 30px 0;
     height: auto;
 }
 
-.footer-content {
+.bottom-menu-content {
     padding: 30px 30px;
     width: 100%;
     text-align: center;
 }
 
-.footer-icon {
+.bottom-menu-icon {
     padding: 0 5px;
     color: var(--footer-icon-color);
     font-size: var(--footer-icon-size);
 }
 
-/*--- Dropdown Menus Footer --------------------------------------------------------------------------------------------------------------*/
-
-.dropdown-menu-custom {
+.bottom-menu-dropdown {
     font-family: var(--dropdown-menu-font);
     color: var(--dropdown-menu-text-color);
 }
 
-.dropdown-menu-icon {
+.bottom-menu-dropdown-icon {
     padding: 0 20px 0 0;
     font-size: var(--dropdown-icon-size);
     color: var(--dropdown-icon-color);
 }
 
-/*=== MAIN PAGE - index.html =============================================================*/
+/*!=== MAIN PAGE - index.html =============================================================*/
 
 /*--- Billboard - Main Page -----------------------------------------------------------------------------------------------------------------*/
 
@@ -221,7 +218,7 @@ header {
     background-image: url("../images/track1.jpg");
 }
 
-/*=== MEDIA QUERIES ==================================================================*/
+/*!=== MEDIA QUERIES ==================================================================*/
 
 /* --- Bootstrap xl breakpoint - More than 1200px ----------------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
