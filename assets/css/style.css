@@ -1,4 +1,4 @@
-/*!=== HTML ELEMENTS ===============================================================*/
+/* #1 === HTML ELEMENTS ====================================================================*/
 
 body {
     margin: 0;
@@ -25,7 +25,6 @@ a:hover {
 h1,h2,h3,h4,h5,h6 {
     color: inherit;
     font-family: inherit;
-    font-weight: bold;
 }
 
 h1 {
@@ -40,7 +39,7 @@ h3, h4 {
     font-size: var(--text-md);
 }
 
-/*!=== GENERAL STYLES (To be used across the Project) ======================================*/
+/* #1 === GENERAL STYLES (To be used across the Project) ======================================*/
 
 .no-paddings-margins {
     padding: 0;
@@ -55,18 +54,39 @@ h3, h4 {
 }
 
 .clear-button {
-    background-color: inherit;
+    background-color: transparent;
+    color: inherit;
     border: inherit;
     font-family: inherit;
-    color: inherit;
+    font-size: inherit;
     padding: inherit;
     margin: inherit;
     outline: none;
     box-sizing: inherit;
-
 }
 
-/*--- Text Styles -----------------------------------------------------------------------------------------------------------------------------*/
+/* #2 - DropDown Menus ------------------------------------------------------------------------*/
+
+.menu-dropdown {
+    font-family: var(--dropdown-menu-font);
+    color: var(--dropdown-menu-text-color);
+}
+
+.menu-dropdown-nav {
+    width: 200px;
+}
+
+.menu-dropdown-foot {
+    width: 300px;
+}
+
+.dropdown-icon {
+    padding: 0 20px 0 0;
+    font-size: var(--dropdown-icon-size);
+    color: var(--dropdown-icon-color);
+}
+
+/* #2 Text Styles ------------------------------------------------------------------------------*/
 
 .text-xl {
     font-size: var(--text-xxl);
@@ -108,9 +128,9 @@ h3, h4 {
     font-weight: thin;
 }
 
-/*!=== SPECIFIC GENERAL STYLES (Special areas to be formated the same across the Project)===========*/
+/* #1 === SPECIFIC GENERAL STYLES ==============================================================*/
 
-/*--- Logotype ---------------------------------------------------------------------------------------------------------------------------------*/
+/* #2 --- Logotype -----------------------------------------------------------------------------*/
 
 .logo-icon {
     font-size: var(--logo-icon-size);
@@ -137,10 +157,9 @@ h3, h4 {
     font-size: 1em;
 }
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*--- HEADER / NAVBAR -----------------------------------------------------------------------------------------------------------------------*/
+/* #2 --- HEADER / NAVBAR ----------------------------------------------------------------------*/
 
-/* --- Navbar Top ---*/
+/* #3 --- Navbar Top ------------------------*/
 
 top-navbar-row {
     height: 5vh;
@@ -152,6 +171,7 @@ top-navbar-row {
     font-size: var(--logo-large-font-size);
 }
 
+/* TODO: Make a class for image in header */
 header {
     background-color: var(--top-navbar-bg-color);
 }
@@ -183,7 +203,7 @@ header {
     color: var(--menu-link-icon-color);
 }
 
-/* --- Navbar Submenu ---*/
+/* #3 --- Navbar Submenu ------------------------*/
 
 #top-navbar-submenu {
     display: none;
@@ -193,7 +213,6 @@ header {
 
 .top-navbar-submenu-group {
     text-align: center;
-    width: 80%;
     padding-bottom: 20px;
 }
 
@@ -217,10 +236,11 @@ header {
     font-family: var(--menu-text-2-font);
 }
 
-/* --- header / navbar end ----------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+.top-navbar-submenu-link {
+    display: block;
+}
 
-/*--- Billboard --------------------------------------------------------------------------------------------------------------------------------*/
+/* #2 --- Billboard -------------------------------------------------------------------------------------------*/
 
 .billboard {
     background-repeat: no-repeat;
@@ -232,7 +252,7 @@ header {
     margin: 0;
 }
 
-/*--- Main Content Area ------------------------------------------------------------------------------------------------------------------*/
+/* #2--- Main Content Area ------------------------------------------------------------------------------------*/
 
 .main-content-container {
     width:100%;
@@ -240,7 +260,7 @@ header {
     padding: 20px 0;
 }
 
-/*--- Footer -----------------------------------------------------------------------------------------------------------------------------------*/
+/* #2 --- Footer -----------------------------------------------------------------------------------------------*/
 .bottom-menu-container {
     width: 100%;
     height: 80px;
@@ -266,17 +286,6 @@ header {
     padding: 0 5px;
     color: var(--footer-icon-color);
     font-size: var(--footer-icon-size);
-}
-
-.bottom-menu-dropdown {
-    font-family: var(--dropdown-menu-font);
-    color: var(--dropdown-menu-text-color);
-}
-
-.bottom-menu-dropdown-icon {
-    padding: 0 20px 0 0;
-    font-size: var(--dropdown-icon-size);
-    color: var(--dropdown-icon-color);
 }
 
 /*!=== MAIN PAGE - index.html =============================================================*/
