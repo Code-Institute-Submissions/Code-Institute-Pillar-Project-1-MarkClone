@@ -39,6 +39,57 @@ h3, h4 {
     font-size: var(--text-md);
 }
 
+/* Test classes (to be removed) */
+/* TODO: Don't forget to remove test-classes */
+
+.one {
+    background-color: rgb(177, 114, 114);
+    width: 100%;
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+}
+
+.two {
+    background-color: rgb(162, 190, 162);
+    width: 100%;
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+}
+
+.three {
+    background-color: rgb(156, 156, 199);
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+
+.four {
+    background-color: rgb(216, 200, 172);
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+
+.five {
+    background-color: rgb(173, 130, 153);
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+
+.six {
+   background-color:  rgb(24, 73, 112);
+   width: 100%;
+   height: 50vh;
+   padding: 0;
+   margin: 0;
+}
+
 /* #1 === GENERAL STYLES (To be used across the Project) ======================================*/
 
 .no-paddings-margins {
@@ -48,7 +99,6 @@ h3, h4 {
 
 .invisible {
     font-size: 0;
-    color: transparent;
     background-color: transparent;
     position: absolute;
 }
@@ -247,7 +297,7 @@ header {
     background-position: top center;
     background-size: 100% 70vh;
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     padding: 0;
     margin: 0;
 }
@@ -257,7 +307,7 @@ header {
 .main-content-container {
     width:100%;
     margin: auto;
-    padding: 20px 0;
+    padding: 0;
 }
 
 /* #2 --- Footer -----------------------------------------------------------------------------------------------*/
