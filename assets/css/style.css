@@ -12,6 +12,11 @@ header {
     padding: 0;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -37,6 +42,12 @@ h2 {
 
 h3, h4 {
     font-size: var(--text-md);
+}
+
+main {
+    background-color: var(--main-bg-color);
+    padding: 0;
+    margin: 0;
 }
 
 /* Test classes (to be removed) */
@@ -290,33 +301,82 @@ header {
     display: block;
 }
 
-/* #2 --- Billboard -------------------------------------------------------------------------------------------*/
+/* ==== #2 - Background Image Containers =============== */
 
 .billboard {
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 100% 70vh;
+    background-size: 100% 65vh;
     width: 100%;
     height: 65vh;
     padding: 0;
     margin: 0;
 }
 
-/* #2--- Main Content Area ------------------------------------------------------------------------------------*/
-
-.main-content-container {
-    width:100%;
-    margin: auto;
+.full-screen-bg {
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
     padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.full-screen-bg-overlay {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: inherit;
+    background: linear-gradient(180deg, var(--screen-overlay-0) 0%, var(--screen-overlay-50) 50%, var(--screen-overlay-100) 100%);
+}
+
+/* :::: #1 - Main Content Area ::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+/* ==== #2 Container to control width to all Main Content =======================  */
+.main-content-container {
+    position: relative;
+    z-index: 5;
+    width:100%;
+    min-height: 80vh;
+    margin: 0 auto;
+    padding-top: 50px;
+ }
+
+/* ==== #2 Containers for One-Column pages (use "template---one-column.html")  ====  */
+/* ==== Or use Bootstrap grid content area ==== */
+
+.one-column-header {
+    margin-top: 0px;
+    padding: 20px 0px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.5);
+}
+
+.one-column-frame {
+    margin: 20px auto 0px auto;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 5px;
+}
+
+.one-column-bottom {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
 }
 
 /* #2 --- Footer -----------------------------------------------------------------------------------------------*/
 .bottom-menu-container {
+    position: relative;
+    z-index: 10;
     width: 100%;
-    height: 80px;
+    height: 20vh;
     background-color: var(--footer-bg-color);
     padding: 0;
-    margin: 30px 0 0 0;
+    margin: 0;
     border-top: 1px solid var(--footer-border-color);
 }
 
@@ -338,12 +398,32 @@ header {
     font-size: var(--footer-icon-size);
 }
 
-/*!=== MAIN PAGE - index.html =============================================================*/
-
-/*--- Billboard - Main Page -----------------------------------------------------------------------------------------------------------------*/
+/* :::: #1 - MAIN PAGE ::::::::::::::::::::::::::::::::: */
 
 .billboard-main-page {
-    background-image: url("../images/track_1080.jpg");
+    background-image: url("../images/track-1080.jpg");
+}
+
+/* :::: #1 - ORDER PAGES:: ::::::::::::::::::::::::::::: */
+
+
+
+.order-progress {
+    margin: 0px 20px;
+}
+
+/* ==== #2 - Background Images ========================= */
+
+.order-bg-2 {
+    background-image: url("../images/factory1-1080.jpg");
+}
+
+/* ==== #2 - Form Elements ============================= */
+
+
+
+.order-form-group {
+    padding: 30px 100px;
 }
 
 /*!=== MEDIA QUERIES ==================================================================*/

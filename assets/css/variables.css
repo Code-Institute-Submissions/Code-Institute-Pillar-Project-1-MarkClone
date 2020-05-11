@@ -11,6 +11,7 @@
     --secondary-color-4: #e0e0e0;
     --secondary-color-5: #b3b3b3;
     --secondary-color-6: #c8c8c8;
+    --secondary-color-7: #dbdbdb;
     /*=== Text sizes ======================================================================*/
     --text-xxl: 180%;
     --text-xl: 150%;
@@ -28,6 +29,13 @@
     /* === BODY === */
     --main-text-color: var(--secondary-color-1);
     --main-text-size: var(--text-md);
+    --main-bg-color: var(--secondary-color-7);
+    
+    --screen-overlay-0: rgba(219,219,219,1);
+    --screen-overlay-50: rgba(219,219,219,.5);
+    --screen-overlay-100: rgba(219,219,219,1);
+    
+    
     /* === MENUS === */
     /* Links */
     --menu-link-1-color: var(--secondary-color-1);
