@@ -11,13 +11,11 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <!-- Font Aweswome -->
-    <script src="https://kit.fontawesome.com/b396aa4a88.js" crossorigin="anonymous"></script>
     <!-- Hover.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
     <!-- Custom Css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>
         Mark Clone Inc. | Get Your Ultimate Employee Today! | mark-clone.com
@@ -39,19 +37,19 @@
                         </div>
                     </div>
                     <div class="col-6 top-navbar-link-container"> <!-- ====================================================== #2 - Menu Link  -->
-                        <button class="clear-button top-navbar-menu-link toggle-button" data-id="#top-navbar-submenu">
-                            Menu<i class="fas fa-angle-down"></i>
+                        <button class="button button--top-menu toggle-button" data-id="#top-navbar-submenu">
+                            Menu<i class="fas fa-angle-down icon icon-menu"></i>
                         </button>
                     </div>
                 </div>
             </div>
-            <div id="top-navbar-submenu" role="navigation"> <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: #1 - TOP SUB MENU  -->
+            <div class="collapse top-navbar-submenu" id="top-navbar-submenu" role="navigation"> <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: #1 - TOP SUB MENU  -->
                 <div class="container-fluid no-paddings-margins">
                     <div class="row no-gutters text-align-center"> <!-- ================================================ #2 - Sub Menu Row 1  -->
                         <div class="col-sm-12 col-md-4 top-navbar-submenu-group"> <!-- ''''''''''''''''''''''''''''''''''' 3# - PRODUCT menu  -->
                             <div class="top-navbar-submenu-header"> 
                                 <a href="product.html"> <!-- ................................................................... #4 - Header  -->
-                                    <h2>Mark<br />2000!</h2>
+                                    <h2>Mark<br>2000!</h2>
                                 </a>
                             </div>
                             <a class="top-navbar-submenu-link" href="product.html"> <!-- ..................................... #4 - Overview  -->
@@ -133,12 +131,12 @@
                     </div>
                     <hr />
                     <div class="row no-gutters text-align-center"> <!-- ================================================ #2 - Sub Menu Row 2  -->
-                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text"> <!-- '''''''''''''''''''''''''''''''''''' 3# - Markers Club   -->
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text"> <!-- ''''''''''''''''''''''''''''''''''' 3# - Markers Club   -->
                             <a class="top-navbar-submenu-link" href="markers-club.html">
                                 <h3>Join The Exclusive<br />"Markers" Club!</h3>
                             </a>
                         </div>
-                        <div class="col-sm-12 order-sm-last col-md-4 top-navbar-submenu-text"> <!-- '''''''''''''''''''''''''' 3# - About Us  -->
+                        <div class="col-sm-12 order-sm-last col-md-4 top-navbar-submenu-text"> <!-- ''''''''''''''''''''''''''''''''''''''''' 3# - About Us  -->
                             <a class="top-navbar-submenu-link" href="company.html">
                                 <h3>About<br />Us</h3>
                             </a>
@@ -188,37 +186,36 @@
                     <div class="dropup">
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false" id="social-media-dropdown-footer">
-                            <i class="fas fa-hashtag bottom-menu-icon text-xs" aria-hidden="true"></i>SOCIAL MEDIA
+                            <i class="fas fa-hashtag icon icon-menu" aria-hidden="true"></i>SOCIAL MEDIA
                         </a>
                         <div class="dropdown-menu menu-dropdown menu-dropdown-foot" aria-labelledby="social-media-dropdown-footer"> <!-- '''''' 3# - DROPDOWN group  -->
                             <div class="dropdown-item"> <!-- ................................................................... #4 - Header  -->
-                                <h2 class="invisible">Follow us on Social Media</h2>
-                                <p class="text-lg text-bold">KEEP UP!</p>
-                                <p class="text-md text-bold">FOLLOW US!</p>
+                                <h2>KEEP UP!</h2>
+                                <h3 class="text-md">FOLLOW US!<span class="invisible">Follow us on Social Media</span></h3>
                             </div>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="https://www.facebook.com/" target="_blank"> <!-- .................. #4 - FaceBook  -->
                                 <h3 class="invisible">Facebook</h3>
                                 <p class="text-md">
-                                    <i class="fab fa-facebook-square dropdown-icon" aria-hidden="true"></i>Facebook
+                                    <i class="fab fa-facebook-square icon icon-dropdown" aria-hidden="true"></i>Facebook
                                 </p>
                             </a>
                             <a class="dropdown-item" href="https://www.twitter.com/" target="_blank"> <!-- .................... #4 - Twitter  -->
                                 <h3 class="invisible">Twitter</h3>
                                 <p class="text-md">
-                                    <i class="fab fa-twitter-square dropdown-icon" aria-hidden="true"></i>Twitter
+                                    <i class="fab fa-twitter-square icon icon-dropdown" aria-hidden="true"></i>Twitter
                                 </p>
                             </a>
                             <a class="dropdown-item" href="https://www.linkedin.com/" target="_blank"> <!-- .................. #4 - LinkedIn  -->
                                 <h3 class="invisible">Linled In</h3>
                                 <p class="text-md">
-                                    <i class="fab fa-linkedin dropdown-icon" aria-hidden="true"></i>Linked In
+                                    <i class="fab fa-linkedin icon icon-dropdown" aria-hidden="true"></i>Linked In
                                 </p>
                             </a>
                             <a class="dropdown-item" href="https://www.instagram.com/" target="_blank"> <!-- ................ #4 - Instagram  -->
                                 <h3 class="invisible">Instagram</h3>
                                 <p class="text-md">
-                                    <i class="fab fa-instagram-square dropdown-icon" aria-hidden="true"></i>Instagram
+                                    <i class="fab fa-instagram-square icon icon-dropdown" aria-hidden="true"></i>Instagram
                                 </p>
                             </a>
                         </div>
@@ -228,9 +225,9 @@
                     <div class="dropup">
                         <a href="#" role="button" class="dropdown-toggle text-md" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" id="contact-dropdown-footer">
-                            <i class="fas fa-headset bottom-menu-icon" aria-hidden="true"></i>CONTACT
-                        </a> 
-                        <div class="dropdown-menu menu-dropdown menu-dropdown-foot" aria-labelledby="contact-dropdown-footer"> <!-- '''''' 3# - DROPDOWN group  -->
+                            <i class="fas fa-headset icon icon-menu" aria-hidden="true"></i>CONTACT
+                        </a>
+                        <div class="dropdown-menu dropdown-custom dropdown-custom-footer" aria-labelledby="contact-dropdown-footer"> <!-- '''''' 3# - DROPDOWN group  -->
                             <div class="dropdown-item"> <!-- ........................................................... #4 - Contact Header  -->
                                 <h2>CONTACT US</h2>
                             </div>
@@ -238,14 +235,14 @@
                             <div> <!-- .......................................................................................... #4 - Phone  -->
                                 <a class="dropdown-item" href="#">
                                     <h3 class="invisible">Phone number</h3>
-                                    <i class="fas fa-phone-square-alt dropdown-icon" aria-hidden="true"></i>+46(0)729
+                                    <i class="fas fa-phone-square-alt icon icon-dropdown" aria-hidden="true"></i>+46(0)729
                                     437 026
                                 </a>
                             </div>
                             <div> <!-- ......................................................................................... #4 - E-mail  -->
-                                <a class="dropdown-item" href="mailto:info@mark-clone.com">
+                                <a class="dropdown-item" href="mailto:info@mark-submenu.com">
                                     <h3 class="invisible">e-mail address</h3>
-                                    <i class="fas fa-at dropdown-icon" aria-hidden="true"></i>info@mark-clone.com
+                                    <i class="fas fa-at icon icon-dropdown" aria-hidden="true"></i>info@mark-clone.com
                                 </a>
                             </div>
                             <div class="dropdown-divider"></div>
@@ -268,7 +265,7 @@
                             <div> <!-- ............................................................................................ #4 - Map  -->
                                 <a class="dropdown-item" target="_blank"
                                     href="https://www.google.se/maps/place/Solberga+hagv%C3%A4g+11,+125+44+%C3%84lvsj%C3%B6/@59.2802935,18.0057522,17z/data=!3m1!4b1!4m5!3m4!1s0x465f770edcec0797:0x4540cd747505ec90!8m2!3d59.2802935!4d18.0079409">
-                                    <i class="far fa-map dropdown-icon" aria-hidden="true"></i>Map
+                                    <i class="far fa-map icon icon-dropdown" aria-hidden="true"></i>Map
                                 </a>
                             </div>
                             <br />
@@ -285,26 +282,22 @@
         </div>
     </footer>
 
-    <!-- !====== JAVASCRIPTS ======! -->
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <!-- Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+      <!-- ====== JAVASCRIPTS ====== -->
+      <!-- Font Aweswome -->
+      <script src="https://kit.fontawesome.com/b396aa4a88.js" crossorigin="anonymous"></script>
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <!-- Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <!-- Bootstrap -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- Javascript to toggle Main Navigation Menu at top -->
+      <!-- Custom script to expand and collapse the Top Navbar Submenu  -->
     <script>
         $(document).ready(function () {
             $(".toggle-button").click(function () {
                 var id = $(this).data("id");
-                $(id).toggle("slow", "swing");
+                $(id).toggle('slow', 'swing');
             });
         });
     </script>

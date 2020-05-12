@@ -1,56 +1,66 @@
-/* #1 === HTML ELEMENTS ====================================================================*/
+/* :::: #1 - HTML ELEMENTS :::::::::::::::::::::::::::::::::::::::::::: */
+
+/* TODO: Clean up the html elements styles */
 
 body {
     margin: 0;
     padding: 0;
-    color: var(--main-text-color);
     font-size: var(--main-text-size);
-}
-
-header {
-    margin: 0;
-    padding: 0;
+    font-family: var(--main-font-family);
+    color: var(--main-text-color);
 }
 
 p {
-    margin: 0;
-    padding: 0;
+    font-size: var(--text-md);
+    font-family: var(--font-family-text);
+    color: var(--secondary-color-1);
 }
 
 a {
-    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
     color: inherit;
 }
 
 a:hover {
-    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
     color: inherit;
+    text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: inherit;
-    font-family: inherit;
-}
 
 h1 {
-    font-size: var(--text-xl);
+    font-size: var(--text-xxl);
+    font-family: var(--font-family-headers);
+    color: var(--primary-color-2);
 }
 
 h2 {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
+    font-family: var(--font-family-headers);
+    color: var(--primary-color-2);
 }
 
-h3, h4 {
+h3 {
+    font-size: var(--text-mdl);
+    font-family: var(--font-family-headers);
+    color: var(--secondary-color-1);
+}
+
+h4 {
     font-size: var(--text-md);
+    font-family: var(--font-family-headers);
+    color: var(--secondary-color-1);
 }
 
 main {
-    background-color: var(--main-bg-color);
+    background-color: var(--secondary-color-7);
     padding: 0;
     margin: 0;
 }
 
-/* Test classes (to be removed) */
+/* Test classes (to be removed) ....................................... */
 /* TODO: Don't forget to remove test-classes */
 
 .one {
@@ -101,7 +111,7 @@ main {
    margin: 0;
 }
 
-/* #1 === GENERAL STYLES (To be used across the Project) ======================================*/
+/* :::: 1# - GENERAL STYLES =========================================== */
 
 .no-paddings-margins {
     padding: 0;
@@ -114,42 +124,61 @@ main {
     position: absolute;
 }
 
-.clear-button {
-    background-color: transparent;
-    color: inherit;
-    border: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    padding: inherit;
-    margin: inherit;
-    outline: none;
-    box-sizing: inherit;
+/* ==== #2 - DropDown Menus =========================================== */
+
+.dropdown-custom {
+    font-size: var(--text-md);
+    font-family: var(--font-family-menus);
+    color: var(--secondary-color-1);
 }
 
-/* #2 - DropDown Menus ------------------------------------------------------------------------*/
-
-.menu-dropdown {
-    font-family: var(--dropdown-menu-font);
-    color: var(--dropdown-menu-text-color);
-}
-
-.menu-dropdown-nav {
+.dropdown-custom-navbar {
     width: 200px;
 }
 
-.menu-dropdown-foot {
+.dropdown-custom-footer {
     width: 300px;
 }
 
-.dropdown-icon {
-    padding: 0 20px 0 0;
-    font-size: var(--dropdown-icon-size);
-    color: var(--dropdown-icon-color);
+/* ==== #2 - Icons ===================================================== */
+
+.icon {
+    font-size: 1.3em;
+    color: var(--primary-color-2);
 }
 
-/* #2 Text Styles ------------------------------------------------------------------------------*/
+.icon-menu {
+    padding: 0 10px;
+    font-size: 1em;
+}
 
-.text-xl {
+.icon-dropdown {
+    padding-right: 20px;
+}
+
+/* === #2 - Buttons =================================================== */
+
+.button {
+    background-color: transparent;
+    border: 0;
+}
+
+.button--top-menu {
+    display: inline-block;
+    width:150px;
+    position: relative;
+    text-align:center;
+    right: 75px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--menu-link-1-color);
+    font-size: var( --menu-link-1-size);
+    font-family: var(--font-family-menus);
+}
+
+/* === #2 - Text Styles =============================================== */
+
+.text-xxl {
     font-size: var(--text-xxl);
 }
 
@@ -189,9 +218,9 @@ main {
     font-weight: thin;
 }
 
-/* #1 === SPECIFIC GENERAL STYLES ==============================================================*/
+/* :::: #1 - SPECIFIC GENERAL STYLES :::::::::::::::::::::::::::::::::: */
 
-/* #2 --- Logotype -----------------------------------------------------------------------------*/
+/* ==== #2 Logotype =================================================== */
 
 .logo-icon {
     font-size: var(--logo-icon-size);
@@ -218,17 +247,18 @@ main {
     font-size: 1em;
 }
 
-/* #2 --- HEADER / NAVBAR ----------------------------------------------------------------------*/
+/* ==== #2 Header / Navbar ============================================ */
 
-/* #3 --- Navbar Top ------------------------*/
+/* .... #3 - Navbar Top ............................................... */
 
-top-navbar-row {
+.top-navbar-row {
     height: 5vh;
 }
 
 .top-navbar-logo-container {
     width: 100%;
     padding-left: 20px;
+    padding-top: 5px;
     font-size: var(--logo-large-font-size);
 }
 
@@ -241,30 +271,9 @@ header {
     position: relative;
 }
 
-.top-navbar-menu-link {
-    display: inline-block;
-    width:150px;
-    position: relative;
-    text-align:center;
-    right: 75px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: var(--menu-link-1-color);
-    font-size: var( --menu-link-1-size);
-    font-family: var(--font-family-menus);
-    background-color: 0;
-    border: 0;
-}
 
-.top-navbar-menu-link i {
-    padding-left: 6px;
-    position: absolute;
-    top: 5px;
-    font-size: 1em;
-    color: var(--menu-link-icon-color);
-}
 
-/* #3 --- Navbar Submenu ------------------------*/
+/* .... #3 - Navbar Submenu ........................................... */
 
 #top-navbar-submenu {
     display: none;
@@ -278,13 +287,9 @@ header {
 }
 
 .top-navbar-submenu-header {
-    height: 60px;
     margin-bottom: 15px;
     text-align: center;
     border-bottom: 1px solid var(--border-thin-light);
-    font-size: var(--menu-text-1-size);
-    color: var(--menu-text-1-color);
-    font-family: var(--menu-text-1-font);
     text-transform: uppercase;
 }
 
@@ -292,16 +297,13 @@ header {
     margin-bottom: 15px;
     text-align: center;
     border-bottom: 1px solid var(--border-thin-light);
-    font-size: var(--menu-text-2-size);
-    color: var(--menu-text-2-color);
-    font-family: var(--menu-text-2-font);
 }
 
 .top-navbar-submenu-link {
     display: block;
 }
 
-/* ==== #2 - Background Image Containers =============== */
+/* ==== #2 - Background Image Containers ============================== */
 
 .billboard {
     background-repeat: no-repeat;
@@ -334,31 +336,30 @@ header {
     background: linear-gradient(180deg, var(--screen-overlay-0) 0%, var(--screen-overlay-50) 50%, var(--screen-overlay-100) 100%);
 }
 
-/* :::: #1 - Main Content Area ::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::: #1 - Main Content Area :::::::::::::::::::::::::::::::::::::::: */
 
-/* ==== #2 Container to control width to all Main Content =======================  */
+/* ==== #2 Container to control width to all Main Content ============  */
 .main-content-container {
     position: relative;
     z-index: 5;
     width:100%;
     min-height: 80vh;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 0px;
  }
 
-/* ==== #2 Containers for One-Column pages (use "template---one-column.html")  ====  */
-/* ==== Or use Bootstrap grid content area ==== */
-
+/* ==== #2 Containers for One-Column pages ==========================  */
+/* (use "template---one-column.html") */
 .one-column-header {
     margin-top: 0px;
     padding: 20px 0px;
     border-radius: 5px;
-    background-color: rgba(255,255,255,.5);
+    background-color: transparent;
 }
 
 .one-column-frame {
     margin: 20px auto 0px auto;
-    background-color: rgba(255,255,255,.5);
+    background-color: transparent;
     border-radius: 5px;
 }
 
@@ -368,7 +369,7 @@ header {
     background-color: transparent;
 }
 
-/* #2 --- Footer -----------------------------------------------------------------------------------------------*/
+/* :::: #1 - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::: */
 .bottom-menu-container {
     position: relative;
     z-index: 10;
@@ -392,43 +393,15 @@ header {
     text-align: center;
 }
 
-.bottom-menu-icon {
-    padding: 0 5px;
-    color: var(--footer-icon-color);
-    font-size: var(--footer-icon-size);
-}
-
-/* :::: #1 - MAIN PAGE ::::::::::::::::::::::::::::::::: */
+/* :::: #1 - MAIN PAGE :::::::::::::::::::::::::::::::::::::::::::::::: */
 
 .billboard-main-page {
     background-image: url("../images/track-1080.jpg");
 }
 
-/* :::: #1 - ORDER PAGES:: ::::::::::::::::::::::::::::: */
+/* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
 
-
-
-.order-progress {
-    margin: 0px 20px;
-}
-
-/* ==== #2 - Background Images ========================= */
-
-.order-bg-2 {
-    background-image: url("../images/factory1-1080.jpg");
-}
-
-/* ==== #2 - Form Elements ============================= */
-
-
-
-.order-form-group {
-    padding: 30px 100px;
-}
-
-/*!=== MEDIA QUERIES ==================================================================*/
-
-/* --- Bootstrap xl breakpoint - More than 1200px ----------------------------------------------------------------------------------- */
+/* ==== Bootstrap xl breakpoint - More than 1200px ==================== */
 @media screen and (min-width: 1200px) {
     
     /*Main content*/
@@ -443,7 +416,7 @@ header {
 
 }
 
-/* --- Bootstrap xl breakpoint - Less than 1200px --------------------------------------------------------------------------------------- */
+/* ==== Bootstrap xl breakpoint - Less than 1200px ==================== */
 @media screen and (max-width: 1200px) {
     
     /*Main content*/
@@ -458,7 +431,7 @@ header {
 
 }
 
-/* ------------------------------------- Less than 1100px --------------------------------------------------------------------------------------- */
+/* ==== Less than 1100px ============================================== */
 @media screen and (max-width: 1100px) {
        
     /* Top Navbar Menu Link */
@@ -478,7 +451,7 @@ header {
         }
 }
 
-/* --- Bootstrap lg breakpoint - Less than 992px ------------------------------------------------------------------------------------------ */
+/* ==== Bootstrap lg breakpoint - Less than 992px ===================== */
 @media screen and (max-width: 992px) {
     
     /*Main content*/
@@ -493,23 +466,23 @@ header {
 
 }
 
-/* --- Bootstrap md breakpoint - Less than 768px ---------------------------------------------------------------------------------------- */
+/* ==== Bootstrap xl breakpoint - Less than 768px ===================== */
 @media screen and (max-width: 768px) {
     
     /*Main content*/
     .main-content-container {
-        width: 100%;
+        width: 95%;
     }
 
     /*Footer*/
     .footer-row {
-        width: 100%;
+        width: 95%;
     }
 
 }
 
 /*TODO  Add a breakpoint for sm at below 576px */
-/* --- Bootstrap md breakpoint - Less than 450px ---------------------------------------------------------------------------------------- */
+/* ==== Less than 450px =============================================== */
 @media screen and (max-width: 450px) {
     
     .logotype-large {
@@ -517,7 +490,7 @@ header {
     }
 }
 
-/* --- Bootstrap md breakpoint - Less than 370px ---------------------------------------------------------------------------------------- */
+/* ==== Less than 370px =============================================== */
 @media screen and (max-width:370px) {
     
     .logotype-large {
