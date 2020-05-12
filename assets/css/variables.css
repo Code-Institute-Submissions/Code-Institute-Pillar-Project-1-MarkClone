@@ -32,11 +32,17 @@
     /* :::: GENERAL ELEMENTS VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     
     /* === BODY === */
+    
+    /* General */
     --main-text-size: var(--text-md);
     --main-font-family: var(--font-family-text);
     --main-text-color: var(--secondary-color-1);
 
-      
+    /* Footer */
+    --footer-bg-color: var(--secondary-color-2);
+    --footer-border-color: var(--secondary-color-6);
+    
+
     /* For pages using full screen background images */
     --screen-overlay-0: rgba(219,219,219,1);
     --screen-overlay-50: rgba(219,219,219,.5);
