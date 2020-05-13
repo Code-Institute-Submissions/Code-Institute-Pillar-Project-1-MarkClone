@@ -52,6 +52,7 @@
     --main-text-size: var(--text-md);
     --main-font-family: var(--font-family-text);
     --main-text-color: var(--secondary-color-1);
+    --main-bg-color: var(--secondary-color-2);
 
     /* Header */
     --top-navbar-bg-color: var(--secondary-color-7);

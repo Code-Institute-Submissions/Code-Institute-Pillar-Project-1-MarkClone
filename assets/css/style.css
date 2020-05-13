@@ -9,6 +9,7 @@ body {
     font-size: var(--main-text-size);
     font-family: var(--main-font-family);
     color: var(--main-text-color);
+    background-color: var(--main-bg-color);
 }
 
 p {
@@ -278,7 +279,7 @@ header {
 
 #top-navbar-submenu {
     display: none;
-    padding: 50px 100px;
+    padding: 30px 0 0 0;
     border-bottom: 1px solid var(--border-thin-light);
 }
 
@@ -295,9 +296,7 @@ header {
 }
 
 .top-navbar-submenu-text {
-    margin-bottom: 15px;
     text-align: center;
-    border-bottom: 1px solid var(--border-thin-light);
 }
 
 .top-navbar-submenu-link {
@@ -341,7 +340,7 @@ header {
 /* ==== #2 Container to control width to all Main Content ============  */
 .main-content-container {
     position: relative;
-    z-index: 5;
+    z-index: 1;
     width:100%;
     margin: 0 auto;
     padding-top: 0px;
@@ -410,31 +409,34 @@ header {
     font-family: var(--font-family-billboard);
     text-transform: uppercase;
     text-align: right;
-    padding-left: 5px;
+    padding: 0 20px;
 }
 
 .billboard-slogan-container h1 {
+    position: relative;
     font-size: 2.2rem;
     color: var(--primary-color-14);
     letter-spacing: 10px;
     font-weight: 300;
-    z-index: 2;
+    z-index: 3;
 }
 
 .billboard-slogan-container h2 {
+    position: relative;
     font-size: 2rem;
     color: var(--primary-color-4);
     letter-spacing: 10px;
     font-weight: 300;
-    z-index: 2;
+    z-index: 3;
 }
 
 .billboard-slogan-container h3 {
+    position: relative;
     font-size: 1.2rem;
     color: var(--primary-color-7);
     letter-spacing: 10px;
     font-weight: 300;
-    z-index: 2;    
+    z-index: 3;    
 }
 
 .billboard-slogan-line-1 {
@@ -476,9 +478,20 @@ header {
 
 .billboard-slogan-image-container img {
     position: relative;
+    top: 90px;
+    right: 60px;
+    z-index: 2;
     max-width: auto;
-    z-index: 1;
     text-align: right;
+}
+
+.billboard-slogan-image-container-first-mark-half {
+    position: absolute;
+    z-index: 4;
+    top: 347px;
+
+
+    right: 50px;
 }
 
 .billboard-slogan-image-container-second-mark {
@@ -505,9 +518,17 @@ header {
     opacity: 0.8;
 }
 
+/* ==== #2 - Main Page - Main Content ================================= */
+
+.mainpage-main-content-box-1 {
+    position: relative;
+    z-index: 1
+}
+
+
 /* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
 /* TODO: Limit Main content width on extrem wide screens.
-/* ==== Bootstrap xl breakpoint - More than 2000px ==================== */
+/* ==== Bootstrap xl breakpoint - More than 1920px ==================== */
 @media screen and (min-width: 1920px) {
     
     /* Billboard */
@@ -526,12 +547,12 @@ header {
 
    /*Main content*/
     .main-content-container {
-        width: 70%;  
+        width: 80%;  
     }
 
     /*Footer*/
     .footer-row {
-        width: 70%;
+        width: 80%;
     }
 
 }
@@ -541,12 +562,12 @@ header {
     
     /*Main content*/
     .main-content-container {
-        width: 80%;
+        width: 100%;
     }
 
     /*Footer*/
     .footer-row {
-        width: 80%;
+        width: 100%;
     }
 
 }
@@ -578,6 +599,10 @@ header {
     .billboard-slogan-image-container-second-mark {
         right: 300px;
     }
+
+    .billboard-slogan-container h2 {
+        font-size: 1.3rem;
+    }
 }
 
 /* ==== Bootstrap lg breakpoint - Less than 992px ===================== */
@@ -586,23 +611,23 @@ header {
     /* Billboard */
     
     .billboard-slogan-container h1 {
-        font-size: 1.8rem;
-    }
-    
-    .billboard-slogan-container h2 {
         font-size: 1.6rem;
     }
     
+    .billboard-slogan-container h2 {
+        font-size: 1.3rem;
+    }
+    
     .billboard-slogan-container h3 {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .billboard-slogan-line-1 {
-        width: 140%;
+        width: 150%;
     }
     
     .billboard-slogan-line-2 {
-        width: 125%;
+        width: 135%;
     }
     
     .billboard-slogan-line-3 {
@@ -610,7 +635,7 @@ header {
     }
 
     .billboard-slogan-image-container img {
-        right: 0px;
+        left: 0px;
     }
 
 
