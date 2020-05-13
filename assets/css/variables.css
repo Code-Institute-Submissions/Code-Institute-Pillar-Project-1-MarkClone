@@ -38,10 +38,10 @@
     --text-xs: 70%;
     /*=== Fonts ===*/
     --font-family-menus: inherit;
-    --font-family-headers: inherit;
+    --font-family-headers: "Montserrat", sans-serif;
     --font-family-links: inherit;
-    --font-family-text: inherit;
-    --font-family-logotype: inherit;
+    --font-family-text: "Roboto", sans-serif;
+    --font-family-logotype: "Raleway", sans-serif;
     --font-family-billboard: "Oswald", sans-serif;
     
     /* :::: GENERAL ELEMENTS VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */

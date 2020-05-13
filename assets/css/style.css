@@ -3,7 +3,8 @@
 /* TODO: Clean up the html elements styles */
 
 body {
-    margin: 0;
+    max-width: 2000px;
+    margin: auto;
     padding: 0;
     font-size: var(--main-text-size);
     font-family: var(--main-font-family);
@@ -253,7 +254,7 @@ main {
 /* .... #3 - Navbar Top ............................................... */
 
 .top-navbar-row {
-    height: 5vh;
+    height: 50px;
     background-color: var(--top-navbar-bg-color);
 }
 
@@ -342,7 +343,6 @@ header {
     position: relative;
     z-index: 5;
     width:100%;
-    min-height: 80vh;
     margin: 0 auto;
     padding-top: 0px;
  }
@@ -372,7 +372,7 @@ header {
 .bottom-menu-container {
     position: relative;
     z-index: 10;
-    width: 100%;
+    max-width: 2000px;
     height: 20vh;
     background-color: var(--footer-bg-color);
     padding: 0;
@@ -397,20 +397,20 @@ header {
 /* ==== #2 - Billboard ================================================ */
 
 .billboard-main-page {
-    background-image: url("../images/track-702.jpg");
+    background-image: url("../images/track-600-2000.jpg");
     position: relative;
-    height: 60%;
+    height: 600px;
 }
 
 /* TODO: Prevent billboard to be pushed under content below when vertical resizing */
 .billboard-slogan-container {
-    height: 702px;;
-    width: 100%;
+    height: 600px;
+    max-width: 2000px;
     background: linear-gradient(180deg, rgba(219,219,219,1) 0%, rgba(219,219,219,.3) 50%, rgba(219,219,219,.4) 75%, rgba(255,255,255,1) 100%);
     font-family: var(--font-family-billboard);
     text-transform: uppercase;
     text-align: right;
-    padding-left: 17px;
+    padding-left: 5px;
 }
 
 .billboard-slogan-container h1 {
@@ -418,6 +418,7 @@ header {
     color: var(--primary-color-14);
     letter-spacing: 10px;
     font-weight: 300;
+    z-index: 2;
 }
 
 .billboard-slogan-container h2 {
@@ -425,13 +426,15 @@ header {
     color: var(--primary-color-4);
     letter-spacing: 10px;
     font-weight: 300;
+    z-index: 2;
 }
 
 .billboard-slogan-container h3 {
     font-size: 1.2rem;
     color: var(--primary-color-7);
     letter-spacing: 10px;
-    font-weight: 300;    
+    font-weight: 300;
+    z-index: 2;    
 }
 
 .billboard-slogan-line-1 {
@@ -472,6 +475,7 @@ header {
 }
 
 .billboard-slogan-image-container img {
+    position: relative;
     max-width: auto;
     z-index: 1;
     text-align: right;
@@ -504,11 +508,33 @@ header {
 
 
 
+
+
+
+
+
+
+
+
 /* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
 /* TODO: Limit Main content width on extrem wide screens.
-/* ==== Bootstrap xl breakpoint - More than 1200px ==================== */
-@media screen and (min-width: 1200px) {
+/* ==== Bootstrap xl breakpoint - More than 2000px ==================== */
+@media screen and (min-width: 2000px) {
     
+    /* Billboard */
+    .billboard-slogan-image-container img {
+        right: 120px;
+    }
+
+    .billboard-slogan-image-container-second-mark {
+        right: 500px;
+    }
+
+    .billboard-slogan-image-container-third-mark {
+        right: 1600px;
+    }
+
+
    /*Main content*/
     .main-content-container {
         width: 70%;  
@@ -544,13 +570,12 @@ header {
             text-align: right;
         }
     
-        .top-navbar-menu-link {
+        .button--top-menu {
             text-align: right;
             right: 0px;
-            padding-right: 20px;
         }
     
-        .top-navbar-menu-link i {
+        .button--top-menu i {
             position: relative;
             top: 0px;
         }
@@ -558,7 +583,11 @@ header {
     /* Billboard */
 
     .billboard-slogan-image-container img {
-        right: 50px;
+        right: 0px;
+    }
+
+    .billboard-slogan-image-container-second-mark {
+        right: 300px;
     }
 }
 
@@ -638,10 +667,8 @@ header {
     .footer-row {
         width: 100%;
     }
-
 }
 
-/*TODO  Add a breakpoint for sm at below 576px */
 /* ==== Less than 450px =============================================== */
 @media screen and (max-width: 450px) {
     
