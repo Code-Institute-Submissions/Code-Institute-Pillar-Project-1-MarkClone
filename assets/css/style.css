@@ -489,8 +489,6 @@ header {
     position: absolute;
     z-index: 4;
     top: 347px;
-
-
     right: 50px;
 }
 
@@ -569,7 +567,6 @@ header {
     .footer-row {
         width: 100%;
     }
-
 }
 
 /* ==== Less than 1100px ============================================== */
@@ -654,9 +651,11 @@ header {
 /* ==== Bootstrap xl breakpoint - Less than 768px ===================== */
 @media screen and (max-width: 768px) {
     
+    /* TODO: Check right margin bug on mobile screen sizes - Galaxy S III *
     /* Billboard */
     .billboard-slogan-line-1 {
         width: 100%;
+        padding-top: 30px;
     }
     
     .billboard-slogan-line-2 {
@@ -685,7 +684,25 @@ header {
 
 /* ==== Less than 450px =============================================== */
 @media screen and (max-width: 450px) {
-    
+/* TODO - IMPORTANT!: Fix margin bug on mobile devices */
+    body {
+        min-width:400px;
+        margin: auto;
+        padding: 0 15px;
+        background-color: var(--top-navbar-bg-color);
+        font-size: 60%;
+    }
+
+    .billboard {
+        width: 110%;
+        padding: 0 10;
+        margin: 0;
+    }
+
+    .main-content-container {
+        width: 85%;
+    }
+
     .logotype-large {
         font-size: 0.8em;
     }
