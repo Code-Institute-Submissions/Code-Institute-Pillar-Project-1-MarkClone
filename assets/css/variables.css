@@ -1,11 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* :::: VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 :root {
+    /* Imported Fonts */
+   
+
     /*=== Colors ===*/
     --primary-color-1: #c39853;
     --primary-color-2: #65060f;
     --primary-color-3: #df8817;
-    --primary-color-4: #6b53c3;
-    --primary-color-5: #b56b65;
+    --primary-color-4: #e98a1d; /* Adobe Shades 1 - First*/
+    --primary-color-5: #804B0F; /* Adobe Shades 2 */
+    --primary-color-6: #FF961F; /* Adobe Shades 3 */   
+    --primary-color-7: #402608; /* Adobe Shades 4 */
+    --primary-color-8: #E6871C; /* Adobe Shades 5 */
+    --primary-color-9: #0CB32C; /* Adobe Triad 2 */
+    --primary-color-10: #FF961F; /* Adobe Triad 3 */
+    --primary-color-11: #5F05FF; /* Adobe Triad 4 */
+    --primary-color-12: #480CB3; /* Adobe Triad 5 */
+    --primary-color-13: rgb(54, 32, 92); /* Adobe Triad 5 custom */
+    --primary-color-14: rgb(38, 23, 65); /* Adobe Triad 5 custom */
     --secondary-color-1: #5d5d5d;
     --secondary-color-2: #ffffff;
     --secondary-color-3: #8a8a8a;
@@ -28,6 +42,7 @@
     --font-family-links: inherit;
     --font-family-text: inherit;
     --font-family-logotype: inherit;
+    --font-family-billboard: "Oswald", sans-serif;
     
     /* :::: GENERAL ELEMENTS VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     
@@ -38,9 +53,12 @@
     --main-font-family: var(--font-family-text);
     --main-text-color: var(--secondary-color-1);
 
+    /* Header */
+    --top-navbar-bg-color: var(--secondary-color-7);
+
     /* Footer */
     --footer-bg-color: var(--secondary-color-2);
-    --footer-border-color: var(--secondary-color-6);
+    --footer-border-color: var(--secondary-color-7);
     
 
     /* For pages using full screen background images */
@@ -64,6 +82,10 @@
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /* :::: #1 - SPECIFIC SECTIONS AND PAGES :::::::::::::::::::::::::::::::::::::::::::::::: */ 
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+    /* ==== #2 - MAIN PAGE ================================================================== */
+    
+    /* Billboard */
     
 
 

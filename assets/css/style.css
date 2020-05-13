@@ -66,7 +66,7 @@ main {
 .one {
     background-color: rgb(177, 114, 114);
     width: 100%;
-    height: 30vh;
+    height: 100px;
     padding: 0;
     margin: 0;
 }
@@ -74,7 +74,7 @@ main {
 .two {
     background-color: rgb(162, 190, 162);
     width: 100%;
-    height: 30vh;
+    height:100px;
     padding: 0;
     margin: 0;
 }
@@ -82,7 +82,7 @@ main {
 .three {
     background-color: rgb(156, 156, 199);
     width: 100%;
-    height: 50vh;
+    height: 100px;
     padding: 0;
     margin: 0;
 }
@@ -160,7 +160,8 @@ main {
 
 .button {
     background-color: transparent;
-    border: 0;
+    border: none;
+    outline: none;
 }
 
 .button--top-menu {
@@ -253,6 +254,7 @@ main {
 
 .top-navbar-row {
     height: 5vh;
+    background-color: var(--top-navbar-bg-color);
 }
 
 .top-navbar-logo-container {
@@ -270,8 +272,6 @@ header {
 .top-navbar-link-container {
     position: relative;
 }
-
-
 
 /* .... #3 - Navbar Submenu ........................................... */
 
@@ -307,10 +307,9 @@ header {
 
 .billboard {
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% 65vh;
+    background-position: center bottom;
+    background-size: auto;
     width: 100%;
-    height: 65vh;
     padding: 0;
     margin: 0;
 }
@@ -320,7 +319,7 @@ header {
     z-index: 1;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 100vh 65vh;
     width: 100%;
     height: 75vh;
     padding: 0;
@@ -395,16 +394,122 @@ header {
 
 /* :::: #1 - MAIN PAGE :::::::::::::::::::::::::::::::::::::::::::::::: */
 
+/* ==== #2 - Billboard ================================================ */
+
 .billboard-main-page {
-    background-image: url("../images/track-1080.jpg");
+    background-image: url("../images/track-702.jpg");
+    position: relative;
+    height: 60%;
 }
 
-/* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
+/* TODO: Prevent billboard to be pushed under content below when vertical resizing */
+.billboard-slogan-container {
+    height: 702px;;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(219,219,219,1) 0%, rgba(219,219,219,.3) 50%, rgba(219,219,219,.4) 75%, rgba(255,255,255,1) 100%);
+    font-family: var(--font-family-billboard);
+    text-transform: uppercase;
+    text-align: right;
+    padding-left: 17px;
+}
 
+.billboard-slogan-container h1 {
+    font-size: 2.2rem;
+    color: var(--primary-color-14);
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+
+.billboard-slogan-container h2 {
+    font-size: 2rem;
+    color: var(--primary-color-4);
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+
+.billboard-slogan-container h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color-7);
+    letter-spacing: 10px;
+    font-weight: 300;    
+}
+
+.billboard-slogan-line-1 {
+    width: 135%;
+    padding-top: 70px;
+}
+
+.billboard-slogan-line-2 {
+    width: 120%;
+    padding-top: 20px;
+}
+
+.billboard-slogan-line-3 {
+    width: 110%;
+    padding-top: 15px;
+}
+
+.billboard-slogan-button {
+    width: 70%;
+    padding: 10px 20px;
+    margin: 25px;
+    letter-spacing: 10px;
+    margin-left: 0;
+}
+
+.billboard-slogan-button i {
+    position: relative;
+    top: 2px;
+    padding-left: 15px;
+    color:#65060f;
+    font-size: 1.5em;
+}
+
+.billboard-slogan-image-container {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.billboard-slogan-image-container img {
+    max-width: auto;
+    z-index: 1;
+    text-align: right;
+}
+
+.billboard-slogan-image-container-second-mark {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    opacity: 0.2;
+}
+
+.billboard-slogan-image-container-third-mark {
+    position: absolute;
+    bottom: 230px;
+    right: 900px;
+    opacity: 0.2;
+}
+
+.billboard-slogan-image-container-fourth-mark {
+    position: absolute;
+    left: 910px;
+    opacity: 0.2;
+}
+
+.billboard-slogan-image-container-small-mark {
+    opacity: 0.8;
+}
+
+
+
+
+/* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
+/* TODO: Limit Main content width on extrem wide screens.
 /* ==== Bootstrap xl breakpoint - More than 1200px ==================== */
 @media screen and (min-width: 1200px) {
     
-    /*Main content*/
+   /*Main content*/
     .main-content-container {
         width: 70%;  
     }
@@ -449,11 +554,48 @@ header {
             position: relative;
             top: 0px;
         }
+    
+    /* Billboard */
+
+    .billboard-slogan-image-container img {
+        right: 50px;
+    }
 }
 
 /* ==== Bootstrap lg breakpoint - Less than 992px ===================== */
 @media screen and (max-width: 992px) {
     
+    /* Billboard */
+    
+    .billboard-slogan-container h1 {
+        font-size: 1.8rem;
+    }
+    
+    .billboard-slogan-container h2 {
+        font-size: 1.6rem;
+    }
+    
+    .billboard-slogan-container h3 {
+        font-size: 1rem;
+    }
+
+    .billboard-slogan-line-1 {
+        width: 140%;
+    }
+    
+    .billboard-slogan-line-2 {
+        width: 125%;
+    }
+    
+    .billboard-slogan-line-3 {
+        width: 120%;
+    }
+
+    .billboard-slogan-image-container img {
+        right: 0px;
+    }
+
+
     /*Main content*/
     .main-content-container {
         width: 90%;
@@ -469,14 +611,32 @@ header {
 /* ==== Bootstrap xl breakpoint - Less than 768px ===================== */
 @media screen and (max-width: 768px) {
     
+    /* Billboard */
+    .billboard-slogan-line-1 {
+        width: 100%;
+    }
+    
+    .billboard-slogan-line-2 {
+        width: 100%;
+    }
+    
+    .billboard-slogan-line-3 {
+        width: 100%;
+    }
+
+    .billboard-slogan-container {
+        text-align: center;
+        padding: 0;
+    }
+
     /*Main content*/
     .main-content-container {
-        width: 95%;
+        width: 100%;
     }
 
     /*Footer*/
     .footer-row {
-        width: 95%;
+        width: 100%;
     }
 
 }
