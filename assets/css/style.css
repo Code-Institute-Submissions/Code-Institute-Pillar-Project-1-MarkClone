@@ -3,7 +3,7 @@
 /* TODO: Clean up the html elements styles */
 
 body {
-    max-width: 2000px;
+    max-width: 1920px;
     margin: auto;
     padding: 0;
     font-size: var(--main-text-size);
@@ -372,7 +372,7 @@ header {
 .bottom-menu-container {
     position: relative;
     z-index: 10;
-    max-width: 2000px;
+    max-width: 1920px;
     height: 20vh;
     background-color: var(--footer-bg-color);
     padding: 0;
@@ -397,7 +397,7 @@ header {
 /* ==== #2 - Billboard ================================================ */
 
 .billboard-main-page {
-    background-image: url("../images/track-600-2000.jpg");
+    background-image: url("../images/track-600-1920.jpg");
     position: relative;
     height: 600px;
 }
@@ -405,7 +405,7 @@ header {
 /* TODO: Prevent billboard to be pushed under content below when vertical resizing */
 .billboard-slogan-container {
     height: 600px;
-    max-width: 2000px;
+    max-width: 1920px;
     background: linear-gradient(180deg, rgba(219,219,219,1) 0%, rgba(219,219,219,.3) 50%, rgba(219,219,219,.4) 75%, rgba(255,255,255,1) 100%);
     font-family: var(--font-family-billboard);
     text-transform: uppercase;
@@ -505,21 +505,10 @@ header {
     opacity: 0.8;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
 /* TODO: Limit Main content width on extrem wide screens.
 /* ==== Bootstrap xl breakpoint - More than 2000px ==================== */
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1920px) {
     
     /* Billboard */
     .billboard-slogan-image-container img {
@@ -531,7 +520,7 @@ header {
     }
 
     .billboard-slogan-image-container-third-mark {
-        right: 1600px;
+        right: 1500px;
     }
 
 
