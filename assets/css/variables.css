@@ -1,9 +1,16 @@
+/* ::::::::::::::::::::::::::::::::::::::: IMPORTED FONTS ::::::::::::::::::::::::::::::::::::::::: */
+/* === FROM: Google Fonts                                                                       === */
+/* === (all available sizes and styles are included for all fonts)                              === */
+/* === #1 - Fonts: Montserrat - Oswald - Raleway - Roboto                                       === */
+/* === #2 - Fonts: Merriweather - Poppins - Baloo 2                                             === */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* :::: VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 :root {
     /* Imported Fonts */
-   
+    
 
     /*=== Colors ===*/
     --primary-color-1: #c39853;
@@ -30,6 +37,7 @@
     /*=== Text sizes =========================================================================*/
     --text-xxl: 170%;
     --text-xl: 150%;
+    --text-lgl: 130%;
     --text-lg: 120%;
     --text-mdl: 110%;
     --text-md: 100%;
@@ -39,20 +47,20 @@
     /*=== Fonts ===*/
     --font-family-menus: inherit;
     --font-family-headers: "Montserrat", sans-serif;
-    --font-family-links: inherit;
+    --font-family-link-button: "Roboto", sans-serif;
+    --font-size-link-button: var(--text-mds);
     --font-family-text: "Roboto", sans-serif;
-    --font-family-logotype: "Raleway", sans-serif;
+    --font-family-logotype: "Merriweather", sans-serif;
     --font-family-billboard: "Oswald", sans-serif;
+
+ 
     
     /* :::: GENERAL ELEMENTS VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     
     /* === BODY === */
     
     /* General */
-    --main-text-size: var(--text-md);
-    --main-font-family: var(--font-family-text);
-    --main-text-color: var(--secondary-color-1);
-    --main-bg-color: var(--secondary-color-2);
+
 
     /* Header */
     --top-navbar-bg-color: var(--secondary-color-7);
@@ -78,7 +86,9 @@
     --logo-icon-color: var(--primary-color-1);
     --logo-icon-size: 1.2em;
     --logo-small-font-size: var(--text-xs);
-    --logo-large-font-size: var(--text-xxl);
+    --logo-medium-font-size: var(--text-md);
+    --logo-large-font-size: var(--text-lgl);
+    --logo-font-stretch: ultra-expanded;
     
     /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     /* :::: #1 - SPECIFIC SECTIONS AND PAGES :::::::::::::::::::::::::::::::::::::::::::::::: */ 

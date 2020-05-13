@@ -23,47 +23,52 @@
 </head>
 
 <body>
-    <!-- TODO: Fix the problem with the header on mobile screens + the menu button not pushing enough to the right when increasing screen with -->
+    
+    <!-- TODO: Fix the sizing links pushing content below down(Fixed), but now rows have too much space -->
     <!-- HEADER WITH LOGO AND MAIN NAVIGATION MENU -->
     <header>
         <nav>
-            <div class="container-fluid no-paddings-margins"> <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: #1 - TOP NAVBAR  -->
+            <div class="container-fluid no-paddings-margins"> <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: #1 - TOP NAVBAR  -->
                 <div class="row align-items-center no-gutters top-navbar-row"> 
-                    <div class="col-6"> <!-- ================================================================================= #2 - Logotype  -->
+                    <div class="col-6 col-sm-8 col-md-6"> <!-- ================================================================================= #2 - Logotype  -->
                         <div class="top-navbar-logo-container">
                             <a class="logotype logotype-large" href="index.html">
                                 Mark<i class="fas fa-dna logo-icon logo-icon-large"></i>Clone
                             </a>
                         </div>
                     </div>
-                    <div class="col-6 top-navbar-link-container"> <!-- ====================================================== #2 - Menu Link  -->
+                    <div class="col-6 col-sm-4 col-md-6 top-navbar-link-container"> <!-- ====================================================== #2 - Menu Link  -->
                         <button class="button button--top-menu toggle-button" data-id="#top-navbar-submenu">
                             Menu<i class="fas fa-angle-down icon icon-menu"></i>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="collapse top-navbar-submenu" id="top-navbar-submenu" role="navigation"> <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: #1 - TOP SUB MENU  -->
-                <div class="container-fluid no-paddings-margins">
-                    <div class="row no-gutters text-align-center"> <!-- ================================================ #2 - Sub Menu Row 1  -->
-                        <div class="col-sm-12 col-md-4 top-navbar-submenu-group"> <!-- ''''''''''''''''''''''''''''''''''' 3# - PRODUCT menu  -->
+            <div class="collapse top-navbar-submenu" id="top-navbar-submenu" role="navigation"> <!-- :::::::::::::::::::::::::::::::::::: #1 - TOP SUB MENU  -->
+                <div class="container-fluid">
+                    <div class="row no-gutters text-align-center "> <!-- ================================================ #2 - Sub Menu Row 1  -->
+                        <div class="col-sm-12 col-md-4 top-navbar-submenu-group py-5"> <!-- ''''''''''''''''''''''''''''''''''' 3# - PRODUCT menu  -->
                             <div class="top-navbar-submenu-header"> 
                                 <a href="product.html"> <!-- ................................................................... #4 - Header  -->
                                     <h2>Mark<br>2000!</h2>
                                 </a>
                             </div>
-                            <a class="top-navbar-submenu-link" href="product.html"> <!-- ..................................... #4 - Overview  -->
-                                <h3>Overview</h3>
-                            </a>
-                            <a class="top-navbar-submenu-link" href="product-base.html"> <!-- ............................... #4 - Base Unit  -->
-                                <h3>The Base Unit</h3>
-                            </a>
-                            <div id="dropdown-center"> <!-- ........................................................... #4 - Add-On's (DropDown)  -->
-                                <div class="dropdown btn-group">
-                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="add-on-dropdown">
-                                    The Add On's
+                            <div class="py-4">
+                                <a class="top-navbar-submenu-link" href="product.html"> <!-- ..................................... #4 - Overview  -->
+                                    <h3>Overview</h3>
                                 </a>
-                                <div class="dropdown-menu menu-dropdown menu-dropdown-nav" id="test" aria-labelledby="add-on-dropdown">
+                            </div>
+                            <div class="py-4">
+                                <a class="top-navbar-submenu-link" href="product-base.html"> <!-- ............................... #4 - Base Unit  -->
+                                    <h3>The Base Unit</h3>
+                                </a>
+                            </div>
+                            <div id="dropdown-center plain-text"> <!-- ........................................................... #4 - Add-On's (DropDown)  -->
+                                <div class="dropdown btn-group py-4">
+                                <a href="#" role="button" class="dropdown-toggle plain-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="add-on-dropdown">
+                                    <h3>The Add On's</h3>
+                                </a>
+                                <div class="dropdown-menu menu-dropdown menu-dropdown-nav py-4" id="test" aria-labelledby="add-on-dropdown">
                                     <h3 class="dropdown-header"> <!-- .......................................................... #4 - Header  -->
                                         SELECT A PACKAGE<br />TO FIND OUT!
                                     </h3>
@@ -96,52 +101,52 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-4 top-navbar-submenu-group"> <!-- '''''''''''''''''''''''''''''''''''''' 3# - ORDER menu  -->
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-group py-5"> <!-- '''''''''''''''''''''''''''''''''''''' 3# - ORDER menu  -->
                             <div class="top-navbar-submenu-header"> <!-- ........................................................ #4 - Header -->
                                 <a href="order.html">
                                     <h2>Order<br />Now!</h2>
                                 </a>
                             </div>
-                            <a class="top-navbar-submenu-link" href="leasing.html"> <!-- ........................................ #4 - Leasing -->
+                            <a class="top-navbar-submenu-link py-4" href="leasing.html"> <!-- ........................................ #4 - Leasing -->
                                 <h3>Business Leasing</h3>
                             </a>
-                            <a class="top-navbar-submenu-link" href="finance.html"> <!-- ........................................ #4 - Finance -->
+                            <a class="top-navbar-submenu-link py-4" href="finance.html"> <!-- ........................................ #4 - Finance -->
                                 <h3>Need a good bank?</h3>
                             </a>
-                            <a class="top-navbar-submenu-link" href="sales-guy.html"> <!-- .................................... #4 - Sales Guy -->
+                            <a class="top-navbar-submenu-link py-4" href="sales-guy.html"> <!-- .................................... #4 - Sales Guy -->
                                 <h3>Unsure? Talk to a Mark!</h3>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-4 top-navbar-submenu-group"> <!-- '''''''''''''''''''''''''''''''''''' 3# - SERVICE menu  -->
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-group py-5"> <!-- '''''''''''''''''''''''''''''''''''' 3# - SERVICE menu  -->
                            <div class="top-navbar-submenu-header"> <!-- ........................................................ #4 - Header  -->
                                 <a href="service.html">
                                     <h2>Service<br />Center</h2>
                                 </a>
                             </div>
-                            <a class="top-navbar-submenu-link" href="service-faq.html"> <!-- ...................................... #4 - FAQ  -->
+                            <a class="top-navbar-submenu-link py-4" href="service-faq.html"> <!-- ...................................... #4 - FAQ  -->
                                 <h3>Is It Really Broken?</h3>
                             </a>
-                            <a class="top-navbar-submenu-link" href="service-service-location.html"> <!-- ............ #4 - Service Partners  -->
+                            <a class="top-navbar-submenu-link py-4" href="service-service-location.html"> <!-- ............ #4 - Service Partners  -->
                                 <h3>Find Out Why!</h3>
                             </a>
-                            <a class="top-navbar-submenu-link" href="service-tech-support.html"> <!-- .................... #4 - Tech Support  -->
+                            <a class="top-navbar-submenu-link py-4" href="service-tech-support.html"> <!-- .................... #4 - Tech Support  -->
                                 <h3>Contact Tech-Support</h3>
                             </a>
                         </div>
                     </div>
                     <hr />
-                    <div class="row no-gutters text-align-center"> <!-- ================================================ #2 - Sub Menu Row 2  -->
-                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text"> <!-- ''''''''''''''''''''''''''''''''''' 3# - Markers Club   -->
+                    <div class="row no-gutters text-align-center tb-padding-5"> <!-- ================================================ #2 - Sub Menu Row 2  -->
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text py-4"> <!-- ''''''''''''''''''''''''''''''''''' 3# - Markers Club   -->
                             <a class="top-navbar-submenu-link" href="markers-club.html">
                                 <h3>Join The Exclusive<br />"Markers" Club!</h3>
                             </a>
                         </div>
-                        <div class="col-sm-12 order-sm-last col-md-4 top-navbar-submenu-text"> <!-- ''''''''''''''''''''''''''''''''''''''''' 3# - About Us  -->
+                        <div class="col-sm-12 order-sm-last col-md-4 top-navbar-submenu-text py-4"> <!-- ''''''''''''''''''''''''''''''''''''''''' 3# - About Us  -->
                             <a class="top-navbar-submenu-link" href="company.html">
                                 <h3>About<br />Us</h3>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text"> <!-- ''''''''''''''''''''''''''''''''''''''''' 3# - Register  -->
+                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text py-4"> <!-- ''''''''''''''''''''''''''''''''''''''''' 3# - Register  -->
                             <a class="top-navbar-submenu-link" href="login.html">
                                 <h3>Register to Upgrade<br />Your Mark-2000</h3>
                             </a>
@@ -151,12 +156,10 @@
             </div>
         </nav>
     </header>
-   
-    <!-- TODO: Limit width on sub-menu and billboard on very wide screens -->
-    
+          
     <!-- SECTION WITH LARGE BILLBOARD / LANDING SITE -->
     <section class="billboard billboard-main-page"> 
-        <h1 class="invisible">Mark-2000 - The Ideal Clone Coworker For The Future!</h1>
+        <h1 class="invisible">Mark-2000 - The Ideal Clone Coworker - The Future is Now!</h1>
         <div class="container-fluid no-paddings-margins">
             <div class="row no-gutters billboard-slogan-container">
                     <div class="col-sm-12 col-md-6"> <!-- ========================================= Slogans -->
@@ -222,7 +225,7 @@
     <footer class="bottom-menu-container">
         <div class="container-fluid no-paddings-margins">
             <div class="row row align-items-center bottom-menu-row"> <!-- :::::::::::::::::::::::::::::::::::::::::: #1 - FOOTER CONTENT ROW  -->
-                <div class="col-md-4 bottom-menu-content"> <!-- ========================================================== #2 - SOCIAL Media  -->
+                <div class="col-md-3 bottom-menu-content"> <!-- ========================================================== #2 - SOCIAL Media  -->
                     <div class="dropup">
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false" id="social-media-dropdown-footer">
@@ -261,7 +264,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 order-md-3 bottom-menu-content"> <!-- =============================================== #2 - CONTACT info  -->
+                <div class="col-md-3 order-md-3 bottom-menu-content"> <!-- =============================================== #2 - CONTACT info  -->
                     <div class="dropup">
                         <a href="#" role="button" class="dropdown-toggle text-md" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" id="contact-dropdown-footer">
@@ -312,10 +315,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 bottom-menu-content"> <!-- ============================================================== #2 - LOGOTYPE  -->
-                    <a href="index.html">Mark<span class="logo-icon"><i
-                                class="fas fa-dna logo-icon-small"></i></span>Clone<span class="logotype-small">
-                            Inc.</span></a>
+                <div class="col-md-6 bottom-menu-content"> <!-- ============================================================== #2 - LOGOTYPE  -->
+                    <a class="logotype logotype-medium" href="index.html">Mark<span class="logo-icon"><i
+                                class="fas fa-dna logo-icon logo-icon-small"></i></span>Clone</a>
                     <p class="text-xs color-grey">All Rights reserved. © 2020.</p>
                 </div>
             </div>
