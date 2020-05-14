@@ -94,7 +94,7 @@ main {
 .four {
     background-color: rgb(216, 200, 172);
     width: 100%;
-    height: 50vh;
+    height: 100px;
     padding: 0;
     margin: 0;
 }
@@ -102,7 +102,7 @@ main {
 .five {
     background-color: rgb(173, 130, 153);
     width: 100%;
-    height: 50vh;
+    height: 100px;
     padding: 0;
     margin: 0;
 }
@@ -110,7 +110,7 @@ main {
 .six {
    background-color:  rgb(24, 73, 112);
    width: 100%;
-   height: 50vh;
+   height: 100px;
    padding: 0;
    margin: 0;
 }
@@ -228,12 +228,12 @@ main {
     font-size: var(--text-xs)
 }
 
-.text-bold {
-    font-weight: bold;
+.font-weight-700 {
+    font-weight: 700;
 }
 
-.text-thin {
-    font-weight: thin;
+.font-weight-300 {
+    font-weight: 300;
 }
 
 /* :::: #1 - SPECIFIC GENERAL STYLES :::::::::::::::::::::::::::::::::: */
@@ -351,8 +351,9 @@ header {
 
 .billboard {
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: auto;
+    background-position: top center;
+    background-size: 1920px 650px;
+    background-attachment: local;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -449,7 +450,7 @@ header {
 .billboard-slogan-container {
     height: 600px;
     max-width: 1920px;
-    background: linear-gradient(180deg, rgba(219,219,219,1) 0%,rgba(219,219,219,0.2) 20%,  rgba(219,219,219,.1) 50%, rgba(219,219,219,.1) 75%, rgba(255,255,255,1.5) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%,rgba(255, 255, 255,.2) 10%, rgba(255, 255, 255,.3) 20%, rgba(255, 255, 255,.3) 85%, rgba(255,255,255,1) 100%);
     font-family: var(--font-family-billboard);
     text-transform: uppercase;
     text-align: right;
@@ -459,7 +460,7 @@ header {
 .billboard-slogan-container h1 {
     position: relative;
     font-size: 2.2rem;
-    color: var(--primary-color-14);
+    color: var(--primary-color-4);
     letter-spacing: 10px;
     font-weight: 400;
     z-index: 3;
@@ -468,7 +469,7 @@ header {
 .billboard-slogan-container h2 {
     position: relative;
     font-size: 2rem;
-    color: var(--primary-color-4);
+    color: var(--primary-color-14);
     letter-spacing: 10px;
     font-weight: 400;
     z-index: 3;
@@ -536,6 +537,7 @@ header {
     z-index: 4;
     top: 347px;
     right: 50px;
+    opacity: .9;
 }
 
 .billboard-slogan-image-container-second-mark {
@@ -544,9 +546,8 @@ header {
     right: 20vh;
     opacity: .3;
     width: 100px;
-    height: auto;
     transform: scale(.2, .2);
-    
+    opacity: .7;
 }
 
 .billboard-slogan-image-container-third-mark {
@@ -563,9 +564,7 @@ header {
     top: 4vh;
     opacity: .2;
     width: 100px;
-    height: auto;
     transform: scale(0.1, 0.1);
-    
 }
 
 .billboard-slogan-image-container-fifth-mark {
@@ -581,13 +580,11 @@ header {
 
 .billboard-slogan-image-container-sixth-mark {
     position: absolute;
-    top: -22vh;
+    top: -19vh;
     left: 50vh;
     opacity: .3;
     width: 100px;
-    height: auto;
-    transform: scale(.1, .1);
-    
+    transform: scale(.07, .07);
 }
 
 .billboard-slogan-image-container-seventh-mark {
@@ -596,23 +593,41 @@ header {
     bottom: 29vh;
     opacity: .1;
     width: 100px;
-    height: auto;
     transform: scale(.3, .3);
-    
 }
-
-.billboard-slogan-image-container-small-mark {
-    opacity: 0.7;
-}
-
-
 
 /* ==== #2 - Main Page - Main Content ================================= */
 
-.mainpage-main-content-box-1 {
-    position: relative;
-    z-index: 1
+.main-page-quotes {
+    min-height: 300px;
+    background-color: var(--main-page-quotes-bg-color);
 }
+
+.main-page-quotes img {
+    display: block;
+    float: left;
+    transform: scale(.7,.7);
+}
+
+.main-page-usp {
+    min-height: 300px;
+    background-color: grey;
+}
+
+.main-page-trial {
+    min-height: 300px;
+    background-color: rgb(196, 180, 180);
+}
+
+.main-page-leasing {
+    min-height: 300px;
+    background-color: rgb(140, 149, 200);
+}
+
+.main-page-markersclub {
+    min-height: 300px;
+}
+
 
 
 /* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */

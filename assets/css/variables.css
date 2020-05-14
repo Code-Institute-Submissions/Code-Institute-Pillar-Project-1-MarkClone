@@ -60,7 +60,7 @@
 
 
     /* Header */
-    --top-navbar-bg-color: var(--secondary-color-7);  /* old navbar used secondary 7 */
+    --top-navbar-bg-color: var(--secondary-color-2);  /* old navbar used secondary 7 */
 
     /* Footer */
     --footer-bg-color: var(--secondary-color-2);
@@ -99,7 +99,13 @@
     /* Billboard */
     
 
+    /* Main Page Info */
 
+    --main-page-quotes-bg-color: var(--secondary-color-2);
+    --main-page-usp-bg-color: var(--secondary-color-2);
+    --main-page-trial-bg-color: var(--secondary-color-2);
+    --main-page-leasing-bg-color: var(--secondary-color-2);
+    --main-page-markersclub-bg-color: var(--secondary-color-2);
 
 
 }
