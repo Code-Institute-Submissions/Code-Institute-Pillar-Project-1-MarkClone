@@ -59,7 +59,7 @@ h4 {
 }
 
 main {
-    background-color: var(--secondary-color-7);
+    background-color: transparent;
     padding: 0;
     margin: 0;
 }
@@ -236,6 +236,27 @@ main {
     font-weight: 300;
 }
 
+.text-quotes {
+    font-family: "Poppins"; /*var(--font-family-text);*/
+    font-size: var(--text-lgl);
+    font-weight: 300;
+    color: var(--secondary-color-1);
+    font-style: italic;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.text-quotes-reference {
+    border-top: 1px solid var(--secondary-color-6);
+    font-family: "arial";/*(--font-family-headers);*/
+    font-size: var(--text-lgl);
+    letter-spacing: 2px;
+    padding-top: 5px;
+    text-align: right;
+}
+
+
+
 /* :::: #1 - SPECIFIC GENERAL STYLES :::::::::::::::::::::::::::::::::: */
 
 /* ==== #2 Logotype =================================================== */
@@ -387,9 +408,8 @@ header {
     position: relative;
     z-index: 1;
     width:100%;
-    margin: 0 auto;
-    padding-top: 0px;
- }
+    margin: auto;
+}
 
 /* ==== #2 Containers for One-Column pages ==========================  */
 /* (use "template---one-column.html") */
@@ -598,25 +618,28 @@ header {
 
 /* ==== #2 - Main Page - Main Content ================================= */
 
-.main-page-quotes {
-    min-height: 300px;
+/* '''' #3 - General Purpose '''''''''''''''''''''''''''''''''''''''''' */
+
+.main-page-quote-image {
+    display: block;
+    float: right;
+}
+
+
+/* '''' #3 - Quotes ''''''''''''''''''''''''''''''''''''''''''''''''''' */
+.main-page-quotes-container {
     background-color: var(--main-page-quotes-bg-color);
 }
 
-.main-page-quotes img {
-    display: block;
-    float: left;
-    transform: scale(.7,.7);
-}
-
-.main-page-usp {
-    min-height: 300px;
-    background-color: grey;
-}
-
+/* '''' #3 - Good Morning Package Trial ''''''''''''''''''''''''''''''' */
 .main-page-trial {
-    min-height: 300px;
     background-color: rgb(196, 180, 180);
+}
+
+/* '''' #3 - Usp ''''''''''''''''''''''''''''''''''''''''''''''''''' */
+.main-page-usp {
+    min-height: 500px;
+    background-color: grey;
 }
 
 .main-page-leasing {
@@ -627,8 +650,6 @@ header {
 .main-page-markersclub {
     min-height: 300px;
 }
-
-
 
 /* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
 /* TODO: Limit Main content width on extrem wide screens.
@@ -648,15 +669,14 @@ header {
         right: 1500px;
     }
 
-
    /*Main content*/
     .main-content-container {
-        width: 80%;  
+        width: 100%;  
     }
 
     /*Footer*/
     .footer-row {
-        width: 80%;
+        width: 100%;
     }
 
 }
@@ -782,6 +802,11 @@ header {
         width: 100%;
     }
 
+    /* Main content -Quotes */
+    .main-page-quotes-container {
+        padding-top: 100px;
+    }
+    
     /*Footer*/
     .footer-row {
         width: 100%;
