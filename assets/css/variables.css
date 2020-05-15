@@ -31,6 +31,7 @@
     --secondary-color-5: #b3b3b3;
     --secondary-color-6: #c8c8c8;
     --secondary-color-7: #dbdbdb;
+    --transparent-color: transparent;
     /*=== Text sizes =============================================================================$====*/
     --text-xxxxl: 230%;
     --text-xxxl: 200%;
@@ -65,7 +66,9 @@
 
 
     /* Header */
-    --top-navbar-bg-color: var(--secondary-color-2);  
+    --top-navbar-bg-color: var(--transparent-color);
+    --top-navbar-submenu-bg-color: var(--secondary-color-2);
+    --top-navbar-submenu-border-color: var(--border-thin-medium);  
 
     /* Footer */
     --footer-bg-color: var(--secondary-color-2);
@@ -87,6 +90,8 @@
 
     /* === BORDERS === */
     --border-thin-light: 1px solid var(--secondary-color-6);
+    --border-thin-medium: 3px solid -var(--secondary-color-1);
+
 
     /* === LOGOTYPE === */
     --logo-text-color: var(--secondary-color-1);

@@ -8,26 +8,65 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/a92080124d.js"></script>
     <!-- === INTERNAL CSS FILES === -->
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Document</title>
+    <title>Mark Clone Inc. | Get Your Ultimate Employee Today! | mark-clone.com</title>
 </head>
+
 <body>
  
-<div class="container-fluid">
+<div class="container-xl"> <!-- HEADER GRID START  -->
 
-    <header class="row no-gutters bg bg-image-main-page bg-image-full-cover">
+    <header class="bg bg-image-main-page bg-image-full-cover">
         
-        <nav class="col-12 d-flex justify-content-center">
-           Navbar goes here
+        <nav class="row align-items-center no-gutters top-navbar-row">
+
+            <div class="col-6 col-sm-8 col-md-6"> <!-- :::: LOGOTYPE :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+                <div class="top-navbar-logo-container">
+                    <a class="logotype logotype-large" href="index.html">
+                        Mark<i class="fas fa-dna logo-icon logo-icon-large"></i>Clone
+                    </a>                
+                </div>
+           </div>
+
+
+            <div class="col-6 col-sm-4 col-md-6 top-navbar-link-container"> <!-- :::: Menu Button :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+                <button class="button button--top-menu toggle-button" data-id="#top-navbar-submenu">
+                    Menu<i class="fas fa-angle-down icon"></i>
+                </button>
+            </div>
         </nav>
+
+        <div class="collapse justify-content-center top-navbar-submenu" id="top-navbar-submenu" role="navigation"> <!-- :::: EXPANDABLE SUB-MENU  -->
+             <div class="d-flex flex-row justify-content-around align-items-center">
+                <div class="py-3 top-navbar-submenu-header">
+                    <a class="top-navbar-submenu-link" href="product.html"> <!-- ..................................... #4 - Overview  -->
+                        <h3>About</h3>
+                    </a>
+                </div>
+                <div class="py-3 top-navbar-submenu-header">
+                    <a class="top-navbar-submenu-link" href="order.html">
+                        <h3>Order</h3>
+                    </a>
+                </div>
+                <div class="py-3 top-navbar-submenu-header">
+                    <a class="top-navbar-submenu-link" href="contact.html">
+                        <h3>Contact</h3>
+                    </a>
+                </div>
+             </div>   
+
+
+
+        </div>
         
-        <div class="col-12 d-flex justify-content-center">Billboard grid goes here</div>
+        <div class="col-12 d-flex justify-content-center">Billboard grid</div>
     </header>
-</div>
+</div> <!-- HEADER GRID END  -->
 
 <div class="container-xl">
     <main class="row no-gutters test-main">
@@ -60,15 +99,16 @@
 
 
     <!-- === EXTERNAL JAVA SCRIPTS === -->
-      <!-- Font Aweswome -->
-      <script src="https://kit.fontawesome.com/b396aa4a88.js" crossorigin="anonymous"></script>
-      <!-- JQuery -->
+      
+        <!-- JQuery -->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <!-- Popper -->
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <!-- Bootstrap -->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      
+       <!-- Font Aweswome -->
+       <script src="https://kit.fontawesome.com/b396aa4a88.js" crossorigin="anonymous"></script>
+
       <!-- === INTERNAL JAVA SCRIPTS === -->
       <!-- script to open and close the Main menu at top -->
       <script src="assets/js/script.js"></script>
