@@ -32,6 +32,7 @@
     --secondary-color-6: #c8c8c8;
     --secondary-color-7: #dbdbdb;
     /*=== Text sizes =============================================================================$====*/
+    --text-xxxl: 200%;
     --text-xxl: 170%;
     --text-xl:  150%;
     --text-lgl: 130%;
@@ -49,7 +50,10 @@
     --font-family-text: "Roboto", sans-serif;
     --font-family-logotype: "Merriweather", sans-serif;
     --font-family-billboard: "Oswald", sans-serif;
-
+    --font-family-quotes-text: "Poppins", sans-serif;
+    --font-family-quotes-reference: "Poppins", sans-serif;
+    --font-family-alert-header: "Oswald", sans-serif;
+    --font-family-alert-text: "Roboto", sans-serif;
  
     
     /* :::: GENERAL ELEMENTS VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -72,14 +76,12 @@
     --screen-overlay-50: rgba(219,219,219,0);
     --screen-overlay-100: rgba(219,219,219,0);
         
-    --screen-overlay-old-0: rgba(219,219,219,.0);
-    --screen-overlay-old-50: rgba(219,219,219,.0);
-    --screen-overlay-old-100: rgba(219,219,219,.0);
+
     /* === FORMS === */
 
 
     /* === BORDERS === */
-    --border-thin-light: var(--secondary-color-6);
+    --border-thin-light: 1px solid var(--secondary-color-6);
 
     /* === LOGOTYPE === */
     --logo-text-color: var(--secondary-color-1);
