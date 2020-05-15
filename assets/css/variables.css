@@ -32,6 +32,7 @@
     --secondary-color-6: #c8c8c8;
     --secondary-color-7: #dbdbdb;
     /*=== Text sizes =============================================================================$====*/
+    --text-xxxxl: 230%;
     --text-xxxl: 200%;
     --text-xxl: 170%;
     --text-xl:  150%;
@@ -75,7 +76,11 @@
     --screen-overlay-0: rgba(219,219,219,0);
     --screen-overlay-50: rgba(219,219,219,0);
     --screen-overlay-100: rgba(219,219,219,0);
-        
+    
+    
+    /* Links */
+    --link-hover-bg-color: var(--secondary-color-7);
+
 
     /* === FORMS === */
 

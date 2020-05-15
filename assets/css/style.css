@@ -193,6 +193,12 @@ main {
     font-family: var(--font-family-link-button);
 }
 
+.link-hover :hover {
+    background-color: var( --link-hover-bg-color);
+    width: 100%;
+    height: 100%;
+}
+
 /* === #2 - Text Styles =============================================== */
 
 .text-xxl {
@@ -237,7 +243,7 @@ main {
 
 .text-quotes {
     font-family: var(--font-family-quotes-text);
-    font-size: var(--text-xl);
+    font-size: var(--text-mdl);
     font-weight: 300;
     color: var(--secondary-color-1);
     font-style: italic;
@@ -645,7 +651,8 @@ header {
 .main-page-trial-overlay {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.1) 10%, rgba(0, 0, 0,.4) 12%, rgba(0, 0, 0,.2) 30%, rgba(0,0,0,.2) 100%);
+    /*background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.1) 10%, rgba(0, 0, 0,.4) 12%, rgba(0, 0, 0,.2) 30%, rgba(0,0,0,.2) 100%);*/
+    background: rgba(0,0,0,.2);
 }
 
 .main-page-trial h3 {
@@ -676,17 +683,41 @@ header {
 
 /* '''' #3 - Usp ''''''''''''''''''''''''''''''''''''''''''''''''''' */
 .main-page-usp {
-    min-height: 500px;
-    background-color: grey;
+    background-color: var(--main-page-usp-bg-color);
+    font-family: var(--font-family-alert-header);
 }
 
+.main-page-usp img {
+    max-width: 280px;
+    object-fit: contain;
+}
+
+.main-page-usp h2 {
+    font-size: var(--text-xxxxl);
+    color: var(--primary-color-8);
+    font-family: var(--font-family-alert-header);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.main-page-usp h3 {
+    font-size: var(--text-lg);
+    color: var(--secondary-color-1);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+/* '''' #3 - Leasing ''''''''''''''''''''''''''''''''''''''''''''''''''' */
 .main-page-leasing {
     min-height: 300px;
-    background-color: rgb(140, 149, 200);
+
 }
 
+/* '''' #3 - The Markers Club ''''''''''''''''''''''''''''''''''''''''''''''''''' */
 .main-page-markersclub {
     min-height: 300px;
+    background-color: grey;
 }
 
 /* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
@@ -802,14 +833,20 @@ header {
 
     /*Main content*/
     .main-content-container {
-        width: 90%;
+        width: 100%;
     }
 
     /*Footer*/
     .footer-row {
-        width: 90%;
+        width: 100%;
     }
 
+    /* ==== Main Page ==== */
+
+    /* Main page Usp */
+    .main-page-usp h2 {
+        font-size: var(--text-xxl);
+    }
 }
 
 /* ==== Bootstrap xl breakpoint - Less than 768px ===================== */
@@ -849,6 +886,7 @@ header {
     .footer-row {
         width: 100%;
     }
+
 }
 
 /* ==== Less than 450px =============================================== */
