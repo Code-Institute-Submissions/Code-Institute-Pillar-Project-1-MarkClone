@@ -170,8 +170,6 @@ h4 {
 
 .link-hover :hover {
     background-color: var( --link-hover-bg-color);
-    width: 100%;
-    height: 100%;
 }
 
 /* === #2 - Text Styles =============================================== */
@@ -351,25 +349,49 @@ h4 {
 
 /* ==== #2 - Background Image Containers ============================== */
 
+/* Main Page */
+ .billboard-main-page {
+    background: url("../track-sky-1920-1080.jpg");
+}
+
+/* Order Start */
+.billboard-order-start {
+    background: url("../images/factory1-1080.jpg");
+}
+
 .billboard {
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: auto;
+    background-size:contain;
     height: 100vh;
-    width: 100%;
-
+    width: auto;
+    padding: 0;
+    margin: 0;
 }
+
+
+/* ? */
+
+.one-column-header {
+    margin-top: 0px;
+    padding: 20px 0px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.5);
+    background-color: transparent;
+}
+
+.one-column-frame {
+    margin: 20px auto 0px auto;
+    background-color: rgba(255,255,255,.5);
+    background-color: transparent;
+    border-radius: 5px;
+}
+
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::: #1 - General Main Content Area :::::::::::::::::::::::::::::::: */
 
 /* ==== #2 Container to control width to all Main Content ============  */
-.main-content-container {
-    position: relative;
-    z-index: 1;
-    width:100%;
-    margin: auto;
-}
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::: #1 - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -399,10 +421,6 @@ h4 {
 /* :::: #1 - MAIN PAGE :::::::::::::::::::::::::::::::::::::::::::::::: */
 
 /* ==== #2 - Main Page - Billboard ==================================== */
-
-.billboard-main-page {
-    background-image: url("../images/track-sky-1920-1080.jpg");
-}
 
 /* TODO: Prevent billboard to be pushed under content below when vertical resizing */
 .billboard-slogan-container {
@@ -637,18 +655,6 @@ h4 {
     text-transform: uppercase;
 }
 
-/* '''' #3 - Leasing ''''''''''''''''''''''''''''''''''''''''''''''''''' */
-.main-page-leasing {
-    min-height: 300px;
-
-}
-
-/* '''' #3 - The Markers Club ''''''''''''''''''''''''''''''''''''''''''''''''''' */
-.main-page-markersclub {
-    min-height: 300px;
-    background-color: grey;
-}
-
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::: #2 - Order Start Page ::::::::::::::::::::::::::::::::::::::::: */
 
@@ -657,85 +663,52 @@ h4 {
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
+/* ==== Less than 1100px ============================================== */
 
-/* TODO: Limit Main content width on extrem wide screens.
-/* ==== Bootstrap xl breakpoint - More than 1920px ==================== */
-@media screen and (min-width: 1920px) {
+
+/* ==== Bootstrap md breakpoint - Less than 768px ===================== */
+@media screen and (min-width: 768px) {
     
+    /* TODO: Check right margin bug on mobile screen sizes - Galaxy S III *
     /* Billboard */
-    .billboard-slogan-image-container img {
-        right: 120px;
+    .billboard-slogan-line-1 {
+        width: 100%;
+        padding-top: 30px;
     }
-
-    .billboard-slogan-image-container-second-mark {
-        right: 500px;
+    
+    .billboard-slogan-line-2 {
+        width: 100%;
     }
-
-    .billboard-slogan-image-container-third-mark {
-        right: 1500px;
-    }
-
-   /*Main content*/
-    .main-content-container {
-        width: 100%;  
-    }
-
-    /*Footer*/
-    .footer-row {
+    
+    .billboard-slogan-line-3 {
         width: 100%;
     }
 
-}
+    .billboard-slogan-container {
+        text-align: center;
+        padding: 0;
+    }
 
-/* ==== Bootstrap xl breakpoint - Less than 1200px ==================== */
-@media screen and (max-width: 1200px) {
-    
     /*Main content*/
     .main-content-container {
         width: 100%;
     }
 
+    /* Main content -Quotes */
+    .main-page-quotes-container {
+        padding-top: 100px;
+    }
+    
     /*Footer*/
     .footer-row {
         width: 100%;
     }
+
 }
 
-/* ==== Less than 1100px ============================================== */
-@media screen and (max-width: 1100px) {
-       
-    /* Top Navbar Menu Link */
-        .top-navbar-link-container {
-            text-align: right;
-        }
-    
-        .button--top-menu {
-            text-align: right;
-            right: 0px;
-        }
-    
-        .button--top-menu i {
-            position: relative;
-            top: 0px;
-        }
-    
-    /* Billboard */
-
-    .billboard-slogan-image-container img {
-        right: 0px;
-    }
-
-    .billboard-slogan-image-container-second-mark {
-        right: 300px;
-    }
-
-    .billboard-slogan-container h2 {
-        font-size: 1.3rem;
-    }
-}
 
 /* ==== Bootstrap lg breakpoint - Less than 992px ===================== */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
     
     /* Billboard */
     
@@ -786,79 +759,59 @@ h4 {
     }
 }
 
-/* ==== Bootstrap xl breakpoint - Less than 768px ===================== */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1100px) {
+       
+    /* Top Navbar Menu Link */
+        .top-navbar-link-container {
+            text-align: right;
+        }
     
-    /* TODO: Check right margin bug on mobile screen sizes - Galaxy S III *
+        .button--top-menu {
+            text-align: right;
+            right: 0px;
+        }
+    
+        .button--top-menu i {
+            position: relative;
+            top: 0px;
+        }
+    
     /* Billboard */
-    .billboard-slogan-line-1 {
-        width: 100%;
-        padding-top: 30px;
-    }
-    
-    .billboard-slogan-line-2 {
-        width: 100%;
-    }
-    
-    .billboard-slogan-line-3 {
-        width: 100%;
+
+    .billboard-slogan-image-container img {
+        right: 0px;
     }
 
-    .billboard-slogan-container {
-        text-align: center;
-        padding: 0;
+    .billboard-slogan-image-container-second-mark {
+        right: 300px;
     }
 
+    .billboard-slogan-container h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ==== Bootstrap xl breakpoint - Less than 1200px ==================== */
+@media screen and (min-width: 1200px) {
+    
     /*Main content*/
     .main-content-container {
         width: 100%;
     }
 
-    /* Main content -Quotes */
-    .main-page-quotes-container {
-        padding-top: 100px;
-    }
-    
     /*Footer*/
     .footer-row {
         width: 100%;
     }
-
 }
 
-/* ==== Less than 450px =============================================== */
-@media screen and (max-width: 450px) {
-/* TODO - IMPORTANT!: Fix margin bug on mobile devices */
-    body {
-        min-width:400px;
-        margin: auto;
-        padding: 0 15px;
-        background-color: var(--top-navbar-bg-color);
-        font-size: 60%;
-    }
 
-    .billboard {
-        width: 110%;
-        padding: 0 10;
-        margin: 0;
-    }
 
-    .main-content-container {
-        width: 85%;
-    }
 
-    .logotype-large {
-        font-size: 0.8em;
-    }
-}
 
-/* ==== Less than 370px =============================================== */
-@media screen and (max-width:370px) {
-    
-    .logotype-large {
-        font-size: 0.6em;
-    }
-}
+
+
+
 
 
 
