@@ -354,7 +354,7 @@ h4 {
 .billboard {
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 1920px 1080px;
+    background-size: auto;
     height: 100vh;
     width: 100%;
 
