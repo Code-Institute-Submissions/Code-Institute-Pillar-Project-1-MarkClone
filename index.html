@@ -28,10 +28,9 @@
     
 <div class="container-fluid">
     <!-- HEADER WITH LOGO AND MAIN NAVIGATION MENU -->
-    <header>
+    <header class="bg billboard billboard-main-page">
         <nav>
-
-                <div class="row align-items-center no-gutters top-navbar-row"> <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: #1 - TOP NAVBAR  -->
+            <div class="row align-items-center no-gutters top-navbar-row"> <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: #1 - TOP NAVBAR  -->
                     <div class="col-6 col-sm-8 col-md-6"> <!-- ================================================================================= #2 - Logotype  -->
                         <div class="top-navbar-logo-container">
                             <a class="logotype logotype-large" href="index.html">
@@ -47,11 +46,10 @@
                 </div>
 
             <div class="row collapse top-navbar-submenu" id="top-navbar-submenu" role="navigation"> <!-- :::::::::::::::::::::::::::::::::::: #1 - TOP SUB MENU  -->
-                
                     <div class="row no-gutters text-align-center "> <!-- ================================================ #2 - Sub Menu Row 1  -->
                         <div class="col-sm-12 col-md-4 top-navbar-submenu-group py-5"> <!-- ''''''''''''''''''''''''''''''''''' 3# - PRODUCT menu  -->
                             <div class="top-navbar-submenu-header"> 
-                                <a href="product.html"> <!-- ................................................................... #4 - Header  -->
+                                <a href="product.html">
                                     <h2>Mark<br>2000</h2>
                                 </a>
                             </div>
@@ -104,20 +102,11 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 top-navbar-submenu-group py-5"> <!-- '''''''''''''''''''''''''''''''''''''' 3# - ORDER menu  -->
-                            <div class="top-navbar-submenu-header"> <!-- ........................................................ #4 - Header -->
+                            <div class="top-navbar-submenu-header">
                                 <a href="order.html">
                                     <h2>Order<br />Now!</h2>
                                 </a>
                             </div>
-                            <a class="top-navbar-submenu-link py-4" href="leasing.html"> <!-- ........................................ #4 - Leasing -->
-                                <h3>Business Leasing</h3>
-                            </a>
-                            <a class="top-navbar-submenu-link py-4" href="finance.html"> <!-- ........................................ #4 - Finance -->
-                                <h3>Need a good bank?</h3>
-                            </a>
-                            <a class="top-navbar-submenu-link py-4" href="sales-guy.html"> <!-- .................................... #4 - Sales Guy -->
-                                <h3>Unsure? Talk to a Mark!</h3>
-                            </a>
                         </div>
                         <div class="col-sm-6 col-md-4 top-navbar-submenu-group py-5"> <!-- '''''''''''''''''''''''''''''''''''' 3# - SERVICE menu  -->
                            <div class="top-navbar-submenu-header"> <!-- ........................................................ #4 - Header  -->
@@ -136,75 +125,37 @@
                             </a>
                         </div>
                     </div>
-                    <hr />
-                    <div class="row no-gutters text-align-center tb-padding-5"> <!-- ================================================ #2 - Sub Menu Row 2  -->
-                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text py-4"> <!-- ''''''''''''''''''''''''''''''''''' 3# - Markers Club   -->
-                            <a class="top-navbar-submenu-link" href="markers-club.html">
-                                <h3>Join The Exclusive<br />"Markers" Club!</h3>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 order-sm-last col-md-4 top-navbar-submenu-text py-4"> <!-- ''''''''''''''''''''''''''''''''''''''''' 3# - About Us  -->
-                            <a class="top-navbar-submenu-link" href="company.html">
-                                <h3>About<br />Us</h3>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 top-navbar-submenu-text py-4"> <!-- ''''''''''''''''''''''''''''''''''''''''' 3# - Register  -->
-                            <a class="top-navbar-submenu-link" href="login.html">
-                                <h3>Register to Upgrade<br />Your Mark-2000</h3>
-                            </a>
-                        </div>
-                    </div>
-                
+                    <hr/>
             </div>
         </nav>
+        <section class="row"> <!-- SECTION WITH LARGE BILLBOARD / LANDING SITE -->
+            <div class="col">
+                <div class="row no-gutters billboard-slogan-container">
+                        <div class="col-sm-12 col-md-6"> <!-- ========================================= Slogans -->
+                        <div class="billboard-slogan-line-1">
+                            <h2>Are your business ready for the next sprint?</h2>
+                        </div>
+                        <div class="billboard-slogan-line-2">
+                            <h3>Join our Leap in Evolution</h3>
+                        </div>
+                        <div class="billboard-slogan-line-3">
+                            <h1>Get a MARK-2000 and do it fast!</h1>
+                        </div>
+                        <a class="btn btn-light billboard-slogan-button" href="#">Order Now<i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <div class="col-6 d-none d-sm-none d-md-block billboard-slogan-image-container"> <!-- ========================================= Image container - Mark One -->
+                        <img src="assets/images/running-mark-400.png" alt="">
+                    </div>
+                    <div class="col-12 d-block d-block d-sm-block d-md-none d-lg-none d-xl-none billboard-slogan-image-container-first-mark-half"> <!-- Image container - Mark in Half -->
+                        <img src="assets/images/running-mark-half-450.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     
-    <!-- TODO: Fix the Order button on the billboard + Slogan decrease in size to much at the lg breakpoint-->
-    <!-- SECTION WITH LARGE BILLBOARD / LANDING SITE -->
-    <section class="row billboard billboard-main-page"> 
-        <div class="col">
-            <div class="row no-gutters billboard-slogan-container">
-                    <div class="col-sm-12 col-md-6"> <!-- ========================================= Slogans -->
-                    <div class="billboard-slogan-line-1">
-                        <h2>Are your business ready for the next sprint?</h2>
-                    </div>
-                    <div class="billboard-slogan-line-2">
-                        <h3>Join our Leap in Evolution</h3>
-                    </div>
-                    <div class="billboard-slogan-line-3">
-                        <h1>Get a MARK-2000 and do it fast!</h1>
-                    </div>
-                    <a class="btn btn-light billboard-slogan-button" href="#">Order Now<i class="fas fa-angle-right"></i></a>
-                </div>
-                <div class="col-6 d-none d-sm-none d-md-block billboard-slogan-image-container"> <!-- ========================================= Image container - Mark One -->
-                    <img src="assets/images/running-mark-400.png" alt="">
-                </div>
-                <div class="col-12 d-block d-block d-sm-block d-md-none d-lg-none d-xl-none billboard-slogan-image-container-first-mark-half"> <!-- Image container - Mark in Half -->
-                    <img src="assets/images/running-mark-half-450.png" alt="">
-                </div>
-            </div>
-        
 
-            <div class="billboard-slogan-image-container-second-mark d-none d-lg-block"><!-- ==================================================================================== Image container -->
-                <img src="assets/images/running-mark-400.png" alt="">
-            </div> 
-            <div class="billboard-slogan-image-container-third-mark d-none d-md-block"><!-- ===================================================================================== Image container -->
-                <img src="assets/images/running-mark-400.png" alt="">
-            </div>
-            <div class="billboard-slogan-image-container-fourth-mark d-none d-xl-block"><!-- ==================================================================================== Image container -->
-                <img src="assets/images/running-mark-400.png" alt="">
-            </div> 
-            <div class="billboard-slogan-image-container-fifth-mark d-none d-md-block"><!-- ===================================================================================== Image container -->
-                <img src="assets/images/running-mark-400.png" alt="">
-            </div>  
-            <div class="billboard-slogan-image-container-sixth-mark d-none d-lg-block"><!-- ===================================================================================== Image container -->
-                <img src="assets/images/running-mark-400.png" alt="">
-            </div>  
-            <div class="billboard-slogan-image-container-seventh-mark d-none d-xl-block "><!-- =================================================================================== Image container -->
-                <img src="assets/images/running-mark-400.png" alt="">
-            </div>   
-        </div>
-    </section>
+
       
      <!-- MAIN CONTENT  -->
     <main class="main-content-container">

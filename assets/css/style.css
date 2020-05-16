@@ -115,17 +115,6 @@ h4 {
     margin: 0;
 }
 
-.row-top-bottom-padding {
-    padding: 10px 0;
-}
-
-/* TODO: Ta bort alla klasser som använder invisible  */
-.invisible {
-    font-size: 0;
-    background-color: transparent;
-    position: absolute;
-}
-
 /* ==== #2 - DropDown Menus =========================================== */
 
 .dropdown-custom {
@@ -380,27 +369,6 @@ h4 {
     z-index: 1;
     width:100%;
     margin: auto;
-}
-
-/* ==== #2 Containers for One-Column pages ==========================  */
-/* (use "template---one-column.html") */
-.one-column-header {
-    margin-top: 0px;
-    padding: 20px 0px;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
-.one-column-frame {
-    margin: 20px auto 0px auto;
-    background-color: transparent;
-    border-radius: 5px;
-}
-
-.one-column-bottom {
-    width: 100%;
-    height: 30px;
-    background-color: transparent;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
