@@ -2,6 +2,6 @@
     $(document).ready(function () {
         $(".toggle-button").click(function () {
             var id = $(this).data("id");
-            $(id).toggle('slow', 'swing');
+            $(id).toggle(3000, 'swing');
         });
     });
