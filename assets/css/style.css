@@ -1,14 +1,6 @@
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::: #1 - HTML ELEMENTS :::::::::::::::::::::::::::::::::::::::::::: */
 
-/* TODO: Clean up the html elements styles */
-
-body {
-    padding: 0;
-    margin: auto;
-    width: 100%;
-}
-
 p {
     font-size: var(--text-md);
     font-family: var(--font-family-text);
@@ -52,58 +44,6 @@ h4 {
     font-size: var(--text-md);
     font-family: var(--font-family-headers);
     color: var(--secondary-color-1);
-}
-
-
-/* Test classes (to be removed) ....................................... */
-/* TODO: Don't forget to remove test-classes */
-
-.one {
-    background-color: rgb(177, 114, 114);
-    width: 100%;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-}
-
-.two {
-    background-color: rgb(162, 190, 162);
-    width: 100%;
-    height:100px;
-    padding: 0;
-    margin: 0;
-}
-
-.three {
-    background-color: rgb(156, 156, 199);
-    width: 100%;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-}
-
-.four {
-    background-color: rgb(216, 200, 172);
-    width: 100%;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-}
-
-.five {
-    background-color: rgb(173, 130, 153);
-    width: 100%;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-}
-
-.six {
-   background-color:  rgb(24, 73, 112);
-   width: 100%;
-   height: 100px;
-   padding: 0;
-   margin: 0;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -250,38 +190,25 @@ h4 {
 
 /* ==== #2 - Background Images & Containers ============================ */
 
-.billboard {
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: auto;
-    width: auto;
-    min-height: 100vh;
-    text-align: center;
-}
-
 /* --- Main Page --- */
 .billboard-main-page {
     background: url(../images/track-sky-1920-1080.jpg);
 }
 
-.main-page-trial {
-    background: url(../images/appearance-header-600.jpg);
+$/* --- Order Start --- */
+.billboard-order-appearance {
+    background-image: url(..images/appearance-header-300.jpg);
+}
+
+.billboard-full {
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
     width: 100%;
-    min-height: 300px;
-    text-align: center;
-}
-
-/* --- Order Start --- */
-.billboard-order-start {
-    background: url:(../images/appearance-header-600.jpg);
+    min-height: 100vh;
 }
 
 .billboard-half {
-    background: url:(../images/appearance-header-600.jpg);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
@@ -426,15 +353,14 @@ h4 {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::: #1 - Footer ::::::::::::::::::::::::::::::::::::::::::::::::::: */
 .bottom-menu-container {
-    position: relative;
-    z-index: 10;
     height: 20vh;
     background-color: var(--footer-bg-color);
     padding: 0;
-    margin: 20px 0 0 0;
+    margin-top: 20px;
     border-top: 1px solid var(--footer-border-color);
 }
 
+/* Ersätt med Flexbox */
 .bottom-menu-row {
     margin: auto;
     padding: 30px 0;
@@ -452,109 +378,18 @@ h4 {
 
 /* ==== #2 - Main Page - Billboard ==================================== */
 
-/* TODO: Prevent billboard to be pushed under content below when vertical resizing */
-.billboard-slogan-container {
-    height:100%;
-    background: transparent; /*linear-gradient(180deg, rgba(255,255,255,1) 0%,rgba(255, 255, 255,.2) 10%, rgba(255, 255, 255,.3) 20%, rgba(255, 255, 255,.3) 85%, rgba(255,255,255,1) 100%);*/
-    font-family: var(--font-family-billboard);
-    text-transform: uppercase;
-    text-align: right;
-    padding: 0 20px;
-}
-
-.billboard-slogan-container h1 {
-    position: relative;
-    font-size: 2.2rem;
-    color: var(--primary-color-4);
-    letter-spacing: 10px;
-    font-weight: 400;
-    z-index: 3;
-}
-
-.billboard-slogan-container h2 {
-    position: relative;
-    font-size: 2rem;
-    color: var(--primary-color-14);
-    letter-spacing: 10px;
-    font-weight: 400;
-    z-index: 3;
-}
-
-.billboard-slogan-container h3 {
-    position: relative;
-    font-size: 1.2rem;
-    color: var(--primary-color-7);
-    letter-spacing: 10px;
-    font-weight: 400;
-    z-index: 3;    
-}
-
-.billboard-slogan-line-1 {
-    width: 135%;
-    padding-top: 70px;
-}
-
-.billboard-slogan-line-2 {
-    width: 120%;
-    padding-top: 20px;
-}
-
-.billboard-slogan-line-3 {
-    width: 110%;
-    padding-top: 15px;
-}
-
-.billboard-slogan-button {
-    position: relative;
-    z-index: 15;
-    width: 70%;
-    padding: 10px 20px;
-    margin: 25px;
-    letter-spacing: 10px;
-    margin-left: 0;
-}
-
-.billboard-slogan-button i {
-    position: relative;
-    top: 2px;
-    padding-left: 15px;
-    color:#65060f;
-    font-size: 1.5em;
-}
-
-.billboard-slogan-image-container {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.billboard-slogan-image-container img {
-    position: relative;
-    top: 90px;
-    right: 60px;
-    z-index: 3;
-    max-width: auto;
-    text-align: right;
-}
-
-.billboard-slogan-image-container-first-mark-half {
-    position: absolute;
-    z-index: 4;
-    top: 347px;
-    right: 50px;
-    opacity: .9;
-}
 
 /* ==== #2 - Main Page - Main Content ================================= */
 
 /* '''' #3 - Good Morning Package Trial ''''''''''''''''''''''''''''''' */
+
 .main-page-trial {
-    background: url(../images/appearance-header-600.jpg);
+    background-image: url(..images/appearance-header-300.jpg);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
     width: 100%;
-    min-height:300px;
+    min-height: 300px;
     text-align: center;
 }
 
@@ -595,7 +430,7 @@ h4 {
     padding: 5px 50px;
 }
 
-/* '''' #3 - Usp ''''''''''''''''''''''''''''''''''''''''''''''''''' */
+/* '''' #3 - Usp '''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
 .main-page-usp {
     background-color: var(--main-page-usp-bg-color);
     font-family: var(--font-family-alert-header);
@@ -625,120 +460,60 @@ h4 {
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::: #2 - Order Start Page ::::::::::::::::::::::::::::::::::::::::: */
 
+/* ==== #3 - Appearance Section=========================================*/
+
+.order-step-1 {
+    max-width: 300px;
+}
+
 
 
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* :::: 1# - MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::::::: */
-/* ==== Less than 1100px ============================================== */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::: 1# - MEDIA QUERIES  :::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 
 
+/* ==== BOOTSTRAP sm - 576px and up =================================== */
+@media (min-width: 576px) { 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* ==== Bootstrap md breakpoint - Less than 768px ===================== */
-@media screen and (max-width: 768px) {
-    
-    /* TODO: Check right margin bug on mobile screen sizes - Galaxy S III *
-    /* Billboard */
-    .billboard-slogan-line-1 {
-        width: 100%;
-        padding-top: 30px;
-    }
-    
-    .billboard-slogan-line-2 {
-        width: 100%;
-    }
-    
-    .billboard-slogan-line-3 {
-        width: 100%;
-    }
-
-    .billboard-slogan-container {
-        text-align: center;
-        padding: 0;
-    }
-
-
-
-    /* Main content -Quotes */
-    .main-page-quotes-container {
-        padding-top: 100px;
-    }
-    
-    /*Footer*/
-    .footer-row {
-        width: 100%;
-    }
 
 }
 
+/*----------------------------------------------------------------------*/
 
-/* ==== Bootstrap lg breakpoint - Less than 992px ===================== */
-@media screen and (max-width: 992px) {
-    
-    /* Billboard */
-    
-    .billboard-slogan-container h1 {
-        font-size: 1.6rem;
-    }
-    
-    .billboard-slogan-container h2 {
-        font-size: 1.3rem;
-    }
-    
-    .billboard-slogan-container h3 {
-        font-size: .8rem;
-    }
+/* ==== BOOTSTRAP md - 768px and up =================================== */
+@media screen and (min-width: 768px) {
+     
 
-    .billboard-slogan-line-1 {
-        width: 150%;
-    }
+
+}
+
+/*----------------------------------------------------------------------*/
+
+/* ==== BOOTSTRAP lg - 992px and up =================================== */
+
+@media (min-width: 992px) {
     
-    .billboard-slogan-line-2 {
-        width: 135%;
-    }
-    
-    .billboard-slogan-line-3 {
-        width: 120%;
-    }
-
-    .billboard-slogan-image-container img {
-        left: 0px;
-    }
-
-    /*Main content*/
-    .main-content-container {
-        width: 100%;
-        margin: auto;
-    }
-
-    /*Footer*/
-    .footer-row {
-        width: 100%;
-    }
-
     /* ==== Main Page ==== */
 
     /* Main page Usp */
-    .main-page-usp h2 {
-        font-size: var(--text-xxl);
-    }
+    .main-page-usp h2 { font-size: var(--text-xxl); }
+
+
 }
 
-/* ==== Custom breakpoint - Less than 1100px ===================== */
-@media screen and (max-width: 1100px) {
+
+/*----------------------------------------------------------------------*/
+
+/* ==== Custom breakpoint - 1100px and up ============================= */
+/* For no other reason than that I think it is a nice point for the     */
+/* menu-button floating from right to the middle for larger screens     */
+
+@media screen and (min-width: 1100px) {
        
     /* Top Navbar Menu Link */
         .top-navbar-link-container {
@@ -754,32 +529,27 @@ h4 {
             position: relative;
             top: 0px;
         }
-    
-    /* Billboard */
-
-    .billboard-slogan-image-container img {
-        right: 0px;
-    }
-
-    .billboard-slogan-image-container-second-mark {
-        right: 300px;
-    }
-
-    .billboard-slogan-container h2 {
-        font-size: 1.3rem;
-    }
 }
 
-/* ==== Bootstrap xl breakpoint - Less than 1200px ==================== */
-@media screen and (max-width: 1200px) {
-    
-    /*Main content*/
-    .main-content-container {
-        width: 100%;
-    }
+/*----------------------------------------------------------------------*/
 
-    /*Footer*/
-    .footer-row {
-        width: 100%;
-    }
+/* ==== Bootstrap xl breakpoint - 1200x and up ======================== */
+
+@media (min-width: 1200px) {
+
+
 }
+
+/*----------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
