@@ -51,7 +51,7 @@ All to be updated.
 
 1. <strong>track-sky-1920-1080.jpg - Top of index.html - is a montage:</strong>
    - <a href="https://www.jakpost.travel/wimages/large/120-1206366_running-track-track-and-field-background.jpg" target="_blank">Track</a>
-   - <a href="https://ouriac.ca/clear-blue-sky/" target="_blank">Blue Sky</a>
+   - <a href="https://i2.wp.com/ouriac.ca/wp-content/uploads/2019/06/clear-blue-sky.jpeg?resize=500%2C281&ssl=1" target="_blank">Blue Sky</a>
 2. <strong>running-mark-400.png and running-mark-half-400-png - Top of index.html - is a montage:</strong>
    - <a href="https://www.pngfuel.com/free-png/ncikf" target="_blank">Body</a>
    - The head is actually my own - I have my permission!
@@ -59,11 +59,11 @@ All to be updated.
 4. <strong>lego-man.png - Middle of index-html - is a montage:</strong>
    - <a href="https://www.amazon.com/Crank-Dynamo-Flash-Stands-Colors/dp/B002FU5NQ4" target="_blank">Body</a>
    - Head - is actually my own - I have my permission!
-5. <strong><a href="https://hypebeast.com/2018/5/richard-branson-virgin-galactic-to-travel-to-space-in-months" target="_blank">
+5. <strong><a href="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F05%2Frichard-branson-virgin-galactic-to-travel-to-space-in-months-1.jpg?q=90&w=1400&cbr=1&fit=max" target="_blank">
    FAKE QUOTE (He did really never say that!) from Richard Branson (richie-b.jpg)</a></strong>
-6. <strong><a href="https://www.mercurynews.com/2020/05/14/elon-musk-lists-hillsborough-home-for-35-million/" target="_blank">
+6. <strong><a href="https://www.mercurynews.com/wp-content/uploads/2019/09/AFP_1EN3YK.jpg?w=918" target="_blank">
    FAKE QUOTE (He did really never say that!) from Elon Musk elon-m.jpg)</a></strong>
-7. <strong><a href="https://deadline.com/2020/05/president-donald-trump-tweetstorm-the-saturday-edition-73-1202936508/" target="_blank">
+7. <strong><a href="https://pmcdeadline2.files.wordpress.com/2019/10/shutterstock_editorial_10434333bm.jpg?crop=0px%2C0px%2C2903px%2C1627px&resize=681%2C383" target="_blank">
    FAKE QUOTE (He did really never say that!) from Donald Trump (donald-t.jpg)</a></strong>
   <br>
 ##### ORDER PAGE 1 - order.html
