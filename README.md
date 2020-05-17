@@ -47,7 +47,7 @@ All to be updated.
 
 #### Images
 
-##### MAIN PAGE - index-html
+##### MAIN PAGE - index.html
 
 1. <strong>track-sky-1920-1080.jpg - Top of index.html - is a montage:</strong>
    - <a href="https://www.jakpost.travel/wimages/large/120-1206366_running-track-track-and-field-background.jpg" target="_blank">Track</a>
@@ -66,7 +66,8 @@ All to be updated.
 7. <strong><a href="https://pmcdeadline2.files.wordpress.com/2019/10/shutterstock_editorial_10434333bm.jpg?crop=0px%2C0px%2C2903px%2C1627px&resize=681%2C383" target="_blank">
    FAKE QUOTE (He did really never say that!) from Donald Trump (donald-t.jpg)</a></strong>
   <br>
-##### ORDER PAGE 1 - order.html
+
+##### ORDER PAGE - order.html
 
 1. <strong>Header background - appearance-header-300.jpg - is a montage:</strong>
    - <a href="https://www.tailormadefragrance.com/media/wysiwyg/xBLOG_TMF_Dicembre2-04.jpg.pagespeed.ic.dc2iajGSjo.webp" target="_blank">Background</a>
