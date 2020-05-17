@@ -1,10 +1,10 @@
-/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* :::: #1 - HTML ELEMENTS :::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::: #1 - TEXT STYLES :::::::::::::::::::::::::::::::::::::::::::: */
 
 p {
     font-size: var(--text-md);
     font-family: var(--font-family-text);
-    color: var(--secondary-color-1);
+    color: var(--secondary-color-5);
 }
 
 a {
@@ -22,13 +22,13 @@ a:hover {
 h1 {
     font-size: var(--text-xxl);
     font-family: var(--font-family-headers);
-    color: var(--primary-color-2);
+    color: var(--primary-color-5);
 }
 
 h2 {
     font-size: var(--text-lg);
     font-family: var(--font-family-headers);
-    color: var(--primary-color-2);
+    color: var(--primary-color-5);
     font-weight: 400;
     letter-spacing: 8px;
 }
@@ -36,14 +36,22 @@ h2 {
 h3 {
     font-size: var(--text-mds);
     font-family: var(--font-family-headers);
-    color: var(--secondary-color-1);
+    color: var(--secondary-color-5);
     font-weight: 400;
 }
 
 h4 {
     font-size: var(--text-md);
     font-family: var(--font-family-headers);
-    color: var(--secondary-color-1);
+    color: var(--secondary-color-5);
+}
+
+h5 {
+
+}
+
+h6 {
+
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -59,7 +67,7 @@ h4 {
 .dropdown-custom {
     font-size: var(--text-md);
     font-family: var(--font-family-menus);
-    color: var(--secondary-color-1);
+    color: var(--secondary-color-5);
 }
 
 .dropdown-custom-navbar {
@@ -74,7 +82,7 @@ h4 {
 
 .icon {
     font-size: 1.3em;
-    color: var(--primary-color-2);
+    color: var(--primary-color-5);
 }
 
 .icon-menu {
@@ -157,7 +165,7 @@ h4 {
     font-family: var(--font-family-quotes-text);
     font-size: var(--text-mdl);
     font-weight: 300;
-    color: var(--secondary-color-1);
+    color: var(--secondary-color-5);
     font-style: italic;
     text-align: justify;
     letter-spacing: 2px;
@@ -175,13 +183,13 @@ h4 {
 .plain-text {
     font-size: var(--text-mds);
     font-family: var(--font-family-text);
-    color: var(--secondary-color-1);
+    color: var(--secondary-color-5);
     font-weight: 400;
 }
 
 
 .highlight-color {
-    color: var(--primary-color-2);
+    color: var(--primary-color-5);
 }
 
 .highlight-size {
@@ -417,7 +425,7 @@ h4 {
 
 .main-page-trial p {
     font-size: var(--text-lg);
-    color: var(--secondary-color-2);
+    color: var(--secondary-color-5);
     font-family: var(--font-family-alert-text);
     letter-spacing: 4px;
     padding: 20px 10px;
@@ -452,7 +460,7 @@ h4 {
 
 .main-page-usp h3 {
     font-size: var(--text-lg);
-    color: var(--secondary-color-1);
+    color: var(--secondary-color-5);
     letter-spacing: 10px;
     text-transform: uppercase;
 }

@@ -1,38 +1,34 @@
 /* ::::::::::::::::::::::::::::::::::::::: IMPORTED FONTS ::::::::::::::::::::::::::::::::::::::::: */
-/* === FROM: Google Fonts                                                                       === */
-/* === (all available sizes and styles are included for all fonts)                              === */
-/* === #1 - Fonts: Montserrat - Oswald - Raleway - Roboto                                       === */
-/* === #2 - Fonts: Merriweather - Poppins - Baloo 2                                             === */
+/* FROM: Google Fonts                                                                           === */
+/* (all available sizes and styles are included for all fonts)                                  === */
+/* Montserrat - Oswald - Roboto - Merriweather - Poppins                                        === */
+/*                                                                                              === */
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 /* :::: VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 :root {
      /*=== Colors ==================================================================================*/
-    --primary-color-1:   #c39853;
-    --primary-color-2:   #65060f;
-    --primary-color-3:   #df8817;
-    --primary-color-4:   #e98a1d; /* Adobe Shades 1 - First*/
-    --primary-color-5:   #804B0F; /* Adobe Shades 2 */
-    --primary-color-6:   #FF961F; /* Adobe Shades 3 */   
-    --primary-color-7:   #402608; /* Adobe Shades 4 */
-    --primary-color-8:   #E6871C; /* Adobe Shades 5 */
-    --primary-color-9:   #0CB32C; /* Adobe Triad 2 */
-    --primary-color-10:  #FF961F; /* Adobe Triad 3 */
-    --primary-color-11:  #5F05FF; /* Adobe Triad 4 */
-    --primary-color-12:  #480CB3; /* Adobe Triad 5 */
-    --primary-color-13:  rgb(54, 32, 92); /* Adobe Triad 5 custom */
-    --primary-color-14:  rgb(38, 23, 65); /* Adobe Triad 5 custom */
-    --primary-color-15: #1A1AFF;
-    --secondary-color-1: #5d5d5d;
-    --secondary-color-2: #ffffff;
-    --secondary-color-3: #8a8a8a;
-    --secondary-color-4: #e0e0e0;
-    --secondary-color-5: #b3b3b3;
-    --secondary-color-6: #c8c8c8;
-    --secondary-color-7: #dbdbdb;
+
+    --primary-color-1:      #f0b776;
+    --primary-color-2:      #c39853;
+    --primary-color-3:      #e78a21;
+    --primary-color-4:      #ff6e64;
+    --primary-color-5:      #65060f;
+    --primary-color-6:      #4b3f61;
+  
+    --secondary-color-0:    #000000;
+    --secondary-color-1:    #5d5d5d; /* Standard body text */  
+    --secondary-color-2:    #8a8a8a;
+    --secondary-color-3:    #b3b3b3;
+    --secondary-color-4:    #c8c8c8;
+    --secondary-color-5:    #ffffff;
+
+
     --transparent-color: transparent;
+    
     /*=== Text sizes ======================================*/
     --text-xxxxl: 230%;
     --text-xxxl: 200%;
@@ -45,20 +41,17 @@
     --text-mds: 90%;
     --text-sm:  80%;
     --text-xs:  70%;
-    /*=== Fonts ============================================*/
-     --font-family-headers: "Montserrat", sans-serif;
-    --font-family-link-button: "Roboto", sans-serif;
-    --font-size-link-button: var(--text-mds);
-    --font-family-text: "Roboto", sans-serif;
-    --font-family-logotype: "Merriweather", sans-serif;
-    --font-family-billboard: "Oswald", sans-serif;
-    --font-family-quotes-text: "Poppins", sans-serif;
-    --font-family-quotes-reference: "Poppins", sans-serif;
-    --font-family-alert-header: "Oswald", sans-serif;
-    --font-family-alert-text: "Roboto", sans-serif;
- 
     
-    /* :::: GENERAL ELEMENTS VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /*=== Fonts ============================================*/
+    --font-family-body-text: "Roboto", sans-serif;
+    --font-family-headers-lg: "Oswald", sans-serif;
+    --font-family-headers-md: "Montserrat", sans-serif;
+    --font-family-buttons: "Montserrat", sans-serif;
+    --font-family-quotations: "Poppins", sans-serif;
+    --font-family-logotype: "Merriweather", sans-serif;
+
+   
+   /* :::: GENERAL ELEMENTS VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     
     /* === BODY === */
     
@@ -69,7 +62,7 @@
     --top-navbar-bg-color: var(--transparent-color);  /* old navbar used secondary 7 */
 
     /* Footer */
-    --footer-bg-color: var(--secondary-color-2);
+    --footer-bg-color: var(--secondary-color-5);
     --footer-border-color: var(--secondary-color-7);
     
 
@@ -90,8 +83,8 @@
     --border-thin-light: 1px solid var(--secondary-color-6);
 
     /* === LOGOTYPE === */
-    --logo-text-color: var(--secondary-color-1);
-    --logo-icon-color: var(--primary-color-1);
+    --logo-text-color: var(--secondary-color-5);
+    --logo-icon-color: var(--primary-color-5);
     --logo-icon-size: 1.2em;
     --logo-small-font-size: var(--text-xs);
     --logo-medium-font-size: var(--text-md);
@@ -108,11 +101,11 @@
     
 
     /* Main Page Info */
-    --main-page-quotes-bg-color: var(--secondary-color-2);
-    --main-page-usp-bg-color: var(--secondary-color-2);
-    --main-page-trial-bg-color: var(--secondary-color-2);
-    --main-page-leasing-bg-color: var(--secondary-color-2);
-    --main-page-markersclub-bg-color: var(--secondary-color-2);
+    --main-page-quotes-bg-color: var(--secondary-color-5);
+    --main-page-usp-bg-color: var(--secondary-color-5);
+    --main-page-trial-bg-color: var(--secondary-color-5);
+    --main-page-leasing-bg-color: var(--secondary-color-5);
+    --main-page-markersclub-bg-color: var(--secondary-color-5);
 
 
 }
