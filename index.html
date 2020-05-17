@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/style_old.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>
         Mark Clone Inc. | Get Your Ultimate Employee Today! | mark-clone.com
     </title>
 </head>
     
-<div class="container-xl"> <!-- One Container from between the body-tags -->
+<div class="container-fluid px-0"> <!-- One Container fluid for header -->
     <!-- HEADER WITH LOGO AND MAIN NAVIGATION MENU -->
-    <header class="">
+    <header class="main-page-header-background header-background-full">
             <div class="row align-items-center no-gutters top-navbar-row"> <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: #1 - TOP NAVBAR  -->
                     <div class="col-6 col-sm-8 col-md-6"> <!-- ====================================================================================================== #2 - Logotype  -->
                         <div class="top-navbar-logo-container">
@@ -92,19 +92,21 @@
             </div>
         </section>
     </header>
-          
+</div>
+
+<div class="container-xl"> <!-- One xl Container from Main cntent and down below footer -->
+    
      <!-- MAIN CONTENT  -->
     <main>
-            <div class="row mb-4 mt-0"> <!-- ============= - #2 - FIRST ROW ======================================== -->
-                <section class="col main-page-trial"> <!-- ''''''''''''''''''''''''''''''''''''''''''''''''''''''''' #3 - Good Morning-->
-                    <a href="#"><div class="main-page-trial-overlay">
-                        <div class="d-flex flex-row justify-content-center"><h3 style="color:var(--primary-color-2);"><span style="font-size:3rem; color:#FF6E64;"> New Feature!</span><br>The "Good Morning"-Module</h3></div>
-                        <div class="d-flex flex-row"><p>The newly developed 'Good Morning' - Module guarantees your Mark-2000 to always come with a Jolly-Good morning mood. Try it now for free in 30 days!<br><br>Find out more</p></div>
-                    </div></a>
-                </section>
-            </div>
-            
-            <section class="row my-4"> <!-- ============= - #2 - Second Row :======================================================================================================= -->
+            <section class="col my-5 main-page-trial"> <!-- ============= - #2 - FIRST ROW ======================================== -->
+                <a href="#"><div class="main-page-trial-overlay"> <!-- ''''''''''''''''''''''''''''''''''''''''''''''''''''''''' #3 - Good Morning-->
+                    <div class="d-flex flex-row justify-content-center"><h3 
+                        style="color:var(--primary-color-2);"><span style="font-size:4rem; color:#FF6E64;"> 
+                            Good Morning!</span><br>The "Good Morning"-Module</h3></div>
+                    <div class="d-flex flex-row"><p>The newly developed 'Good Morning' - Module guarantees your Mark-2000 to always come with a Jolly-Good morning mood. Try it now for free in 30 days!<br><br>Find out more</p></div>
+                </div></a>
+            </section>
+            <section class="row my-5"> <!-- ============= - #2 - Second Row :======================================================================================================= -->
                 <div class="col main-page-usp"> <!-- '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' #3 - Usp -->
                     <div class="row">
                         <div class="col-md-6 d-flex justify-content-center">
@@ -144,7 +146,7 @@
                     </div>
                 </div>
             </section>
-            <section mb-5-> <!-- ============= - #2 - Third Row :================================================================================================================== -->
+            <section class="my-5"> <!-- ============= - #2 - Third Row :================================================================================================================== -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!-- ''''''''''''''''''''''''''''''''''''''''''''''''''''''''' #3 - Quotes Carousel-->
                     <ol class="carousel-indicators">
                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

@@ -191,28 +191,28 @@ h4 {
 /* ==== #2 - Background Images & Containers ============================ */
 
 /* --- Main Page --- */
-.billboard-main-page {
-    background: url(../images/track-sky-1920-1080.jpg);
+.main-page-header-background {
+    background-image: url(../images/track-sky-1920-1080.jpg);
 }
 
-$/* --- Order Start --- */
-.billboard-order-appearance {
-    background-image: url(..images/appearance-header-300.jpg);
+/* --- Order Start --- */
+.order-1-header-bg {
+    background-image: url(../images/appearance-header-300.jpg);
 }
 
-.billboard-full {
+.header-background-full {
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom center;
     background-size: cover;
     width: 100%;
     min-height: 100vh;
 }
 
-.billboard-half {
+.header-bg-300px {
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
-    width: 100%;
+    width: 60%;
     min-height: 300px;
     text-align: center;
 }
@@ -384,7 +384,7 @@ $/* --- Order Start --- */
 /* '''' #3 - Good Morning Package Trial ''''''''''''''''''''''''''''''' */
 
 .main-page-trial {
-    background-image: url(..images/appearance-header-300.jpg);
+    background-image: url(../images/good-morning.png);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
@@ -462,7 +462,7 @@ $/* --- Order Start --- */
 
 /* ==== #3 - Appearance Section=========================================*/
 
-.order-step-1 {
+.order-1 {
     max-width: 300px;
 }
 
@@ -513,7 +513,7 @@ $/* --- Order Start --- */
 /* For no other reason than that I think it is a nice point for the     */
 /* menu-button floating from right to the middle for larger screens     */
 
-@media screen and (min-width: 1100px) {
+@media screen and (max-width: 1100px) {
        
     /* Top Navbar Menu Link */
         .top-navbar-link-container {
