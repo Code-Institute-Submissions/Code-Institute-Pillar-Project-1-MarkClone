@@ -12,9 +12,9 @@
      /*=== Colors ==================================================================================*/
     --primary-color-1:   #c39853;
     --primary-color-2:   #65060f;
-    --primary-color-3:   #df8817;
+    
     --primary-color-4:   #e98a1d; /* Adobe Shades 1 - First*/
-    --primary-color-5:   #804B0F; /* Adobe Shades 2 */
+     /* Adobe Shades 2 */
     --primary-color-6:   #FF961F; /* Adobe Shades 3 */   
     --primary-color-7:   #402608; /* Adobe Shades 4 */
     --primary-color-8:   #E6871C; /* Adobe Shades 5 */
@@ -48,7 +48,6 @@
     --font-family-menus: inherit;
     --font-family-headers: "Montserrat", sans-serif;
     --font-family-link-button: "Roboto", sans-serif;
-    --font-size-link-button: var(--text-mds);
     --font-family-text: "Roboto", sans-serif;
     --font-family-logotype: "Merriweather", sans-serif;
     --font-family-billboard: "Oswald", sans-serif;
@@ -81,7 +80,7 @@
     
     /* Links */
     --link-hover-bg-color: var(--secondary-color-7);
-
+    --font-size-link-button: var(--text-mds);
 
     /* === FORMS === */
 
