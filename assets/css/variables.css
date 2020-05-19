@@ -83,8 +83,8 @@
     --border-thin-light: 1px solid var(--secondary-color-6);
 
     /* === LOGOTYPE === */
-    --logo-text-color: var(--secondary-color-5);
-    --logo-icon-color: var(--primary-color-5);
+    --logo-text-color: var(--secondary-color-1);
+    --logo-icon-color: var(--primary-color-2);
     --logo-icon-size: 1.2em;
     --logo-small-font-size: var(--text-xs);
     --logo-medium-font-size: var(--text-md);

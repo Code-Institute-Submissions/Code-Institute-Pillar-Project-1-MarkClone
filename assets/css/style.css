@@ -19,6 +19,12 @@ a {
     font-family: inherit;
     color: inherit;
     font-weight: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
@@ -150,7 +156,7 @@ button h1, h2, h3, h4, h5 {
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
-    width: 60%;
+    width: 100%;
     min-height: 300px;
     text-align: center;
 }
@@ -182,12 +188,7 @@ button h1, h2, h3, h4, h5 {
     color: var(--logo-text-color);
     letter-spacing: var(--logo-letter-spacing);
     font-stretch: ultra-expanded;
-}
-
-.logotype .logotype-large :hover {
-    font-family: inherit;
-    color: inherit;
-    letter-spacing: inherit;
+    text-decoration: none;
 }
 
 .logotype-medium {
@@ -205,13 +206,6 @@ button h1, h2, h3, h4, h5 {
    font-size: var(--logo-large-font-size);
    font-weight: 500;
    font-stretch: semi-expanded;
-}
-
-.logotype-large :hover {
-    font-family: var(--font-family-logotype);
-    font-size: var(--logo-large-font-size);
-    color: var(--logo-text-color);
-    letter-spacing: var(--logo-letter-spacing);
 }
 
 /* ==== #2 Header / Navbar ============================================ */
