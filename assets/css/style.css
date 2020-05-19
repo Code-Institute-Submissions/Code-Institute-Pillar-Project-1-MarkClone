@@ -256,27 +256,6 @@ button h1, h2, h3, h4, h5 {
     display: block;
 }
 
-/* ==== #2 - Background Image Containers ============================== */
-
-
-/* ? */
-
-.one-column-header {
-    margin-top: 0px;
-    padding: 20px 0px;
-    border-radius: 5px;
-    background-color: rgba(255,255,255,.5);
-    background-color: transparent;
-}
-
-.one-column-frame {
-    margin: 20px auto 0px auto;
-    background-color: rgba(255,255,255,.5);
-    background-color: transparent;
-    border-radius: 5px;
-}
-
-
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::: #1 - General Main Content Area :::::::::::::::::::::::::::::::: */
 
@@ -390,13 +369,27 @@ button h1, h2, h3, h4, h5 {
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* :::: #2 - Order Start Page ::::::::::::::::::::::::::::::::::::::::: */
+/* :::: #1 - ORDER PAGES :::::::::::::::::::::::::::::::::::::::::::::: */
 
-/* ==== #3 - Appearance Section=========================================*/
+/* ==== #2 - Order - Header ============================================*/
 
-.order-1 {
-    max-width: 300px;
+.order-header-text-box {
+    padding: 30px 20px 20px 0px;
+    text-align: center;
+    border-top: var(--border-thin-light);
+    background-color: var(--order-header-text-box-bg-color);
 }
+
+.order-header-h1-box {
+    text-align: center;
+    margin: auto;
+    background-color: var(--order-header-h1-box-bg-color);
+}
+
+
+
+
+
 
 
 
@@ -419,9 +412,9 @@ button h1, h2, h3, h4, h5 {
 
 /* ==== BOOTSTRAP md - 768px and up =================================== */
 @media screen and (min-width: 768px) {
-     
 
 
+    
 }
 
 /*----------------------------------------------------------------------*/

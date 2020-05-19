@@ -24,7 +24,8 @@
     --secondary-color-2:    #8a8a8a;
     --secondary-color-3:    #b3b3b3;
     --secondary-color-4:    #c8c8c8;
-    --secondary-color-5:    #ffffff;
+    --secondary-color-5:    #f0f0f0;
+    --secondary-color-6:    #ffffff;
 
 
     --transparent-color: transparent;
@@ -62,8 +63,8 @@
     --top-navbar-bg-color: var(--transparent-color);  /* old navbar used secondary 7 */
 
     /* Footer */
-    --footer-bg-color: var(--secondary-color-5);
-    --footer-border-color: var(--secondary-color-7);
+    --footer-bg-color: var(--secondary-color-6);
+    --footer-border-color: var(--secondary-color-5);
     
 
     /* For pages using full screen background images */
@@ -80,7 +81,8 @@
 
 
     /* === BORDERS === */
-    --border-thin-light: 1px solid var(--secondary-color-6);
+    --border-thin-light: 1px solid var(--secondary-color-5);
+    --border-thin-medium: 1px solid var(--secondary-color-4);
 
     /* === LOGOTYPE === */
     --logo-text-color: var(--secondary-color-1);
@@ -107,5 +109,9 @@
     --main-page-leasing-bg-color: var(--secondary-color-5);
     --main-page-markersclub-bg-color: var(--secondary-color-5);
 
+    /* ==== #2 - ORDER PAGES ================================================================== */
 
+    /* Header */
+    --order-header-text-box-bg-color: var(--secondary-color-6);
+    --order-header-h1-box-bg-color: var(--primary-color-2);
 }
