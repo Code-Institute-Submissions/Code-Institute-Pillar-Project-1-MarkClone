@@ -386,13 +386,10 @@ button h1, h2, h3, h4, h5 {
     background-color: var(--order-header-h1-box-bg-color);
 }
 
-
-
-
-
-
-
-
+/* ==== #2 - Order -Form Group =========================================*/
+.order-form-group-box {
+    background-color: var(--order-form-group-bg-color);
+}
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
