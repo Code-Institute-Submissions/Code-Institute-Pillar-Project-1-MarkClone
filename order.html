@@ -73,10 +73,10 @@
                     <div class="col-12 col-md-6 mx-auto p-0">
                         <!-- TODO: Order Header text box - Fix Padding and Margin! -->
                         <div class="order-header-text-box">
-                            <h4>Welcome to The-Mark-2000-Appearances-Packages-Department!</h4>
+                            <h5 class="d-none d-md-block">Welcome to The-Mark-2000-Appearances-Packages-Department!</h5>
                             <br>
-                            <p>Yes! that is a long word, but trust us when we tell you it is worth every ounce of effort.
-                                    So come along now, Let's get our new friend som style! (And maybe it can smell better too?)</p>
+                            <p class="d-none d-md-block">Yes! that is a long word, but trust us when we tell you it is worth every ounce of effort.
+                                    So come along now, Let's get our new friend som style!</p>
                             <h2>Make your Mark-2000<br>Make You Look Good!</h2>
                         </div>
                       </div>
@@ -85,7 +85,14 @@
                     </div>
                     <div class="col-12 p-3">
                         <!-- TODO: Add order progress indicator -->
-                        <p>Order Progress Indication</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>You are almost trough all the steps to get yourself a perfectly modified Mark-2000!
+                            <br>
+                            STEP 1 OF 5
+                        </p>
+
                     </div>
                 </div>
                </section>
@@ -96,18 +103,17 @@
        
         <!-- MAIN CONTENT  -->
        <main>
-        <div class="row mt-4 pt-4 order-form-group-box"> <!-- Form Group -->
-            <div class="col-12"><h3>Form Group Header</h3></div>
+        <div class="row mt-4 pt-4 order-form-group"> <!-- =========================================================== - Package Group 1 -->
+            <div class="col-12 order-form-group-header"><h3>The Wardrobe Package</h3></div>
             <div class="col-md-6 mt-4">
                 <form> 
-                    <div class="row"> <!-- ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' #4 - Package Group X -->
+                    <div class="row"> 
 
                             <div class="col-12"> <!-- ................................................................ #5 - Description -->
                                 <p>The Wardrobe Package is great for occasions where you do not want your Mark-2000 to be naked. 
                                     Business meetings, a tennis match, relaxed after work or even a short trip to space. 
                                     Pick what you need or just grab it all in the “Complete Package” option.
                                 </p>
-                                <hr>
                             </div>
  
                             <div class="col-12"> <!-- ...................................................... #5 - Full Package Selector -->
@@ -123,12 +129,11 @@
                                             Let me choose separate Modules (Below)
                                         </label>
                                     </div>
-                                    <hr>
-
                             </div>
 
-                            <div class="col-12 mt-1 mb-2 order-form-group-module-box">  <!-- ............................................... #5 - Module 1 -->
+                            <div class="col-12 mt-1 mb-2 order-form-module">  <!-- ............................................... #5 - Module 1 -->
                                 <div class="row">
+                                    <div class="col-12 order-form-module-summary-header-top"></div>
                                     <div class="col-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
@@ -140,18 +145,18 @@
                                     </div>
                                     <div class="col-6">
                                         <div class="d-flex flex-column order-form-module-summary">
-                                            <div class="d-flex h-25">
-                                                <h4>Lego Man dress</h4>
+                                                <div class="d-flex h-25 order-form-module-summary-header">
+                                                    <h4>Lego Man Suit</h4>
+                                                </div>
+                                                <div class="d-flex h-50">
+                                                    <p>Not so agile, but sturdy!</p>
+                                                </div>
+                                                <div class="d-flex h-25">
+                                                    <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-appearance-wardrobe-1"> <!-- Button trigger modal -->
+                                                        <i class="fas fa-info-circle icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="d-flex h-50">
-                                                <p>Not so agile, but sturdy!</p>
-                                            </div>
-                                            <div class="d-flex h-25">
-                                                <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-appearance-wardrobe-1"> <!-- Button trigger modal -->
-                                                    <i class="fas fa-info-circle icon icon-p-5"></i> More info<i class="fas fa-angle-right icon icon-p-5 icon-adj-down"></i></i>
-                                                </button>
-                                            </div>
-                                        </div>
                                     </div>                                  
                                 </div>
                                 <!-- Modal -->
@@ -178,8 +183,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 mt-1 mb-2 order-form-group-module-box">  <!-- ............................................... #5 - Module 2 -->
+                            <div class="col-12 mt-1 mb-2">  <!-- ............................................... #5 - Module 2 -->
                                 <div class="row">
+                                    <div class="col-12 order-form-module-summary-header-top"></div>
                                     <div class="col-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
@@ -199,7 +205,7 @@
                                             </div>
                                             <div class="d-flex h-25">
                                                 <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-appearance-wardrobe-2"> <!-- Button trigger modal -->
-                                                   More info
+                                                    <i class="fas fa-info-circle icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -228,8 +234,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 mt-1 mb-2 order-form-group-module-box">  <!-- ............................................... #5 - Module 3 -->
+                            <div class="col-12 mt-1 mb-2">  <!-- ............................................... #5 - Module 3 -->
                                 <div class="row">
+                                    <div class="col-12 order-form-module-summary-header-top"></div>
                                     <div class="col-1">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
@@ -249,7 +256,7 @@
                                             </div>
                                             <div class="d-flex h-25">
                                                 <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-appearance-wardrobe-3"> <!-- Button trigger modal -->
-                                                   More info
+                                                    <i class="fas fa-info-circle icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -279,7 +286,7 @@
                                 </div>
                             </div>
 
-
+                        
         
                     </div>
                 </form>
@@ -287,11 +294,202 @@
             <div class="d-none col-md-6 d-md-block">
                 <img src="assets/images/wardrobe-1200.jpg" class="img-fluid" alt="The Wardrobe Package - When naked just does not work!">
             </div>
-
-
         </div>
+
+        <div class="row mt-4 pt-4 order-form-group"> <!-- =========================================================== - Package Group 2 -->
+            <div class="col-12 order-form-group-header"><h3>The Wardrobe Package</h3></div>
+            <div class="col-md-6 mt-4">
+                <form> 
+                    <div class="row"> 
+
+                            <div class="col-12"> <!-- ................................................................ #5 - Description -->
+                                <p>The Wardrobe Package is great for occasions where you do not want your Mark-2000 to be naked. 
+                                    Business meetings, a tennis match, relaxed after work or even a short trip to space. 
+                                    Pick what you need or just grab it all in the “Complete Package” option.
+                                </p>
+                                <hr>
+                            </div>
+ 
+                            <div class="col-12"> <!-- ...................................................... #5 - Full Package Selector -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="choose-full-package" id="full-package-wardrobe" value="yes" checked>
+                                        <label class="form-check-label" for="full-package">
+                                            I want the Complete Package! 
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="choose-full-package" id="choose-modules-wardrobe" value="no">
+                                        <label class="form-check-label" for="choose-modules">
+                                            Let me choose separate Modules (Below)
+                                        </label>
+                                    </div>
+                                    <hr>
+
+                            </div>
+
+                            <div class="col-12 mt-1 mb-2">  <!-- ............................................... #5 - Module 1 -->
+                                <div class="row">
+                                    <div class="col-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
+                                            <label class="form-check-label" for="defaultCheck1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <img src="assets/images/order-thumb-200-lego.png" class="img-fluid img-thumbnail" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column order-form-module-summary">
+                                            <div class="d-flex h-25">
+                                                <h4>Lego Man Suit</h4>
+                                            </div>
+                                            <div class="d-flex h-50">
+                                                <p>Not so agile, but sturdy!</p>
+                                            </div>
+                                            <div class="d-flex h-25">
+                                                <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-appearance-wardrobe-1"> <!-- Button trigger modal -->
+                                                    <i class="fas fa-info-circle icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade order-form-modal" id="order-appearance-wardrobe-1" tabindex="-1" role="dialog" 
+                                aria-labelledby="order-appearance-wardrobe-1" aria-hidden="true"> 
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h3 class="modal-title" id="order-appearance-wardrobe-1-label">The Lego Man Suit</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body mx-auto">
+                                        <img src="assets/images/order-large-600-lego.png" class="img-fluid" alt="">
+                                        <p>Not so agile, but sturdy! Some more detailed text about the Module here, 
+                                            and possbly a link to the product info page</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-1 mb-2">  <!-- ............................................... #5 - Module 2 -->
+                                <div class="row">
+                                    <div class="col-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
+                                            <label class="form-check-label" for="defaultCheck1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <img src="assets/images/order-thumb-200-business.png" class="img-fluid img-thumbnail" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column order-form-module-summary">
+                                            <div class="d-flex h-25">
+                                                <h4>Business</h4>
+                                            </div>
+                                            <div class="d-flex h-50">
+                                                <p>Let's get down to Business!</p>
+                                            </div>
+                                            <div class="d-flex h-25">
+                                                <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-appearance-wardrobe-2"> <!-- Button trigger modal -->
+                                                    <i class="fas fa-info-circle icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade order-form-modal" id="order-appearance-wardrobe-2" tabindex="-1" role="dialog" 
+                                aria-labelledby="order-appearance-wardrobe-1" aria-hidden="true"> 
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h3 class="modal-title" id="order-appearance-wardrobe-1-label">Business</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body mx-auto">
+                                        <img src="assets/images/order-large-600-business.png" class="img-fluid" alt="">
+                                        <p>Let's get down to business!</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-1 mb-2">  <!-- ............................................... #5 - Module 3 -->
+                                <div class="row">
+                                    <div class="col-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
+                                            <label class="form-check-label" for="defaultCheck1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <img src="assets/images/order-thumb-200-lego.png" class="img-fluid img-thumbnail" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column order-form-module-summary">
+                                            <div class="d-flex h-25">
+                                                <h4>Lego Man dress</h4>
+                                            </div>
+                                            <div class="d-flex h-50">
+                                                <p>Not so agile, but sturdy!</p>
+                                            </div>
+                                            <div class="d-flex h-25">
+                                                <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-appearance-wardrobe-3"> <!-- Button trigger modal -->
+                                                    <i class="fas fa-info-circle icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade order-form-modal" id="order-appearance-wardrobe-3" tabindex="-1" role="dialog" 
+                                aria-labelledby="order-appearance-wardrobe-1" aria-hidden="true"> 
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h3 class="modal-title" id="order-appearance-wardrobe-1-label">The Lego Man Suit</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body mx-auto">
+                                        <img src="assets/images/order-large-400-lego.png" alt="">
+                                        <p>Not so agile, but sturdy! Some more detailed text about the Module here, 
+                                            and possbly a link to the product info page</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
         
-        
+                    </div>
+                </form>
+            </div>
+            <div class="d-none col-md-6 d-md-block">
+                <img src="assets/images/wardrobe-1200.jpg" class="img-fluid" alt="The Wardrobe Package - When naked just does not work!">
+            </div>
+        </div>
+
+
 
 
        </main>

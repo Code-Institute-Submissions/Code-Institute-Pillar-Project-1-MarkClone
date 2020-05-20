@@ -32,7 +32,7 @@ h1 {
     font-family: var(--font-family-headers-lg);
     color: var(--primary-color-6);
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 20px;
     font-weight: 600;
 }
 
@@ -56,8 +56,8 @@ h3 {
 
 h4 {
     font-size: var(--text-mdl);
-    font-family: var(--font-family-body-text);
-    color: var(--secondary-color-1);
+    font-family: var(--font-family-headers-md);
+    color: var(--primary-color-5);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight:400;
@@ -65,7 +65,7 @@ h4 {
 
 h5 {
     font-size: var(--text-md);
-    font-family: var(--font-family-body-text);
+    font-family: var(--font-family-headers-md);
     color: var(--secondary-color-1);
     text-transform: uppercase;
     letter-spacing: 0px;
@@ -100,10 +100,19 @@ h5 {
 
 .icon {
     font-size: 1.3em;
+    color: var(--icon-standard-color);
 }
 
-.icon-p-5 {
-    padding: 0px 5px;
+.icon-highlight {
+    color: var(--icon-highlight-color);
+}
+
+.icon-pr-5 {
+    padding-right: 5px;
+}
+
+.icon-pl-5 {
+    padding-left: 5px;
 }
 
 .icon-adj-down {
@@ -391,28 +400,53 @@ button h1, h2, h3, h4, h5 {
     background-color: var(--order-header-h1-box-bg-color);
 }
 
+.order-header-progress-bar {
+
+}
+
 /* ==== #2 - Order -Form Group =========================================*/
-.order-form-group-box {
+.order-form-group {
     background-color: var(--order-form-group-bg-color);
 }
 
-.order-form-group-module-box {
+.order-form-group-header {
+    background-color: var(--order-form-group-header-bg-color);
+    padding: 5px 10px;
+}
 
-} 
+.order-form-group-header h3 {
+    color: var(--order-form-group-header-txt-color);
+}
+
+.order-form-group-bottom {
+    border-bottom: var(--border-thin-light);
+}
+
+.order-form-module {
+    background-color: var(--order-form-module-bg-color);
+}
 
 .order-form-module-summary {
     height: 100%;
 }
 
-.order-form-module-summary > i {
-    color: var(--order-form-info-button-color);
+.order-form-module-summary-header {
+    background-color: transparent;
+}
+
+.order-form-module-summary-header-top {
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: var(--order-form-module-header-bg-color);
+}
+
+.order-form-module-summary p {
+    font-size: var(--text-sm);
 }
 
 .order-form-modal {
     text-align: center;
 }
-
-
 
 .order-form-modal p {
     margin-top: 20px;
@@ -422,11 +456,12 @@ button h1, h2, h3, h4, h5 {
     max-width: 300px;
 }
 
+
+
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* ::::::::::::::::::::::: 1# - MEDIA QUERIES  :::::::::::::::::::::::: */
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
 
 
 /* ==== BOOTSTRAP sm - 576px and up =================================== */

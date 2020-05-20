@@ -1,14 +1,14 @@
-/* ::::::::::::::::::::::::::::::::::::::: IMPORTED FONTS ::::::::::::::::::::::::::::::::::::::::: */
+/* :::: IMPORTED FONTS :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* FROM: Google Fonts                                                                           === */
 /* (all available sizes and styles are included for all fonts)                                  === */
 /* Montserrat - Oswald - Roboto - Merriweather - Poppins                                        === */
-/*                                                                                              === */
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-/* :::: VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::: COLORS - FONT-SIZE - FONT-FAMILYS ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 :root {
      /*=== Colors ==================================================================================*/
 
@@ -30,7 +30,7 @@
 
     --transparent-color: transparent;
     
-    /*=== Text sizes ======================================*/
+    /*=== Text sizes ===============================================================================*/
     --text-xxxxl: 230%;
     --text-xxxl: 200%;
     --text-xxl: 170%;
@@ -43,7 +43,7 @@
     --text-sm:  80%;
     --text-xs:  70%;
     
-    /*=== Fonts ============================================*/
+    /*=== Fonts =====================================================================================*/
     --font-family-body-text: "Roboto", sans-serif;
     --font-family-headers-lg: "Oswald", sans-serif;
     --font-family-headers-md: "Montserrat", sans-serif;
@@ -51,39 +51,18 @@
     --font-family-quotations: "Poppins", sans-serif;
     --font-family-logotype: "Merriweather", sans-serif;
 
-   
-   /* :::: GENERAL ELEMENTS VARIABLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+   /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+   /* :::: GENERAL ELEMENTS VARIABLES :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+   /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
     
-    /* === BODY === */
-    
-    /* General */
+    /* Icons */
+    --icon-standard-color: var(--secondary-color-4);
+    --icon-highlight-color: var(--primary-color-1);
 
-
-    /* Header */
-    --top-navbar-bg-color: var(--transparent-color);  /* old navbar used secondary 7 */
-
-    /* Footer */
-    --footer-bg-color: var(--secondary-color-6);
-    --footer-border-color: var(--secondary-color-5);
-    
-
-    /* For pages using full screen background images */
-    --screen-overlay-0: rgba(219,219,219,0);
-    --screen-overlay-50: rgba(219,219,219,0);
-    --screen-overlay-100: rgba(219,219,219,0);
-    
-    
-    /* Links */
-    --link-hover-bg-color: var(--secondary-color-7);
-
-
-    /* === FORMS === */
-
-
-    /* === BORDERS === */
+    /* Borders */
     --border-thin-light: 1px solid var(--secondary-color-5);
     --border-thin-medium: 1px solid var(--secondary-color-4);
-
+ 
     /* === LOGOTYPE === */
     --logo-text-color: var(--secondary-color-1);
     --logo-icon-color: var(--primary-color-2);
@@ -93,14 +72,19 @@
     --logo-large-font-size: var(--text-lgl);
     --logo-font-stretch: ultra-expanded;
     
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-    /* :::: #1 - SPECIFIC SECTIONS AND PAGES :::::::::::::::::::::::::::::::::::::::::::::::: */ 
-    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    /* :::: #1 - SPECIFIC SECTIONS AND PAGES :::::::::::::::::::::::::::::::::::::::::::::::::::::::: */ 
+    /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    
 
-    /* ==== #2 - MAIN PAGE ================================================================== */
-    
-    /* Billboard */
-    
+    /* === HEADER =================================================================================== */
+    --top-navbar-bg-color: var(--secondary-color-6);  /* old navbar used secondary 7 */
+
+    /* === FOOTER =================================================================================== */
+    --footer-bg-color: var(--secondary-color-6);
+    --footer-border-color: var(--secondary-color-5);
+
+    /* === MAIN PAGE ================================================================================ */
 
     /* Main Page Info */
     --main-page-quotes-bg-color: var(--secondary-color-5);
@@ -109,13 +93,17 @@
     --main-page-leasing-bg-color: var(--secondary-color-5);
     --main-page-markersclub-bg-color: var(--secondary-color-5);
 
-    /* ==== #2 - ORDER PAGES ================================================================== */
+    /* === ORDER PAGES ============================================================================== */
 
     /* Header */
     --order-header-text-box-bg-color: var(--secondary-color-6);
     --order-header-h1-box-bg-color: var(--primary-color-2);
 
     /* Form */
-    --order-form-group-bg-color: var(--secondary-color-5)
+    --order-form-group-bg-color: var(--secondary-color-6);
+    --order-form-group-header-txt-color: var(--secondary-color-1);
+    --order-form-group-header-bg-color: var(--primary-color-1);
+    --order-form-module-bg-color: var(--secondary-color-6);
+    --order-form-module-header-bg-color: var(--secondary-color-5);
     --order-form-info-button-color: var(--primary-color-5);
 }
