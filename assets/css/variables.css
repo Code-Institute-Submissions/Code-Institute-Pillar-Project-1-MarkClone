@@ -117,4 +117,5 @@
 
     /* Form */
     --order-form-group-bg-color: var(--secondary-color-5)
+    --order-form-info-button-color: var(--primary-color-5);
 }

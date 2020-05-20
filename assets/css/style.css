@@ -100,16 +100,15 @@ h5 {
 
 .icon {
     font-size: 1.3em;
-    color: var(--primary-color-5);
 }
 
-.icon-menu {
-    padding: 0 10px;
-    font-size: 1em;
+.icon-p-5 {
+    padding: 0px 5px;
 }
 
-.icon-dropdown {
-    padding-right: 20px;
+.icon-adj-down {
+    position: relative;
+    top: 2px;
 }
 
 /* === #2 - Buttons =================================================== */
@@ -130,6 +129,12 @@ button h1, h2, h3, h4, h5 {
     border: none;
     outline: 0;
     text-align: center;
+}
+
+.button--order-open-modal {
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 /* ==== #2 - Background Images & Containers ============================ */
@@ -389,6 +394,32 @@ button h1, h2, h3, h4, h5 {
 /* ==== #2 - Order -Form Group =========================================*/
 .order-form-group-box {
     background-color: var(--order-form-group-bg-color);
+}
+
+.order-form-group-module-box {
+
+} 
+
+.order-form-module-summary {
+    height: 100%;
+}
+
+.order-form-module-summary > i {
+    color: var(--order-form-info-button-color);
+}
+
+.order-form-modal {
+    text-align: center;
+}
+
+
+
+.order-form-modal p {
+    margin-top: 20px;
+}
+
+.order-form-modal img {
+    max-width: 300px;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
