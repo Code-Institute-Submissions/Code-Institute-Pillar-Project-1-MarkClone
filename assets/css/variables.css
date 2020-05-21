@@ -98,6 +98,7 @@
     /* Header */
     --order-header-text-box-bg-color: var(--secondary-color-6);
     --order-header-h1-box-bg-color: var(--primary-color-2);
+    --order-progress-bg-color: var(--secondary-color-3);
 
     /* Form */
     --order-form-group-bg-color: var(--secondary-color-6);
