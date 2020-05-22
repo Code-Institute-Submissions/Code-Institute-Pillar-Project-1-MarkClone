@@ -120,6 +120,22 @@ h5 {
     top: 2px;
 }
 
+.icon-order {
+    text-align: center;
+    color: var(--order-form-icon-color);
+    padding-top: 5px;
+}
+
+.icon-order-thumb {
+    padding-top: 5px;
+    font-size: 6rem;
+}
+
+.icon-order-large {
+    font-size: 10rem;
+}
+
+
 /* === #2 - Buttons =================================================== */
 
 .button {
@@ -165,6 +181,9 @@ button h1, h2, h3, h4, h5 {
 }
 .order-2-header-bg {
     background-image: url(../images/social-header-300.jpg);
+}
+.order-3-header-bg {
+    background-image: url(../images/misc-header-300.jpg);
 }
 
 
@@ -474,6 +493,11 @@ button h1, h2, h3, h4, h5 {
     text-align: center;
     width: 70%;
     margin-top: 50px;
+}
+
+.order-form-input-text {
+    padding: 0 10px;
+    
 }
 
 

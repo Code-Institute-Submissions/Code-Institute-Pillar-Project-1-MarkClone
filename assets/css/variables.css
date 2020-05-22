@@ -107,4 +107,5 @@
     --order-form-module-bg-color: var(--secondary-color-6);
     --order-form-module-header-bg-color: var(--secondary-color-5);
     --order-form-info-button-color: var(--primary-color-5);
+    --order-form-icon-color: var(--secondary-color-2);
 }

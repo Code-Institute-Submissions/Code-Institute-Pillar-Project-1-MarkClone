@@ -69,7 +69,7 @@
            </nav>
                <section class="row"> <!-- Page Header -->
                 <div class="row ">
-                    <div class="col-12 col-md-6 order-1-header-bg header-bg-300px"></div> <!-- TODO: Update Misc Image -->
+                    <div class="col-12 col-md-6 order-3-header-bg header-bg-300px"></div> <!-- TODO: Update Misc Image -->
                     <div class="col-12 col-md-6 mx-auto p-0">
                         <div class="order-header-text-box">
                             <h5 class="d-none d-md-block">Welcome to The-Mark-2000-Miscellaneous-Packages-Department!</h5>
@@ -104,6 +104,205 @@
         <!-- MAIN CONTENT  -->
        <main>
 
+        <div class="row mt-4 pt-4 order-form-group"> <!-- =========================================================== - Package Group 1 -->
+            <div class="col-12 order-form-group-header"><h3>General Purpose "Good to haves"</h3></div>
+            <div class="col-md-6 mt-4">
+                <form> 
+                    <div class="row"> 
+                            <div class="col-12"> <!-- ................................................................ #5 - Description -->
+                                <p>This package is packed with all that extra stuff that is just nice to have!
+                                </p>
+                            </div>
+ 
+                            <div class="col-12"> <!-- ...................................................... #5 - Full Package Selector -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="choose-full-package" id="full-package-wardrobe" value="yes" checked>
+                                        <label class="form-check-label" for="full-package">
+                                            I want the Complete Package! 
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="choose-full-package" id="choose-modules-wardrobe" value="no">
+                                        <label class="form-check-label" for="choose-modules">
+                                            Let me choose separate Modules (Below)
+                                        </label>
+                                    </div>
+                            </div>
+
+                            <div class="col-12 mt-1 mb-2 order-form-module">  <!-- ................................................................. #5 - Module 1 -->
+                                <div class="row">
+                                    <div class="col-12 order-form-module-summary-header-top"></div>
+                                    <div class="col-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
+                                            <label class="form-check-label" for="defaultCheck1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 icon-order">
+                                        <i class="fas fa-power-off icon-order icon-order-thumb"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column order-form-module-summary">
+                                                <div class="d-flex h-25 order-form-module-summary-header">
+                                                    <h4>On/Off Switch</h4>
+                                                </div>
+                                                <div class="d-flex h-50">
+                                                    <div>
+                                                        <p>If your Mark-2000 gets annoying, just turn it off!</p>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex h-25">
+                                                    <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-misc-1"> <!-- Button trigger modal -->
+                                                        <i class="fas fa-info-circle icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>                                  
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade order-form-modal" id="order-misc-1" tabindex="-1" role="dialog" 
+                                aria-labelledby="order-appearance-wardrobe-1" aria-hidden="true"> 
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h3 class="modal-title" id="order-appearance-wardrobe-1-label">On/Off Switch</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body mx-auto">
+                                            <i class="fas fa-power-off icon-order icon-order-large"></i>
+                                        <p><strong>If your Mark-2000 gets annoying, just turn it off!</strong><br><br>
+                                            Or use the timer to automatically turn it on or off as it suits you.
+                                        </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-1 mb-2 order-form-module">  <!-- ................................................................. #5 - Module 2 -->
+                                <div class="row">
+                                    <div class="col-12 order-form-module-summary-header-top"></div>
+                                    <div class="col-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
+                                            <label class="form-check-label" for="defaultCheck1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 icon-order">
+                                        <i class="fas fa-signature icon-order icon-order-thumb"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column order-form-module-summary">
+                                                <div class="d-flex h-25 order-form-module-summary-header">
+                                                    <h4>Rename</h4>
+                                                </div>
+                                                <div class="d-flex h-50">
+                                                    <div>
+                                                        <!-- TODO: Order 3 - Fix margin under text input field -->
+                                                        <p>If you find the name Mark-2000 inconvenient, just rename it!
+                                                            <input class="form-control form-control-sm order-form-input-text" type="text" placeholder="New Name here">
+                                                        </p>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex h-25">
+                                                    <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-misc-2"> <!-- Button trigger modal -->
+                                                        <i class="fas fa-info-circle icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>                                  
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade order-form-modal" id="order-misc-2" tabindex="-1" role="dialog" 
+                                aria-labelledby="order-appearance-wardrobe-1" aria-hidden="true"> 
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h3 class="modal-title" id="order-appearance-wardrobe-1-label">On/Off Switch</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body mx-auto">
+                                            <i class="fas fa-signature icon-order icon-order-large"></i>
+                                        <p><strong>If you find the name Mark-2000 inconvenient, just rename it!</strong><br><br>
+                                            Use “Bob”, “Susanne”, “Moonshine” or whatever you prefer. 
+                                        </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-1 mb-2 order-form-module">  <!-- ................................................................. #5 - Module 3 -->
+                                <div class="row">
+                                    <div class="col-12 order-form-module-summary-header-top"></div>
+                                    <div class="col-1">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="yes" id="go-for-suit">
+                                            <label class="form-check-label" for="defaultCheck1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 icon-order">
+                                        <i class="fas fa-plug icon-order icon-order-thumb"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column order-form-module-summary">
+                                                <div class="d-flex h-25 order-form-module-summary-header">
+                                                    <h4>Zipp!</h4>
+                                                </div>
+                                                <div class="d-flex h-50">
+                                                    <div>
+                                                        <p>With the Zipp-Module you recharge your Mark-2000 in seconds.
+                                                        </p>
+                                                   </div>
+                                                </div>
+                                                <div class="d-flex h-25">
+                                                    <button type="button" class="button--order-open-modal" data-toggle="modal" data-target="#order-misc-3"> <!-- Button trigger modal -->
+                                                        <i class="fas fa-plug icon icon-pr-5 icon-adj-down icon-highlight"></i> More info<i class="fas fa-angle-right icon icon-pl-5 icon-adj-down"></i></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                    </div>                                  
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade order-form-modal" id="order-misc-3" tabindex="-1" role="dialog" 
+                                aria-labelledby="order-appearance-wardrobe-1" aria-hidden="true"> 
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h3 class="modal-title" id="order-appearance-wardrobe-1-label">Zipp!</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body mx-auto">
+                                            <i class="fas fa-plug icon-order icon-order-large"></i>
+                                        <p><strong>With the Zipp-Module you recharge your Mark-2000 in seconds.</strong><br><br>
+                                            230-volts guarantees no more annoying lunch-breaks!
+                                        </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="d-none col-md-6 d-md-block">
+                <img src="assets/images/gears-1200.jpg" class="img-fluid" alt="The Wardrobe Package - When naked just does not work!">
+            </div>
+        </div>
 
         <div class="row p-0 m-0"> <!-- =============================================================================== - Submit button -->
             <div class="col-4 order-form-submit-button-container">
