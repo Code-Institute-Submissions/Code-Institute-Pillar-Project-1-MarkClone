@@ -334,7 +334,68 @@ button h1, h2, h3, h4, h5 {
 /* :::: #1 - MAIN PAGE :::::::::::::::::::::::::::::::::::::::::::::::: */
 
 /* ==== #2 - Main Page - Billboard ==================================== */
+.billboard-slogan-container {
+    text-align: center;
+}
 
+.billboard-slogan-line-1 {
+    position: relative;
+    margin-top: 150px;
+    font-size: 1.1rem;
+    z-index: 3;
+}
+
+.billboard-slogan-line-2 {
+    position: relative;
+    font-size: 0.8rem;
+    z-index: 3; 
+}
+
+.billboard-slogan-line-3 {
+    position: relative;
+    margin-top: 100px;
+    font-size: 2.3rem;
+    z-index: 3;    
+}
+
+.billboard-slogan-button {
+    position: relative;
+    z-index: 15;
+    width: 90%;
+    letter-spacing: 10px;
+    margin: auto;
+}
+
+.billboard-slogan-button i {
+    position: relative;
+    top: 2px;
+    padding-left: 15px;
+    color:#65060f;
+    font-size: 1.5em;
+}
+
+.billboard-slogan-image-container {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.billboard-slogan-image-container img {
+    position: relative;
+    top: 90px;
+    right: 60px;
+    z-index: 3;
+    max-width: auto;
+    text-align: right;
+}
+
+.billboard-slogan-image-container-first-mark-half {
+    position: absolute;
+    z-index: 4;
+    top:600px;
+    left: 30px;
+    opacity: .9;
+}
 
 /* ==== #2 - Main Page - Main Content ================================= */
 
@@ -399,19 +460,9 @@ button h1, h2, h3, h4, h5 {
 }
 
 .main-page-usp h2 {
-    font-size: var(--text-xxxxl);
-    color: var(--primary-color-8);
-    font-family: var(--font-family-alert-header);
     letter-spacing: 10px;
     text-transform: uppercase;
     margin-bottom: 30px;
-}
-
-.main-page-usp h3 {
-    font-size: var(--text-lg);
-    color: var(--secondary-color-5);
-    letter-spacing: 10px;
-    text-transform: uppercase;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -519,6 +570,12 @@ button h1, h2, h3, h4, h5 {
     text-align: center;
 }
 
+/* =============== Service Page ==========*/
+
+.service-text-box {
+    background-color: transparent;
+}
+
 
 
 
@@ -540,6 +597,7 @@ button h1, h2, h3, h4, h5 {
 /* ==== BOOTSTRAP md - 768px and up =================================== */
 @media screen and (min-width: 768px) {
 
+    
 
     
 }
@@ -550,8 +608,6 @@ button h1, h2, h3, h4, h5 {
 
 @media (min-width: 992px) {
     
-    /* ==== Main Page ==== */
-
     /* Main page Usp */
     .main-page-usp h2 { font-size: var(--text-xxl); }
 
