@@ -500,8 +500,21 @@ button h1, h2, h3, h4, h5 {
 
 .order-form-input-text {
     padding: 0 10px;
+}
+
+.order-form-delivery-form {
+    margin: 5px 0px;
+}
+
+.order-form-delivery-form-short {
+    display: inline-block;
+}
+
+.order-form-delivery-form-short-50 {
+    width: 50%;
     
 }
+
 
 
 
