@@ -159,10 +159,14 @@ button h1, h2, h3, h4, h5 {
     background-image: url(../images/track-sky-1920-1080.jpg);
 }
 
-/* --- Order Start --- */
+/* --- Order Pages --- */
 .order-1-header-bg {
     background-image: url(../images/appearance-header-300.jpg);
 }
+.order-2-header-bg {
+    background-image: url(../images/social-header-300.jpg);
+}
+
 
 .header-background-full {
     background-repeat: no-repeat;
